@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  ketand The KETAN core server.
+#
+#
+# chkconfig: 345 80 20
+# description: ketand
+# processname: ketand
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/ketand, see below
+if [ -f /etc/sysconfig/ketand ]; then
+        . /etc/sysconfig/ketand
+fi
+
+RETVAL=0
+
+prog=ketand
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/ketand
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/ketand}
+
+# ketand defaults to /usr/bin/ketand, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/ketand}
+
+# ketand opts default to -disablewallet, override with BITCOIND_OPTS
+bitcoind_opts=${BITCOIND_OPTS}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $bitcoind $bitcoind_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac
