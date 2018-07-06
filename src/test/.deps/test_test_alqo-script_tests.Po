@@ -1,4 +1,4 @@
-test/test_test_Kema-script_tests.o: test/script_tests.cpp \
+test/test_test_kema-script_tests.o: test/script_tests.cpp \
  /usr/include/stdc-predef.h test/data/script_invalid.json.h \
  test/data/script_valid.json.h core_io.h /usr/include/c++/5/string \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \

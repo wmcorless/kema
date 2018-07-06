@@ -68,7 +68,7 @@ if BUILD_BITCOIND
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += kema-cli Kema-tx
+  bin_PROGRAMS += kema-cli kema-tx
 endif
 
 .PHONY: FORCE
@@ -180,7 +180,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between kemad and Kema-qt
+# server: shared between kemad and kema-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(BOOST_CPPFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -224,7 +224,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between kemad and Kema-qt, but only linked
+# wallet: shared between kemad and kema-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -295,7 +295,7 @@ univalue_libbitcoin_univalue_a_SOURCES = \
   univalue/univalue_escapes.h \
   univalue/univalue.h
 
-# common: shared between kemad, and Kema-qt and non-server tools
+# common: shared between kemad, and kema-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   allocators.cpp \
@@ -351,7 +351,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between kema-cli and Kema-qt
+# cli: shared between kema-cli and kema-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -404,7 +404,7 @@ Kema_cli_SOURCES = \
 Kema_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
-# Kema-tx binary #
+# kema-tx binary #
 Kema_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
@@ -414,7 +414,7 @@ Kema_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-Kema_tx_SOURCES = Kema-tx.cpp
+Kema_tx_SOURCES = kema-tx.cpp
 Kema_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 Kema_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)

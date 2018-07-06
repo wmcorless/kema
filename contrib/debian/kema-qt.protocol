@@ -1,5 +1,5 @@
 [Protocol]
-exec=Kema-qt '%u'
+exec=kema-qt '%u'
 protocol=Kema
 input=none
 output=none

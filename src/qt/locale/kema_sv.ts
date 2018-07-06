@@ -59,11 +59,11 @@
     </message>
     <message>
         <source>These are your Kema addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>De här är dina Kema-adresser för att skicka betalningar. Kontrollera alltid mängden och mottagaradressen innan du skickar mynt.</translation>
+        <translation>De här är dina kema-adresser för att skicka betalningar. Kontrollera alltid mängden och mottagaradressen innan du skickar mynt.</translation>
     </message>
     <message>
         <source>These are your Kema addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>De här är dina Kema-adresser för betalningsmottagningar. Det rekommenderas att använda en ny mottagaradress för varje transaktion.</translation>
+        <translation>De här är dina kema-adresser för betalningsmottagningar. Det rekommenderas att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -245,7 +245,7 @@
     </message>
     <message>
         <source>Send coins to a Kema address</source>
-        <translation>Skicka mynt till en Kema-adress</translation>
+        <translation>Skicka mynt till en kema-adress</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -341,7 +341,7 @@
     </message>
     <message>
         <source>Sign messages with your Kema addresses to prove you own them</source>
-        <translation>Signera meddelanden med dina Kema-adresser för att bevisa att du äger dem</translation>
+        <translation>Signera meddelanden med dina kema-adresser för att bevisa att du äger dem</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -349,7 +349,7 @@
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Kema addresses</source>
-        <translation>Bekräfta meddelanden för att garantera att de signerades med de angivna Kema-adresserna</translation>
+        <translation>Bekräfta meddelanden för att garantera att de signerades med de angivna kema-adresserna</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -405,7 +405,7 @@
     </message>
     <message>
         <source>Open a Kema: URI or payment request</source>
-        <translation>Öppna en Kema-URI eller betalningsbegäran</translation>
+        <translation>Öppna en kema-URI eller betalningsbegäran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -413,7 +413,7 @@
     </message>
     <message>
         <source>Show the Kema Coin help message to get a list with possible Kema command-line options</source>
-        <translation>Visa Kema Coin-hjälpmeddelandet för att få en lista med möjliga Kema-kommandoradalternativ</translation>
+        <translation>Visa Kema Coin-hjälpmeddelandet för att få en lista med möjliga kema-kommandoradalternativ</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -842,7 +842,7 @@ Adress: %4
     </message>
     <message>
         <source>The entered address "%1" is not a valid Kema address.</source>
-        <translation>Den angivna adressen "%1" är inte en giltig Kema-adress.</translation>
+        <translation>Den angivna adressen "%1" är inte en giltig kema-adress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1106,9 +1106,9 @@ Adress: %4
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/kema-crypto/Kema-wallet-translations/</source>
+https://www.transifex.com/kema-crypto/kema-wallet-translations/</source>
         <translation>Fattas språk eller är det en ofullständig översättning? Hjälp till att bidra med översättningar här:
-https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
+https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1183,7 +1183,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Kema network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den visade informationen kan vara utdaterad. Din plånbok synkroniseras automatiskt med Kema-nätverket efter att en anslutning har etablerats men denna process har ännu inte slutförts.</translation>
+        <translation>Den visade informationen kan vara utdaterad. Din plånbok synkroniseras automatiskt med kema-nätverket efter att en anslutning har etablerats men denna process har ännu inte slutförts.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1543,7 +1543,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Kema network.</source>
-        <translation>Ett valfritt meddelande att bifoga betalningsbegärandet vilket kommer att visas när begärandet öppnas. Observera: Meddelandet kommer inte att skickas med betalningen över Kema-nätverket.</translation>
+        <translation>Ett valfritt meddelande att bifoga betalningsbegärandet vilket kommer att visas när begärandet öppnas. Observera: Meddelandet kommer inte att skickas med betalningen över kema-nätverket.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -1900,7 +1900,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>Warning: Invalid Kema address</source>
-        <translation>Varning: Ogiltig Kema-adress</translation>
+        <translation>Varning: Ogiltig kema-adress</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1959,7 +1959,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>A message that was attached to the Kema: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Kema network.</source>
-        <translation>Ett meddelande som bifogades till Kema: URI vilket kommer att lagras med transaktionen så att du vet. Observera: Meddelandet kommer inte att skickas över Kema-nätverket.</translation>
+        <translation>Ett meddelande som bifogades till Kema: URI vilket kommer att lagras med transaktionen så att du vet. Observera: Meddelandet kommer inte att skickas över kema-nätverket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2037,7 +2037,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this Kema address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna Kema-adress</translation>
+        <translation>Signera meddelandet för att bevisa att du äger denna kema-adress</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2061,7 +2061,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Kema address</source>
-        <translation>Bekräfta meddelandet för att försäkra dig om att den signerades med den angivna Kema-adressen</translation>
+        <translation>Bekräfta meddelandet för att försäkra dig om att den signerades med den angivna kema-adressen</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

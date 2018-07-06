@@ -1,4 +1,4 @@
-test/test_test_Kema-allocator_tests.o: test/allocator_tests.cpp \
+test/test_test_kema-allocator_tests.o: test/allocator_tests.cpp \
  /usr/include/stdc-predef.h util.h config/kema-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \

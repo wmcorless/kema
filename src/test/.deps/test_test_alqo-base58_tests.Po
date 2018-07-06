@@ -1,4 +1,4 @@
-test/test_test_Kema-base58_tests.o: test/base58_tests.cpp \
+test/test_test_kema-base58_tests.o: test/base58_tests.cpp \
  /usr/include/stdc-predef.h base58.h chainparams.h chainparamsbase.h \
  /usr/include/c++/5/string \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \

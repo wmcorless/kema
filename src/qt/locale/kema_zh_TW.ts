@@ -1259,9 +1259,9 @@ Address: %4
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/kema-crypto/Kema-wallet-translations/</source>
+https://www.transifex.com/kema-crypto/kema-wallet-translations/</source>
         <translation>缺少相關語言或翻譯不完整？請到這裡協助翻譯
-https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
+https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>

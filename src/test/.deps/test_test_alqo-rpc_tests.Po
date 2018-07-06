@@ -1,4 +1,4 @@
-test/test_test_Kema-rpc_tests.o: test/rpc_tests.cpp \
+test/test_test_kema-rpc_tests.o: test/rpc_tests.cpp \
  /usr/include/stdc-predef.h rpcserver.h amount.h serialize.h \
  /usr/include/c++/5/algorithm /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \

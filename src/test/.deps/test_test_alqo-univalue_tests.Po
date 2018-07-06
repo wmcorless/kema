@@ -1,4 +1,4 @@
-test/test_test_Kema-univalue_tests.o: test/univalue_tests.cpp \
+test/test_test_kema-univalue_tests.o: test/univalue_tests.cpp \
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \

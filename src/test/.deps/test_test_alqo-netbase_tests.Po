@@ -1,4 +1,4 @@
-test/test_test_Kema-netbase_tests.o: test/netbase_tests.cpp \
+test/test_test_kema-netbase_tests.o: test/netbase_tests.cpp \
  /usr/include/stdc-predef.h netbase.h config/kema-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \

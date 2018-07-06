@@ -7,7 +7,7 @@
 #  spendfrom.py  # Lists available funds
 #  spendfrom.py --from=ADDRESS --to=ADDRESS --amount=11.00
 #
-# Assumes it will talk to a kemad or Kema-Qt running
+# Assumes it will talk to a kemad or kema-Qt running
 # on localhost.
 #
 # Depends on jsonrpc
@@ -110,7 +110,7 @@ def list_available(kemad):
         vout = rawtx["vout"][output['vout']]
         pk = vout["scriptPubKey"]
 
-        # This code only deals with ordinary pay-to-Kema-address
+        # This code only deals with ordinary pay-to-kema-address
         # or pay-to-script-hash outputs right now; anything exotic is ignored.
         if pk["type"] != "pubkeyhash" and pk["type"] != "scripthash":
             continue

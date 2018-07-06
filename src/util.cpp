@@ -232,7 +232,7 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "Kema" is a composite category enabling all Kema-related debug output
+            // "Kema" is a composite category enabling all kema-related debug output
             if (ptrCategory->count(string("Kema"))) {
                 ptrCategory->insert(string("Darksend"));
                 ptrCategory->insert(string("Instantx"));

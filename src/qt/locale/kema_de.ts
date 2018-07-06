@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Kema addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre Kema-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Kema überweisen.</translation>
+        <translation>Dies sind ihre kema-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Kema überweisen.</translation>
     </message>
     <message>
         <source>These are your Kema addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre Kema-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <translation>Dies sind ihre kema-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -256,7 +256,7 @@
     </message>
     <message>
         <source>Send coins to a Kema address</source>
-        <translation>Kema an eine Kema-Adresse überweisen</translation>
+        <translation>Kema an eine kema-Adresse überweisen</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -356,7 +356,7 @@
     </message>
     <message>
         <source>Sign messages with your Kema addresses to prove you own them</source>
-        <translation>Nachrichten signieren, um den Besitz ihrer Kema-Adressen zu beweisen</translation>
+        <translation>Nachrichten signieren, um den Besitz ihrer kema-Adressen zu beweisen</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -364,7 +364,7 @@
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Kema addresses</source>
-        <translation>Nachrichten verifizieren, um sicherzustellen, dass diese mit den angegebenen Kema-Adressen signiert wurden</translation>
+        <translation>Nachrichten verifizieren, um sicherzustellen, dass diese mit den angegebenen kema-Adressen signiert wurden</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -488,7 +488,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Kema network</source>
-        <translation><numerusform>%n aktive Verbindung zum Kema-Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Kema-Netzwerk</numerusform></translation>
+        <translation><numerusform>%n aktive Verbindung zum kema-Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum kema-Netzwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -947,7 +947,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid Kema address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige Kema-Adresse.</translation>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige kema-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1174,7 +1174,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Connect to the Kema network through a SOCKS5 proxy.</source>
-        <translation>Über einen SOCKS5-Proxy mit dem Kema-Netzwerk verbinden.</translation>
+        <translation>Über einen SOCKS5-Proxy mit dem kema-Netzwerk verbinden.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1206,7 +1206,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Automatically open the Kema client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisch den Kema-Clientport auf dem Router öffnen. Dies funktioniert nur, wenn Ihr Router UPnP unterstützt und dies aktiviert ist.</translation>
+        <translation>Automatisch den kema-Clientport auf dem Router öffnen. Dies funktioniert nur, wenn Ihr Router UPnP unterstützt und dies aktiviert ist.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1262,9 +1262,9 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/kema-crypto/Kema-wallet-translations/</source>
+https://www.transifex.com/kema-crypto/kema-wallet-translations/</source>
         <translation>Fehlt eine Sprache oder ist unvollständig übersetzt? Hier können Sie helfen:
-https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
+https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1347,7 +1347,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Kema network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigten Informationen sind möglicherweise nicht mehr aktuell. Ihre Wallet wird automatisch synchronisiert, nachdem eine Verbindung zum Kema-Netzwerk hergestellt wurde. Dieser Prozess ist jedoch derzeit noch nicht abgeschlossen.</translation>
+        <translation>Die angezeigten Informationen sind möglicherweise nicht mehr aktuell. Ihre Wallet wird automatisch synchronisiert, nachdem eine Verbindung zum kema-Netzwerk hergestellt wurde. Dieser Prozess ist jedoch derzeit noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1588,7 +1588,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Kema address or malformed URI parameters.</source>
-        <translation>URI konnte nicht erfolgreich verarbeitet werden. Höchstwahrscheinlich ist dies entweder keine gültige Kema-Adresse oder die URI-Parameter sind falsch gesetzt. </translation>
+        <translation>URI konnte nicht erfolgreich verarbeitet werden. Höchstwahrscheinlich ist dies entweder keine gültige kema-Adresse oder die URI-Parameter sind falsch gesetzt. </translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1674,7 +1674,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>Enter a Kema address (e.g. %1)</source>
-        <translation>Kema-Adresse eingeben (z.B. %1)</translation>
+        <translation>kema-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1764,7 +1764,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>Open the Kema debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öffnet die Kema-Debugprotokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
+        <translation>Öffnet die kema-Debugprotokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -2035,7 +2035,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Kema network.</source>
-        <translation>Eine optionale Nachricht, die an die Zahlungsanforderung angehängt wird. Sie wird angezeigt, wenn die Anforderung geöffnet wird. Hinweis: Diese Nachricht wird nicht mit der Zahlung über das Kema-Netzwerk gesendet.</translation>
+        <translation>Eine optionale Nachricht, die an die Zahlungsanforderung angehängt wird. Sie wird angezeigt, wenn die Anforderung geöffnet wird. Hinweis: Diese Nachricht wird nicht mit der Zahlung über das kema-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2047,7 +2047,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Kema network.</source>
-        <translation>Eine optionale Nachricht, die an die Zahlungsanforderung angehängt wird. Sie wird angezeigt, wenn die Anforderung geöffnet wird.&lt;br&gt; Hinweis: Diese Nachricht wird nicht mit der Zahlung über das Kema-Netzwerk gesendet.</translation>
+        <translation>Eine optionale Nachricht, die an die Zahlungsanforderung angehängt wird. Sie wird angezeigt, wenn die Anforderung geöffnet wird.&lt;br&gt; Hinweis: Diese Nachricht wird nicht mit der Zahlung über das kema-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2497,7 +2497,7 @@ Dies kann passieren, wenn einige Kema aus ihrer Wallet bereits ausgegeben wurden
     </message>
     <message>
         <source>Warning: Invalid Kema address</source>
-        <translation>Warnung: ungültige Kema-Adresse</translation>
+        <translation>Warnung: ungültige kema-Adresse</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2520,7 +2520,7 @@ Dies kann passieren, wenn einige Kema aus ihrer Wallet bereits ausgegeben wurden
     </message>
     <message>
         <source>The Kema address to send the payment to</source>
-        <translation>Kema-Adresse, an die überwiesen werden soll</translation>
+        <translation>kema-Adresse, an die überwiesen werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2560,7 +2560,7 @@ Dies kann passieren, wenn einige Kema aus ihrer Wallet bereits ausgegeben wurden
     </message>
     <message>
         <source>A message that was attached to the Kema: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Kema network.</source>
-        <translation>Eine an die "Kema:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Kema-Netzwerk gesendet.</translation>
+        <translation>Eine an die "Kema:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das kema-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2587,7 +2587,7 @@ Dies kann passieren, wenn einige Kema aus ihrer Wallet bereits ausgegeben wurden
     <name>ShutdownWindow</name>
     <message>
         <source>Kema Coin is shutting down...</source>
-        <translation>Kema-Core wird herunter gefahren...</translation>
+        <translation>kema-Core wird herunter gefahren...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2610,7 +2610,7 @@ Dies kann passieren, wenn einige Kema aus ihrer Wallet bereits ausgegeben wurden
     </message>
     <message>
         <source>The Kema address to sign the message with</source>
-        <translation>Kema-Adresse, mit der die Nachricht signiert werden soll</translation>
+        <translation>kema-Adresse, mit der die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2642,7 +2642,7 @@ Dies kann passieren, wenn einige Kema aus ihrer Wallet bereits ausgegeben wurden
     </message>
     <message>
         <source>Sign the message to prove you own this Kema address</source>
-        <translation>Die Nachricht signieren, um den Besitz dieser Kema-Adresse zu belegen</translation>
+        <translation>Die Nachricht signieren, um den Besitz dieser kema-Adresse zu belegen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2666,11 +2666,11 @@ Dies kann passieren, wenn einige Kema aus ihrer Wallet bereits ausgegeben wurden
     </message>
     <message>
         <source>The Kema address the message was signed with</source>
-        <translation>Kema-Adresse, mit der die Nachricht signiert worden ist</translation>
+        <translation>kema-Adresse, mit der die Nachricht signiert worden ist</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Kema address</source>
-        <translation>Die Nachricht verifizieren, um sicherzustellen, dass diese mit der angegebenen Kema-Adresse signiert wurde</translation>
+        <translation>Die Nachricht verifizieren, um sicherzustellen, dass diese mit der angegebenen kema-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3615,7 +3615,7 @@ Dies kann passieren, wenn einige Kema aus ihrer Wallet bereits ausgegeben wurden
     </message>
     <message>
         <source>Disable all Kema specific functionality (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, default: %u)</source>
-        <translation>Deaktiviere all Kema-spezifischen Funktionen (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, Standard: %u)</translation>
+        <translation>Deaktiviere all kema-spezifischen Funktionen (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, Standard: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3710,7 +3710,7 @@ Dies kann passieren, wenn einige Kema aus ihrer Wallet bereits ausgegeben wurden
         <translation>Dieses Produkt enthält vom OpenSSL-Projekt entwickelte Software zur Benutzung des OpenSSL Toolkit &lt;https://www.openssl.org/&gt;, kryptographische Software geschrieben von Eric Young und UPnP Software geschrieben von Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use kemad, or the -server option to Kema-qt, you must set an rpcpassword in the configuration file:
+        <source>To use kemad, or the -server option to kema-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=Kemarpc
@@ -3721,7 +3721,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Kema Alert" admin@foo.com
 </source>
-        <translation>Um kemad (oder Kema-qt mit dem -server Parameter) zu benutzen müssen Sie ein rpcpasswort in dieser Konfigurationsdatei angeben:
+        <translation>Um kemad (oder kema-qt mit dem -server Parameter) zu benutzen müssen Sie ein rpcpasswort in dieser Konfigurationsdatei angeben:
 %s
 Es wird empfohlen das folgende Zufallspasswort zu verwenden:
 rpcuser=Kemarpc

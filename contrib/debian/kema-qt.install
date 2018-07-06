@@ -1,6 +1,6 @@
-usr/local/bin/Kema-qt usr/bin
+usr/local/bin/kema-qt usr/bin
 share/pixmaps/bitcoin32.xpm usr/share/pixmaps
 share/pixmaps/bitcoin16.xpm usr/share/pixmaps
 share/pixmaps/bitcoin128.png usr/share/pixmaps
-debian/Kema-qt.desktop usr/share/applications
-debian/Kema-qt.protocol usr/share/kde4/services/
+debian/kema-qt.desktop usr/share/applications
+debian/kema-qt.protocol usr/share/kde4/services/

@@ -1,5 +1,5 @@
-bin_PROGRAMS += qt/test/test_Kema-qt
-TESTS += qt/test/test_Kema-qt
+bin_PROGRAMS += qt/test/test_kema-qt
+TESTS += qt/test/test_kema-qt
 
 TEST_QT_MOC_CPP = qt/test/moc_uritests.cpp
 
@@ -42,9 +42,9 @@ CLEAN_BITCOIN_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
 
 CLEANFILES += $(CLEAN_BITCOIN_QT_TEST)
 
-test_Kema_qt : qt/test/test_Kema-qt$(EXEEXT)
+test_Kema_qt : qt/test/test_kema-qt$(EXEEXT)
 
-test_Kema_qt_check : qt/test/test_Kema-qt$(EXEEXT) FORCE
+test_Kema_qt_check : qt/test/test_kema-qt$(EXEEXT) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
 test_Kema_qt_clean: FORCE

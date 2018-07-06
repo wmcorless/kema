@@ -15,7 +15,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.Kema.Kema-Qt";
+        return @"io.Kema.kema-Qt";
     } else {
         return [self __bundleIdentifier];
     }

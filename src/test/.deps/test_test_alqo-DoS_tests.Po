@@ -1,4 +1,4 @@
-test/test_test_Kema-DoS_tests.o: test/DoS_tests.cpp \
+test/test_test_kema-DoS_tests.o: test/DoS_tests.cpp \
  /usr/include/stdc-predef.h keystore.h key.h allocators.h \
  /usr/include/c++/5/map /usr/include/c++/5/bits/stl_tree.h \
  /usr/include/c++/5/bits/stl_algobase.h \

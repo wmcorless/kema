@@ -378,7 +378,7 @@ SOURCES += src/activemasternode.cpp \
            src/Darksend-relay.cpp \
            src/Darksend.cpp \
            src/kema-cli.cpp \
-           src/Kema-tx.cpp \
+           src/kema-tx.cpp \
            src/kema.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \

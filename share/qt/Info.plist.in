@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Kema-Qt</string>
+  <string>kema-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.Kema.Kema-Qt</string>
+  <string>io.Kema.kema-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -62,7 +62,7 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-Kema-payment-request</string>
+        <string>application/x-kema-payment-request</string>
         <key>public.filename-extension</key>
         <array>
           <string>Kemapaymentrequest</string>

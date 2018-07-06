@@ -2199,7 +2199,7 @@ Please check the address and try again.</source>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Kema-project/Kema-project-translations</source>
+https://www.transifex.com/kema-project/kema-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5243,7 +5243,7 @@ https://www.transifex.com/Kema-project/Kema-project-translations</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>To use kemad, or the -server option to Kema-qt, you must set an rpcpassword in the configuration file:
+        <source>To use kemad, or the -server option to kema-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=Kemarpc

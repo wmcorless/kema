@@ -20,7 +20,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Kema Coin"
-!define MUI_FINISHPAGE_RUN $INSTDIR\Kema-qt.exe
+!define MUI_FINISHPAGE_RUN $INSTDIR\kema-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/Kema/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /root/Kema/Kema-${VERSION}-win-setup.exe
+OutFile /root/Kema/kema-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\Kema
 !else
@@ -73,7 +73,7 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /root/Kema/release/Kema-qt.exe
+    File /root/Kema/release/kema-qt.exe
     File /oname=COPYING.txt /root/Kema/COPYING
     File /oname=readme.txt /root/Kema/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
@@ -95,7 +95,7 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\Kema-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\kema-qt.exe
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -108,8 +108,8 @@ Section -post SEC0001
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
     WriteRegStr HKCR "Kema" "URL Protocol" ""
     WriteRegStr HKCR "Kema" "" "URL:Kema"
-    WriteRegStr HKCR "Kema\DefaultIcon" "" $INSTDIR\Kema-qt.exe
-    WriteRegStr HKCR "Kema\shell\open\command" "" '"$INSTDIR\Kema-qt.exe" "%1"'
+    WriteRegStr HKCR "Kema\DefaultIcon" "" $INSTDIR\kema-qt.exe
+    WriteRegStr HKCR "Kema\shell\open\command" "" '"$INSTDIR\kema-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -127,7 +127,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\Kema-qt.exe
+    Delete /REBOOTOK $INSTDIR\kema-qt.exe
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon

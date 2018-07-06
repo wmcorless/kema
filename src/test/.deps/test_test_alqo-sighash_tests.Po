@@ -1,4 +1,4 @@
-test/test_test_Kema-sighash_tests.o: test/sighash_tests.cpp \
+test/test_test_kema-sighash_tests.o: test/sighash_tests.cpp \
  /usr/include/stdc-predef.h test/data/sighash.json.h main.h \
  config/kema-config.h amount.h serialize.h /usr/include/c++/5/algorithm \
  /usr/include/c++/5/utility \

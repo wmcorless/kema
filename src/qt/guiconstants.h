@@ -51,7 +51,7 @@ static const int MAX_URI_LENGTH = 255;
 
 #define QAPP_ORG_NAME "Kema"
 #define QAPP_ORG_DOMAIN "http://bit.Kemas/"
-#define QAPP_APP_NAME_DEFAULT "Kema-Qt"
-#define QAPP_APP_NAME_TESTNET "Kema-Qt-testnet"
+#define QAPP_APP_NAME_DEFAULT "kema-Qt"
+#define QAPP_APP_NAME_TESTNET "kema-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

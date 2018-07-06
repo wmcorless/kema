@@ -1,4 +1,4 @@
-test/test_test_Kema-sanity_tests.o: test/sanity_tests.cpp \
+test/test_test_kema-sanity_tests.o: test/sanity_tests.cpp \
  /usr/include/stdc-predef.h compat/sanity.h key.h allocators.h \
  /usr/include/c++/5/map /usr/include/c++/5/bits/stl_tree.h \
  /usr/include/c++/5/bits/stl_algobase.h \

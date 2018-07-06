@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the Kema, gitian-builder, gitian.sigs, and Kema-detached-sigs.
+Run this script from the directory containing the Kema, gitian-builder, gitian.sigs, and kema-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -233,7 +233,7 @@ if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
     git clone https://github.com/Kema/Kema.SIGS.git
-    git clone https://github.com/Kema-DETACHED.SIGS.git
+    git clone https://github.com/kema-DETACHED.SIGS.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -256,7 +256,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./Kema-binaries/${VERSION}
+	mkdir -p ./kema-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -276,7 +276,7 @@ then
 	    echo ""
 	    ./bin/gbuild -j ${proc} -m ${mem} --commit Kema=${COMMIT} --url Kema=${url} ../Kema/contrib/gitian-descriptors/gitian-linux.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../Kema/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/Kema-*.tar.gz build/out/src/Kema-*.tar.gz ../Kema-binaries/${VERSION}
+	    mv build/out/kema-*.tar.gz build/out/src/kema-*.tar.gz ../kema-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -286,8 +286,8 @@ then
 	    echo ""
 	    ./bin/gbuild -j ${proc} -m ${mem} --commit Kema=${COMMIT} --url Kema=${url} ../Kema/contrib/gitian-descriptors/gitian-win.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../Kema/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/Kema-*-win-unsigned.tar.gz inputs/Kema-win-unsigned.tar.gz
-	    mv build/out/Kema-*.zip build/out/Kema-*.exe ../Kema-binaries/${VERSION}
+	    mv build/out/kema-*-win-unsigned.tar.gz inputs/kema-win-unsigned.tar.gz
+	    mv build/out/kema-*.zip build/out/kema-*.exe ../kema-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -297,8 +297,8 @@ then
 	    echo ""
 	    ./bin/gbuild -j ${proc} -m ${mem} --commit Kema=${COMMIT} --url Kema=${url} ../Kema/contrib/gitian-descriptors/gitian-osx.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../Kema/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/Kema-*-osx-unsigned.tar.gz inputs/Kema-osx-unsigned.tar.gz
-	    mv build/out/Kema-*.tar.gz build/out/Kema-*.dmg ../Kema-binaries/${VERSION}
+	    mv build/out/kema-*-osx-unsigned.tar.gz inputs/kema-osx-unsigned.tar.gz
+	    mv build/out/kema-*.tar.gz build/out/kema-*.dmg ../kema-binaries/${VERSION}
 	fi
 	popd
 
@@ -362,8 +362,8 @@ then
 	    echo ""
 	    ./bin/gbuild -i --commit signature=${COMMIT} ../Kema/contrib/gitian-descriptors/gitian-win-signer.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../Kema/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/Kema-*win64-setup.exe ../Kema-binaries/${VERSION}
-	    mv build/out/Kema-*win32-setup.exe ../Kema-binaries/${VERSION}
+	    mv build/out/kema-*win64-setup.exe ../kema-binaries/${VERSION}
+	    mv build/out/kema-*win32-setup.exe ../kema-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -373,7 +373,7 @@ then
 	    echo ""
 	    ./bin/gbuild -i --commit signature=${COMMIT} ../Kema/contrib/gitian-descriptors/gitian-osx-signer.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../Kema/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/Kema-osx-signed.dmg ../Kema-binaries/${VERSION}/Kema-${VERSION}-osx.dmg
+	    mv build/out/kema-osx-signed.dmg ../kema-binaries/${VERSION}/kema-${VERSION}-osx.dmg
 	fi
 	popd
 

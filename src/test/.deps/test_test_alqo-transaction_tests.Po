@@ -1,4 +1,4 @@
-test/test_test_Kema-transaction_tests.o: test/transaction_tests.cpp \
+test/test_test_kema-transaction_tests.o: test/transaction_tests.cpp \
  /usr/include/stdc-predef.h test/data/tx_invalid.json.h \
  test/data/tx_valid.json.h clientversion.h config/kema-config.h \
  /usr/include/c++/5/string \

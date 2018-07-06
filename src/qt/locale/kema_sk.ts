@@ -1262,9 +1262,9 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/kema-crypto/Kema-wallet-translations/</source>
+https://www.transifex.com/kema-crypto/kema-wallet-translations/</source>
         <translation>Chýbajúci alebo nekompletný preklad? Pomôžte nám tu:
-https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
+https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -3709,7 +3709,7 @@ https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
         <translation>Tento produkt obsahuje softvér vyvinutý projektom OpenSSL pre použitie sady nástrojov OpenSSL &lt;https://www.openssl.org/&gt; a kryptografického softvéru napísaného Eric Young a UPnP softvér napísaný Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use kemad, or the -server option to Kema-qt, you must set an rpcpassword in the configuration file:
+        <source>To use kemad, or the -server option to kema-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=Kemarpc
@@ -3720,7 +3720,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Kema Alert" admin@foo.com
 </source>
-        <translation>Pre použitie možnosti -server pre Kema-qt, musíte nastaviť rpcpassword v konfiguračnom súbore:
+        <translation>Pre použitie možnosti -server pre kema-qt, musíte nastaviť rpcpassword v konfiguračnom súbore:
 %s
 Doporučuje sa použiť nasledovné náhodné heslo:
 rpcuser=Kemarpc

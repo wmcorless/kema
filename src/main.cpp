@@ -2026,7 +2026,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("Kema-scriptch");
+    RenameThread("kema-scriptch");
     scriptcheckqueue.Thread();
 }
 

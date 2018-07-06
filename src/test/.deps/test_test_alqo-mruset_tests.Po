@@ -1,4 +1,4 @@
-test/test_test_Kema-mruset_tests.o: test/mruset_tests.cpp \
+test/test_test_kema-mruset_tests.o: test/mruset_tests.cpp \
  /usr/include/stdc-predef.h mruset.h /usr/include/c++/5/deque \
  /usr/include/c++/5/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
