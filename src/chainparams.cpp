@@ -208,8 +208,8 @@ public:
         genesis.nNonce = 21014061;
 
         hashGenesisBlock = genesis.GetHash();
-    printf("%s\n", hashGenesisBlock.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0xbe3b9e59e57bf1c68889d0a2f104d771ebdc243023f0e2d920161d76c4045af6"));
+    //printf("%s\n", hashGenesisBlock.ToString().c_str());
+        assert(hashGenesisBlock == uint256("0xc174f9c443624af18b5052dfea707b54b72d9dd5b048ad68b4b193512f03b610"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
