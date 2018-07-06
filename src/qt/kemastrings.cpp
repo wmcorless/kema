@@ -9,146 +9,146 @@
 #define UNUSED
 #endif
 static const char UNUSED* Kema_strings[] = {
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "(1 = keep tx meta data e.g. account owner and payment request information, 2 "
                                    "= drop tx meta data)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Allow JSON-RPC connections from specified source. Valid for <ip> are a "
                                    "single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or "
                                    "a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "An error occurred while setting up the RPC address %s port %u for listening: "
                                    "%s"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Bind to given address and always listen on it. Use [host]:port notation for "
                                    "IPv6"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Bind to given address and whitelist peers connecting to it. Use [host]:port "
                                    "notation for IPv6"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Bind to given address to listen for JSON-RPC connections. Use [host]:port "
                                    "notation for IPv6. This option can be specified multiple times (default: "
                                    "bind to all interfaces)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Cannot obtain a lock on data directory %s. Kema Coin is probably already "
                                    "running."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
                                    "exact finalized budget match to my generated budget. (string, default: auto)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Continuously rate-limit free transactions to <n>*1000 bytes per minute "
                                    "(default:%u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Create new files with system default permissions, instead of umask 077 (only "
                                    "effective with disabled wallet functionality)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Delete all wallet transactions and only recover those parts of the "
                                    "blockchain through -rescan on startup"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Disable all Kema specific functionality (Masternodes, Darksend, InstantX, "
                                    "Budgeting) (0-1, default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Distributed under the MIT software license, see the accompanying file "
                                    "COPYING or <http://www.opensource.org/licenses/mit-license.php>."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Enable Instantx, show confirmations for locked transactions (bool, default: "
                                    "%s)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Enable use of automated Darksend for funds stored in this wallet (0-1, "
                                    "default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Enter regression test mode, which uses a special chain in which blocks can "
                                    "be solved instantly."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Error: Listening for incoming connections failed (listen returned error %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Error: Unsupported argument -socks found. Setting SOCKS version isn't "
                                    "possible anymore, only SOCKS5 proxies are supported."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Execute command when a relevant alert is received or we see a really long "
                                    "fork (%s in cmd is replaced by message)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Execute command when a wallet transaction changes (%s in cmd is replaced by "
                                    "TxID)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Execute command when the best block changes (%s in cmd is replaced by block "
                                    "hash)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Fees (in Kema/Kb) smaller than this are considered zero fee for relaying "
                                    "(default: %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Fees (in Kema/Kb) smaller than this are considered zero fee for transaction "
                                    "creation (default: %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Flush database activity from memory pool to disk log every <n> megabytes "
                                    "(default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Found unconfirmed denominated outputs, will wait till they confirm to "
                                    "continue."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "How thorough the block verification of -checkblocks is (0-4, default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "If paytxfee is not set, include enough fee so transactions begin "
                                    "confirmation on average within n blocks (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "In this mode -genproclimit controls how many blocks are generated "
                                    "immediately."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Invalid amount for -maxtxfee=<amount>: '%s' (must be at least the minrelay "
                                    "fee of %s to prevent stuck transactions)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Log transaction priority and fee per kB when mining blocks (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Maintain a full transaction index, used by the getrawtransaction rpc call "
                                    "(default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Maximum size of data in data carrier transactions we relay and mine "
                                    "(default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Maximum total fees to use in a single wallet transaction, setting too low "
                                    "may abort large transactions (default: %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Name to construct url for KeePass entry that stores the wallet passphrase"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Number of seconds to keep misbehaving peers from reconnecting (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Darksend uses exact denominated amounts to send funds, you might simply "
                                    "need to anonymize some more coins."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Output debugging information (default: %u, supplying <category> is optional)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Provide liquidity to Darksend by infrequently mixing coins on a continual "
                                    "basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, "
                                    "low fees)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Query for peer addresses via DNS lookup, if low on addresses (default: 1 "
                                    "unless -connect)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Require high priority for relaying free or low-fee transactions (default:%u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Send trace/debug info to console instead of debug.log file (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Set maximum size of high-priority/low-fee transactions in bytes (default: %d)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Set the number of script verification threads (%u to %d, 0 = auto, <0 = "
                                    "leave that many cores free, default: %d)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Set the number of threads for coin generation if enabled (-1 = all cores, "
                                    "default: %d)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Show N confirmations for a successfully locked transaction (0-9999, default: "
                                    "%u)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "InstantX requires inputs with at least 6 confirmations, you might need to "
                                    "wait a few minutes and try again."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "This is a pre-release test build - use at your own risk - do not use for "
                                    "mining or merchant applications"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "This product includes software developed by the OpenSSL Project for use in "
                                    "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
                                    "written by Eric Young and UPnP software written by Thomas Bernard."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "To use kemad, or the -server option to Kema-qt, you must set an rpcpassword "
                                    "in the configuration file:\n"
                                    "%s\n"
@@ -161,283 +161,283 @@ static const char UNUSED* Kema_strings[] = {
                                    "permissions.\n"
                                    "It is also recommended to set alertnotify so you are notified of problems;\n"
                                    "for example: alertnotify=echo %%s | mail -s \"Kema Alert\" admin@foo.com\n"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Unable to bind to %s on this computer. Kema Coin is probably already running."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Unable to locate enough Darksend denominated funds for this transaction."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Unable to locate enough Darksend non-denominated funds for this "
                                    "transaction that are not equal 10000 Kema."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Unable to locate enough funds for this transaction that are not equal 10000 "
                                    "Kema."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
                                    "%s)"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Warning: -maxtxfee is set very high! Fees this large could be paid on a "
                                    "single transaction."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Warning: -paytxfee is set very high! This is the transaction fee you will "
                                    "pay if you send a transaction."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Warning: Please check that your computer's date and time are correct! If "
                                    "your clock is wrong Kema Coin will not work properly."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Warning: The network does not appear to fully agree! Some miners appear to "
                                    "be experiencing issues."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Warning: We do not appear to fully agree with our peers! You may need to "
                                    "upgrade, or other nodes may need to upgrade."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Warning: error reading wallet.dat! All keys read correctly, but transaction "
                                    "data or address book entries might be missing or incorrect."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as "
                                    "wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect "
                                    "you should restore from a backup."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Whitelist peers connecting from the given netmask or IP address. Can be "
                                    "specified multiple times."),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "Whitelisted peers cannot be DoS banned and their transactions are always "
                                    "relayed, even if they are already in the mempool, useful e.g. for a gateway"),
-    QT_TRANSLATE_NOOP("Kema-core", ""
+    QT_TRANSLATE_NOOP("kema-core", ""
                                    "You must specify a masternodeprivkey in the configuration. Please see "
                                    "documentation for help."),
-    QT_TRANSLATE_NOOP("Kema-core", "(70565 could be used only on mainnet)"),
-    QT_TRANSLATE_NOOP("Kema-core", "(default: %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", "(default: 1)"),
-    QT_TRANSLATE_NOOP("Kema-core", "(must be 70565 for mainnet)"),
-    QT_TRANSLATE_NOOP("Kema-core", "<category> can be:\n"),
-    QT_TRANSLATE_NOOP("Kema-core", "Accept command line and JSON-RPC commands"),
-    QT_TRANSLATE_NOOP("Kema-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Accept public REST requests (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Acceptable ciphers (default: %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Add a node to connect to and attempt to keep the connection open"),
-    QT_TRANSLATE_NOOP("Kema-core", "Allow DNS lookups for -addnode, -seednode and -connect"),
-    QT_TRANSLATE_NOOP("Kema-core", "Already have that input."),
-    QT_TRANSLATE_NOOP("Kema-core", "Always query for peer addresses via DNS lookup (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Attempt to recover private keys from a corrupt wallet.dat"),
-    QT_TRANSLATE_NOOP("Kema-core", "Block creation options:"),
-    QT_TRANSLATE_NOOP("Kema-core", "Can't denominate: no compatible inputs left."),
-    QT_TRANSLATE_NOOP("Kema-core", "Can't find random Masternode."),
-    QT_TRANSLATE_NOOP("Kema-core", "Can't mix while sync in progress."),
-    QT_TRANSLATE_NOOP("Kema-core", "Cannot downgrade wallet"),
-    QT_TRANSLATE_NOOP("Kema-core", "Cannot resolve -bind address: '%s'"),
-    QT_TRANSLATE_NOOP("Kema-core", "Cannot resolve -externalip address: '%s'"),
-    QT_TRANSLATE_NOOP("Kema-core", "Cannot resolve -whitebind address: '%s'"),
-    QT_TRANSLATE_NOOP("Kema-core", "Cannot write default address"),
-    QT_TRANSLATE_NOOP("Kema-core", "Collateral not valid."),
-    QT_TRANSLATE_NOOP("Kema-core", "Connect only to the specified node(s)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Connect through SOCKS5 proxy"),
-    QT_TRANSLATE_NOOP("Kema-core", "Connect to KeePassHttp on port <port> (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Connect to a node to retrieve peer addresses, and disconnect"),
-    QT_TRANSLATE_NOOP("Kema-core", "Connection options:"),
-    QT_TRANSLATE_NOOP("Kema-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
-    QT_TRANSLATE_NOOP("Kema-core", "Copyright (C) 2014-%i The Dash and PIVX Core Developers"),
-    QT_TRANSLATE_NOOP("Kema-core", "Copyright (C) 2018-%i The Kema Coin Developers"),
-    QT_TRANSLATE_NOOP("Kema-core", "Corrupted block database detected"),
-    QT_TRANSLATE_NOOP("Kema-core", "Could not parse -rpcbind value %s as network address"),
-    QT_TRANSLATE_NOOP("Kema-core", "Could not parse masternode.conf"),
-    QT_TRANSLATE_NOOP("Kema-core", "Debugging/Testing options:"),
-    QT_TRANSLATE_NOOP("Kema-core", "Disable safemode, override a real safe mode event (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Discover own IP address (default: 1 when listening and no -externalip)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Do not load the wallet and disable wallet RPC calls"),
-    QT_TRANSLATE_NOOP("Kema-core", "Do you want to rebuild the block database now?"),
-    QT_TRANSLATE_NOOP("Kema-core", "Done loading"),
-    QT_TRANSLATE_NOOP("Kema-core", "Enable the client to act as a masternode (0-1, default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Entries are full."),
-    QT_TRANSLATE_NOOP("Kema-core", "Error connecting to Masternode."),
-    QT_TRANSLATE_NOOP("Kema-core", "Error initializing block database"),
-    QT_TRANSLATE_NOOP("Kema-core", "Error initializing wallet database environment %s!"),
-    QT_TRANSLATE_NOOP("Kema-core", "Error loading block database"),
-    QT_TRANSLATE_NOOP("Kema-core", "Error loading wallet.dat"),
-    QT_TRANSLATE_NOOP("Kema-core", "Error loading wallet.dat: Wallet corrupted"),
-    QT_TRANSLATE_NOOP("Kema-core", "Error loading wallet.dat: Wallet requires newer version of Kema Coin"),
-    QT_TRANSLATE_NOOP("Kema-core", "Error opening block database"),
-    QT_TRANSLATE_NOOP("Kema-core", "Error reading from database, shutting down."),
-    QT_TRANSLATE_NOOP("Kema-core", "Error recovering public key."),
-    QT_TRANSLATE_NOOP("Kema-core", "Error"),
-    QT_TRANSLATE_NOOP("Kema-core", "Error: A fatal internal error occured, see debug.log for details"),
-    QT_TRANSLATE_NOOP("Kema-core", "Error: Can't select current denominated inputs"),
-    QT_TRANSLATE_NOOP("Kema-core", "Error: Disk space is low!"),
-    QT_TRANSLATE_NOOP("Kema-core", "Error: Unsupported argument -tor found, use -onion."),
-    QT_TRANSLATE_NOOP("Kema-core", "Error: Wallet locked, unable to create transaction!"),
-    QT_TRANSLATE_NOOP("Kema-core", "Error: You already have pending entries in the Darksend pool"),
-    QT_TRANSLATE_NOOP("Kema-core", "Failed to listen on any port. Use -listen=0 if you want this."),
-    QT_TRANSLATE_NOOP("Kema-core", "Failed to read block"),
-    QT_TRANSLATE_NOOP("Kema-core", "Fee (in Kema/kB) to add to transactions you send (default: %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Finalizing transaction."),
-    QT_TRANSLATE_NOOP("Kema-core", "Force safe mode (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Found enough users, signing ( waiting %s )"),
-    QT_TRANSLATE_NOOP("Kema-core", "Found enough users, signing ..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Generate coins (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "How many blocks to check at startup (default: %u, 0 = all)"),
-    QT_TRANSLATE_NOOP("Kema-core", "If <category> is not supplied, output all debugging information."),
-    QT_TRANSLATE_NOOP("Kema-core", "Importing..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Imports blocks from external blk000??.dat file"),
-    QT_TRANSLATE_NOOP("Kema-core", "Include IP addresses in debug output (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Incompatible mode."),
-    QT_TRANSLATE_NOOP("Kema-core", "Incompatible version."),
-    QT_TRANSLATE_NOOP("Kema-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
-    QT_TRANSLATE_NOOP("Kema-core", "Information"),
-    QT_TRANSLATE_NOOP("Kema-core", "Initialization sanity check failed. Kema Coin is shutting down."),
-    QT_TRANSLATE_NOOP("Kema-core", "Input is not valid."),
-    QT_TRANSLATE_NOOP("Kema-core", "Insufficient funds."),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid -onion address: '%s'"),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid -proxy address: '%s'"),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid amount for -maxtxfee=<amount>: '%s'"),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid amount for -minrelaytxfee=<amount>: '%s'"),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid amount for -mintxfee=<amount>: '%s'"),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid amount for -paytxfee=<amount>: '%s' (must be at least %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid amount for -paytxfee=<amount>: '%s'"),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid amount for -reservebalance=<amount>"),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid masternodeprivkey. Please see documenation."),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid netmask specified in -whitelist: '%s'"),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid port detected in masternode.conf"),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid private key."),
-    QT_TRANSLATE_NOOP("Kema-core", "Invalid script detected."),
-    QT_TRANSLATE_NOOP("Kema-core", "KeePassHttp id for the established association"),
-    QT_TRANSLATE_NOOP("Kema-core", "KeePassHttp key for AES encrypted communication with KeePass"),
-    QT_TRANSLATE_NOOP("Kema-core", "Keep N Kema anonymized (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Last Darksend was too recent."),
-    QT_TRANSLATE_NOOP("Kema-core", "Last successful Darksend action was too recent."),
-    QT_TRANSLATE_NOOP("Kema-core", "Limit size of signature cache to <n> entries (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Line: %d"),
-    QT_TRANSLATE_NOOP("Kema-core", "Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Listen for connections on <port> (default: %u or testnet: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Loading addresses..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Loading block index..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Loading budget cache..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Loading masternode cache..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Loading masternode payment cache..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Loading wallet... (%3.2f %%)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Loading wallet..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Lock is already in place."),
-    QT_TRANSLATE_NOOP("Kema-core", "Lock masternodes from masternode configuration file (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Maintain at most <n> connections to peers (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Masternode options:"),
-    QT_TRANSLATE_NOOP("Kema-core", "Masternode queue is full."),
-    QT_TRANSLATE_NOOP("Kema-core", "Masternode:"),
-    QT_TRANSLATE_NOOP("Kema-core", "Maximum per-connection receive buffer, <n>*1000 bytes (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Maximum per-connection send buffer, <n>*1000 bytes (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Missing input transaction information."),
-    QT_TRANSLATE_NOOP("Kema-core", "Mixing in progress..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Need to specify a port with -whitebind: '%s'"),
-    QT_TRANSLATE_NOOP("Kema-core", "No Masternodes detected."),
-    QT_TRANSLATE_NOOP("Kema-core", "No compatible Masternode found."),
-    QT_TRANSLATE_NOOP("Kema-core", "No funds detected in need of denominating."),
-    QT_TRANSLATE_NOOP("Kema-core", "No matching denominations found for mixing."),
-    QT_TRANSLATE_NOOP("Kema-core", "Node relay options:"),
-    QT_TRANSLATE_NOOP("Kema-core", "Non-standard public key detected."),
-    QT_TRANSLATE_NOOP("Kema-core", "Not compatible with existing transactions."),
-    QT_TRANSLATE_NOOP("Kema-core", "Not enough file descriptors available."),
-    QT_TRANSLATE_NOOP("Kema-core", "Not in the Masternode list."),
-    QT_TRANSLATE_NOOP("Kema-core", "Number of automatic wallet backups (default: 10)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Darksend is idle."),
-    QT_TRANSLATE_NOOP("Kema-core", "Darksend options:"),
-    QT_TRANSLATE_NOOP("Kema-core", "Darksend request complete:"),
-    QT_TRANSLATE_NOOP("Kema-core", "Darksend request incomplete:"),
-    QT_TRANSLATE_NOOP("Kema-core", "Only accept block chain matching built-in checkpoints (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Only connect to nodes in network <net> (ipv4, ipv6 or onion)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Options:"),
-    QT_TRANSLATE_NOOP("Kema-core", "Password for JSON-RPC connections"),
-    QT_TRANSLATE_NOOP("Kema-core", "Prepend debug output with timestamp (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)"),
-    QT_TRANSLATE_NOOP("Kema-core", "RPC server options:"),
-    QT_TRANSLATE_NOOP("Kema-core", "RPC support for HTTP persistent connections (default: %d)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Randomly drop 1 of every <n> network messages"),
-    QT_TRANSLATE_NOOP("Kema-core", "Randomly fuzz 1 of every <n> network messages"),
-    QT_TRANSLATE_NOOP("Kema-core", "Rebuild block chain index from current blk000??.dat files"),
-    QT_TRANSLATE_NOOP("Kema-core", "Receive and display P2P network alerts (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Relay and mine data carrier transactions (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Relay non-P2SH multisig (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Rescan the block chain for missing wallet transactions"),
-    QT_TRANSLATE_NOOP("Kema-core", "Rescanning..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Run a thread to flush wallet periodically (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Run in the background as a daemon and accept commands"),
-    QT_TRANSLATE_NOOP("Kema-core", "Send transactions as zero-fee transactions if possible (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Server certificate file (default: %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Server private key (default: %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Session not complete!"),
-    QT_TRANSLATE_NOOP("Kema-core", "Session timed out."),
-    QT_TRANSLATE_NOOP("Kema-core", "Set database cache size in megabytes (%d to %d, default: %d)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Set external address:port to get to this masternode (example: %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Set key pool size to <n> (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Set maximum block size in bytes (default: %d)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Set minimum block size in bytes (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Set the masternode private key"),
-    QT_TRANSLATE_NOOP("Kema-core", "Set the number of threads to service RPC calls (default: %d)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Sets the DB_PRIVATE flag in the wallet db environment (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Show all debugging options (usage: --help -help-debug)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Shrink debug.log file on client startup (default: 1 when no -debug)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Signing failed."),
-    QT_TRANSLATE_NOOP("Kema-core", "Signing timed out."),
-    QT_TRANSLATE_NOOP("Kema-core", "Signing transaction failed"),
-    QT_TRANSLATE_NOOP("Kema-core", "Specify configuration file (default: %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Specify connection timeout in milliseconds (minimum: 1, default: %d)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Specify data directory"),
-    QT_TRANSLATE_NOOP("Kema-core", "Specify masternode configuration file (default: %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Specify pid file (default: %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Specify wallet file (within data directory)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Specify your own public address"),
-    QT_TRANSLATE_NOOP("Kema-core", "Spend unconfirmed change when sending transactions (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Stop running after importing blocks from disk (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Submitted following entries to masternode: %u / %d"),
-    QT_TRANSLATE_NOOP("Kema-core", "Submitted to masternode, waiting for more entries ( %u / %d ) %s"),
-    QT_TRANSLATE_NOOP("Kema-core", "Submitted to masternode, waiting in queue %s"),
-    QT_TRANSLATE_NOOP("Kema-core", "InstantX options:"),
-    QT_TRANSLATE_NOOP("Kema-core", "Synchronization failed"),
-    QT_TRANSLATE_NOOP("Kema-core", "Synchronization finished"),
-    QT_TRANSLATE_NOOP("Kema-core", "Synchronization pending..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Synchronizing budgets..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Synchronizing masternode winners..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Synchronizing masternodes..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Synchronizing sporks..."),
-    QT_TRANSLATE_NOOP("Kema-core", "This help message"),
-    QT_TRANSLATE_NOOP("Kema-core", "This is experimental software."),
-    QT_TRANSLATE_NOOP("Kema-core", "This is intended for regression testing tools and app development."),
-    QT_TRANSLATE_NOOP("Kema-core", "This is not a Masternode."),
-    QT_TRANSLATE_NOOP("Kema-core", "Threshold for disconnecting misbehaving peers (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Transaction amount too small"),
-    QT_TRANSLATE_NOOP("Kema-core", "Transaction amounts must be positive"),
-    QT_TRANSLATE_NOOP("Kema-core", "Transaction created successfully."),
-    QT_TRANSLATE_NOOP("Kema-core", "Transaction fees are too high."),
-    QT_TRANSLATE_NOOP("Kema-core", "Transaction not valid."),
-    QT_TRANSLATE_NOOP("Kema-core", "Transaction too large for fee policy"),
-    QT_TRANSLATE_NOOP("Kema-core", "Transaction too large"),
-    QT_TRANSLATE_NOOP("Kema-core", "Transmitting final transaction."),
-    QT_TRANSLATE_NOOP("Kema-core", "Unable to bind to %s on this computer (bind returned error %s)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Unable to sign spork message, wrong key?"),
-    QT_TRANSLATE_NOOP("Kema-core", "Unknown network specified in -onlynet: '%s'"),
-    QT_TRANSLATE_NOOP("Kema-core", "Unknown state: id = %u"),
-    QT_TRANSLATE_NOOP("Kema-core", "Upgrade wallet to latest format"),
-    QT_TRANSLATE_NOOP("Kema-core", "Use KeePass 2 integration using KeePassHttp plugin (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Use N separate masternodes to anonymize funds  (2-8, default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Use OpenSSL (https) for JSON-RPC connections"),
-    QT_TRANSLATE_NOOP("Kema-core", "Use UPnP to map the listening port (default: %u)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Use UPnP to map the listening port (default: 1 when listening)"),
-    QT_TRANSLATE_NOOP("Kema-core", "Use the test network"),
-    QT_TRANSLATE_NOOP("Kema-core", "Username for JSON-RPC connections"),
-    QT_TRANSLATE_NOOP("Kema-core", "Value more than Darksend pool maximum allows."),
-    QT_TRANSLATE_NOOP("Kema-core", "Verifying blocks..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Verifying wallet..."),
-    QT_TRANSLATE_NOOP("Kema-core", "Wallet %s resides outside data directory %s"),
-    QT_TRANSLATE_NOOP("Kema-core", "Wallet is locked."),
-    QT_TRANSLATE_NOOP("Kema-core", "Wallet needed to be rewritten: restart Kema Coin to complete"),
-    QT_TRANSLATE_NOOP("Kema-core", "Wallet options:"),
-    QT_TRANSLATE_NOOP("Kema-core", "Wallet window title"),
-    QT_TRANSLATE_NOOP("Kema-core", "Warning"),
-    QT_TRANSLATE_NOOP("Kema-core", "Warning: This version is obsolete, upgrade required!"),
-    QT_TRANSLATE_NOOP("Kema-core", "Warning: Unsupported argument -benchmark ignored, use -debug=bench."),
-    QT_TRANSLATE_NOOP("Kema-core", "Warning: Unsupported argument -debugnet ignored, use -debug=net."),
-    QT_TRANSLATE_NOOP("Kema-core", "Will retry..."),
-    QT_TRANSLATE_NOOP("Kema-core", "You need to rebuild the database using -reindex to change -txindex"),
-    QT_TRANSLATE_NOOP("Kema-core", "Your entries added successfully."),
-    QT_TRANSLATE_NOOP("Kema-core", "Your transaction was accepted into the pool!"),
-    QT_TRANSLATE_NOOP("Kema-core", "Zapping all transactions from wallet..."),
-    QT_TRANSLATE_NOOP("Kema-core", "on startup"),
-    QT_TRANSLATE_NOOP("Kema-core", "wallet.dat corrupt, salvage failed"),
+    QT_TRANSLATE_NOOP("kema-core", "(70565 could be used only on mainnet)"),
+    QT_TRANSLATE_NOOP("kema-core", "(default: %s)"),
+    QT_TRANSLATE_NOOP("kema-core", "(default: 1)"),
+    QT_TRANSLATE_NOOP("kema-core", "(must be 70565 for mainnet)"),
+    QT_TRANSLATE_NOOP("kema-core", "<category> can be:\n"),
+    QT_TRANSLATE_NOOP("kema-core", "Accept command line and JSON-RPC commands"),
+    QT_TRANSLATE_NOOP("kema-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
+    QT_TRANSLATE_NOOP("kema-core", "Accept public REST requests (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Acceptable ciphers (default: %s)"),
+    QT_TRANSLATE_NOOP("kema-core", "Add a node to connect to and attempt to keep the connection open"),
+    QT_TRANSLATE_NOOP("kema-core", "Allow DNS lookups for -addnode, -seednode and -connect"),
+    QT_TRANSLATE_NOOP("kema-core", "Already have that input."),
+    QT_TRANSLATE_NOOP("kema-core", "Always query for peer addresses via DNS lookup (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Attempt to recover private keys from a corrupt wallet.dat"),
+    QT_TRANSLATE_NOOP("kema-core", "Block creation options:"),
+    QT_TRANSLATE_NOOP("kema-core", "Can't denominate: no compatible inputs left."),
+    QT_TRANSLATE_NOOP("kema-core", "Can't find random Masternode."),
+    QT_TRANSLATE_NOOP("kema-core", "Can't mix while sync in progress."),
+    QT_TRANSLATE_NOOP("kema-core", "Cannot downgrade wallet"),
+    QT_TRANSLATE_NOOP("kema-core", "Cannot resolve -bind address: '%s'"),
+    QT_TRANSLATE_NOOP("kema-core", "Cannot resolve -externalip address: '%s'"),
+    QT_TRANSLATE_NOOP("kema-core", "Cannot resolve -whitebind address: '%s'"),
+    QT_TRANSLATE_NOOP("kema-core", "Cannot write default address"),
+    QT_TRANSLATE_NOOP("kema-core", "Collateral not valid."),
+    QT_TRANSLATE_NOOP("kema-core", "Connect only to the specified node(s)"),
+    QT_TRANSLATE_NOOP("kema-core", "Connect through SOCKS5 proxy"),
+    QT_TRANSLATE_NOOP("kema-core", "Connect to KeePassHttp on port <port> (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Connect to a node to retrieve peer addresses, and disconnect"),
+    QT_TRANSLATE_NOOP("kema-core", "Connection options:"),
+    QT_TRANSLATE_NOOP("kema-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
+    QT_TRANSLATE_NOOP("kema-core", "Copyright (C) 2014-%i The Dash and PIVX Core Developers"),
+    QT_TRANSLATE_NOOP("kema-core", "Copyright (C) 2018-%i The Kema Coin Developers"),
+    QT_TRANSLATE_NOOP("kema-core", "Corrupted block database detected"),
+    QT_TRANSLATE_NOOP("kema-core", "Could not parse -rpcbind value %s as network address"),
+    QT_TRANSLATE_NOOP("kema-core", "Could not parse masternode.conf"),
+    QT_TRANSLATE_NOOP("kema-core", "Debugging/Testing options:"),
+    QT_TRANSLATE_NOOP("kema-core", "Disable safemode, override a real safe mode event (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Discover own IP address (default: 1 when listening and no -externalip)"),
+    QT_TRANSLATE_NOOP("kema-core", "Do not load the wallet and disable wallet RPC calls"),
+    QT_TRANSLATE_NOOP("kema-core", "Do you want to rebuild the block database now?"),
+    QT_TRANSLATE_NOOP("kema-core", "Done loading"),
+    QT_TRANSLATE_NOOP("kema-core", "Enable the client to act as a masternode (0-1, default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Entries are full."),
+    QT_TRANSLATE_NOOP("kema-core", "Error connecting to Masternode."),
+    QT_TRANSLATE_NOOP("kema-core", "Error initializing block database"),
+    QT_TRANSLATE_NOOP("kema-core", "Error initializing wallet database environment %s!"),
+    QT_TRANSLATE_NOOP("kema-core", "Error loading block database"),
+    QT_TRANSLATE_NOOP("kema-core", "Error loading wallet.dat"),
+    QT_TRANSLATE_NOOP("kema-core", "Error loading wallet.dat: Wallet corrupted"),
+    QT_TRANSLATE_NOOP("kema-core", "Error loading wallet.dat: Wallet requires newer version of Kema Coin"),
+    QT_TRANSLATE_NOOP("kema-core", "Error opening block database"),
+    QT_TRANSLATE_NOOP("kema-core", "Error reading from database, shutting down."),
+    QT_TRANSLATE_NOOP("kema-core", "Error recovering public key."),
+    QT_TRANSLATE_NOOP("kema-core", "Error"),
+    QT_TRANSLATE_NOOP("kema-core", "Error: A fatal internal error occured, see debug.log for details"),
+    QT_TRANSLATE_NOOP("kema-core", "Error: Can't select current denominated inputs"),
+    QT_TRANSLATE_NOOP("kema-core", "Error: Disk space is low!"),
+    QT_TRANSLATE_NOOP("kema-core", "Error: Unsupported argument -tor found, use -onion."),
+    QT_TRANSLATE_NOOP("kema-core", "Error: Wallet locked, unable to create transaction!"),
+    QT_TRANSLATE_NOOP("kema-core", "Error: You already have pending entries in the Darksend pool"),
+    QT_TRANSLATE_NOOP("kema-core", "Failed to listen on any port. Use -listen=0 if you want this."),
+    QT_TRANSLATE_NOOP("kema-core", "Failed to read block"),
+    QT_TRANSLATE_NOOP("kema-core", "Fee (in Kema/kB) to add to transactions you send (default: %s)"),
+    QT_TRANSLATE_NOOP("kema-core", "Finalizing transaction."),
+    QT_TRANSLATE_NOOP("kema-core", "Force safe mode (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Found enough users, signing ( waiting %s )"),
+    QT_TRANSLATE_NOOP("kema-core", "Found enough users, signing ..."),
+    QT_TRANSLATE_NOOP("kema-core", "Generate coins (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "How many blocks to check at startup (default: %u, 0 = all)"),
+    QT_TRANSLATE_NOOP("kema-core", "If <category> is not supplied, output all debugging information."),
+    QT_TRANSLATE_NOOP("kema-core", "Importing..."),
+    QT_TRANSLATE_NOOP("kema-core", "Imports blocks from external blk000??.dat file"),
+    QT_TRANSLATE_NOOP("kema-core", "Include IP addresses in debug output (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Incompatible mode."),
+    QT_TRANSLATE_NOOP("kema-core", "Incompatible version."),
+    QT_TRANSLATE_NOOP("kema-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
+    QT_TRANSLATE_NOOP("kema-core", "Information"),
+    QT_TRANSLATE_NOOP("kema-core", "Initialization sanity check failed. Kema Coin is shutting down."),
+    QT_TRANSLATE_NOOP("kema-core", "Input is not valid."),
+    QT_TRANSLATE_NOOP("kema-core", "Insufficient funds."),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid -onion address: '%s'"),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid -proxy address: '%s'"),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid amount for -maxtxfee=<amount>: '%s'"),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid amount for -minrelaytxfee=<amount>: '%s'"),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid amount for -mintxfee=<amount>: '%s'"),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid amount for -paytxfee=<amount>: '%s' (must be at least %s)"),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid amount for -paytxfee=<amount>: '%s'"),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid amount for -reservebalance=<amount>"),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid masternodeprivkey. Please see documenation."),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid netmask specified in -whitelist: '%s'"),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid port detected in masternode.conf"),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid private key."),
+    QT_TRANSLATE_NOOP("kema-core", "Invalid script detected."),
+    QT_TRANSLATE_NOOP("kema-core", "KeePassHttp id for the established association"),
+    QT_TRANSLATE_NOOP("kema-core", "KeePassHttp key for AES encrypted communication with KeePass"),
+    QT_TRANSLATE_NOOP("kema-core", "Keep N Kema anonymized (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Last Darksend was too recent."),
+    QT_TRANSLATE_NOOP("kema-core", "Last successful Darksend action was too recent."),
+    QT_TRANSLATE_NOOP("kema-core", "Limit size of signature cache to <n> entries (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Line: %d"),
+    QT_TRANSLATE_NOOP("kema-core", "Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Listen for connections on <port> (default: %u or testnet: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Loading addresses..."),
+    QT_TRANSLATE_NOOP("kema-core", "Loading block index..."),
+    QT_TRANSLATE_NOOP("kema-core", "Loading budget cache..."),
+    QT_TRANSLATE_NOOP("kema-core", "Loading masternode cache..."),
+    QT_TRANSLATE_NOOP("kema-core", "Loading masternode payment cache..."),
+    QT_TRANSLATE_NOOP("kema-core", "Loading wallet... (%3.2f %%)"),
+    QT_TRANSLATE_NOOP("kema-core", "Loading wallet..."),
+    QT_TRANSLATE_NOOP("kema-core", "Lock is already in place."),
+    QT_TRANSLATE_NOOP("kema-core", "Lock masternodes from masternode configuration file (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Maintain at most <n> connections to peers (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Masternode options:"),
+    QT_TRANSLATE_NOOP("kema-core", "Masternode queue is full."),
+    QT_TRANSLATE_NOOP("kema-core", "Masternode:"),
+    QT_TRANSLATE_NOOP("kema-core", "Maximum per-connection receive buffer, <n>*1000 bytes (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Maximum per-connection send buffer, <n>*1000 bytes (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Missing input transaction information."),
+    QT_TRANSLATE_NOOP("kema-core", "Mixing in progress..."),
+    QT_TRANSLATE_NOOP("kema-core", "Need to specify a port with -whitebind: '%s'"),
+    QT_TRANSLATE_NOOP("kema-core", "No Masternodes detected."),
+    QT_TRANSLATE_NOOP("kema-core", "No compatible Masternode found."),
+    QT_TRANSLATE_NOOP("kema-core", "No funds detected in need of denominating."),
+    QT_TRANSLATE_NOOP("kema-core", "No matching denominations found for mixing."),
+    QT_TRANSLATE_NOOP("kema-core", "Node relay options:"),
+    QT_TRANSLATE_NOOP("kema-core", "Non-standard public key detected."),
+    QT_TRANSLATE_NOOP("kema-core", "Not compatible with existing transactions."),
+    QT_TRANSLATE_NOOP("kema-core", "Not enough file descriptors available."),
+    QT_TRANSLATE_NOOP("kema-core", "Not in the Masternode list."),
+    QT_TRANSLATE_NOOP("kema-core", "Number of automatic wallet backups (default: 10)"),
+    QT_TRANSLATE_NOOP("kema-core", "Darksend is idle."),
+    QT_TRANSLATE_NOOP("kema-core", "Darksend options:"),
+    QT_TRANSLATE_NOOP("kema-core", "Darksend request complete:"),
+    QT_TRANSLATE_NOOP("kema-core", "Darksend request incomplete:"),
+    QT_TRANSLATE_NOOP("kema-core", "Only accept block chain matching built-in checkpoints (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Only connect to nodes in network <net> (ipv4, ipv6 or onion)"),
+    QT_TRANSLATE_NOOP("kema-core", "Options:"),
+    QT_TRANSLATE_NOOP("kema-core", "Password for JSON-RPC connections"),
+    QT_TRANSLATE_NOOP("kema-core", "Prepend debug output with timestamp (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)"),
+    QT_TRANSLATE_NOOP("kema-core", "RPC server options:"),
+    QT_TRANSLATE_NOOP("kema-core", "RPC support for HTTP persistent connections (default: %d)"),
+    QT_TRANSLATE_NOOP("kema-core", "Randomly drop 1 of every <n> network messages"),
+    QT_TRANSLATE_NOOP("kema-core", "Randomly fuzz 1 of every <n> network messages"),
+    QT_TRANSLATE_NOOP("kema-core", "Rebuild block chain index from current blk000??.dat files"),
+    QT_TRANSLATE_NOOP("kema-core", "Receive and display P2P network alerts (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Relay and mine data carrier transactions (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Relay non-P2SH multisig (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Rescan the block chain for missing wallet transactions"),
+    QT_TRANSLATE_NOOP("kema-core", "Rescanning..."),
+    QT_TRANSLATE_NOOP("kema-core", "Run a thread to flush wallet periodically (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Run in the background as a daemon and accept commands"),
+    QT_TRANSLATE_NOOP("kema-core", "Send transactions as zero-fee transactions if possible (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Server certificate file (default: %s)"),
+    QT_TRANSLATE_NOOP("kema-core", "Server private key (default: %s)"),
+    QT_TRANSLATE_NOOP("kema-core", "Session not complete!"),
+    QT_TRANSLATE_NOOP("kema-core", "Session timed out."),
+    QT_TRANSLATE_NOOP("kema-core", "Set database cache size in megabytes (%d to %d, default: %d)"),
+    QT_TRANSLATE_NOOP("kema-core", "Set external address:port to get to this masternode (example: %s)"),
+    QT_TRANSLATE_NOOP("kema-core", "Set key pool size to <n> (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Set maximum block size in bytes (default: %d)"),
+    QT_TRANSLATE_NOOP("kema-core", "Set minimum block size in bytes (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Set the masternode private key"),
+    QT_TRANSLATE_NOOP("kema-core", "Set the number of threads to service RPC calls (default: %d)"),
+    QT_TRANSLATE_NOOP("kema-core", "Sets the DB_PRIVATE flag in the wallet db environment (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Show all debugging options (usage: --help -help-debug)"),
+    QT_TRANSLATE_NOOP("kema-core", "Shrink debug.log file on client startup (default: 1 when no -debug)"),
+    QT_TRANSLATE_NOOP("kema-core", "Signing failed."),
+    QT_TRANSLATE_NOOP("kema-core", "Signing timed out."),
+    QT_TRANSLATE_NOOP("kema-core", "Signing transaction failed"),
+    QT_TRANSLATE_NOOP("kema-core", "Specify configuration file (default: %s)"),
+    QT_TRANSLATE_NOOP("kema-core", "Specify connection timeout in milliseconds (minimum: 1, default: %d)"),
+    QT_TRANSLATE_NOOP("kema-core", "Specify data directory"),
+    QT_TRANSLATE_NOOP("kema-core", "Specify masternode configuration file (default: %s)"),
+    QT_TRANSLATE_NOOP("kema-core", "Specify pid file (default: %s)"),
+    QT_TRANSLATE_NOOP("kema-core", "Specify wallet file (within data directory)"),
+    QT_TRANSLATE_NOOP("kema-core", "Specify your own public address"),
+    QT_TRANSLATE_NOOP("kema-core", "Spend unconfirmed change when sending transactions (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Stop running after importing blocks from disk (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Submitted following entries to masternode: %u / %d"),
+    QT_TRANSLATE_NOOP("kema-core", "Submitted to masternode, waiting for more entries ( %u / %d ) %s"),
+    QT_TRANSLATE_NOOP("kema-core", "Submitted to masternode, waiting in queue %s"),
+    QT_TRANSLATE_NOOP("kema-core", "InstantX options:"),
+    QT_TRANSLATE_NOOP("kema-core", "Synchronization failed"),
+    QT_TRANSLATE_NOOP("kema-core", "Synchronization finished"),
+    QT_TRANSLATE_NOOP("kema-core", "Synchronization pending..."),
+    QT_TRANSLATE_NOOP("kema-core", "Synchronizing budgets..."),
+    QT_TRANSLATE_NOOP("kema-core", "Synchronizing masternode winners..."),
+    QT_TRANSLATE_NOOP("kema-core", "Synchronizing masternodes..."),
+    QT_TRANSLATE_NOOP("kema-core", "Synchronizing sporks..."),
+    QT_TRANSLATE_NOOP("kema-core", "This help message"),
+    QT_TRANSLATE_NOOP("kema-core", "This is experimental software."),
+    QT_TRANSLATE_NOOP("kema-core", "This is intended for regression testing tools and app development."),
+    QT_TRANSLATE_NOOP("kema-core", "This is not a Masternode."),
+    QT_TRANSLATE_NOOP("kema-core", "Threshold for disconnecting misbehaving peers (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Transaction amount too small"),
+    QT_TRANSLATE_NOOP("kema-core", "Transaction amounts must be positive"),
+    QT_TRANSLATE_NOOP("kema-core", "Transaction created successfully."),
+    QT_TRANSLATE_NOOP("kema-core", "Transaction fees are too high."),
+    QT_TRANSLATE_NOOP("kema-core", "Transaction not valid."),
+    QT_TRANSLATE_NOOP("kema-core", "Transaction too large for fee policy"),
+    QT_TRANSLATE_NOOP("kema-core", "Transaction too large"),
+    QT_TRANSLATE_NOOP("kema-core", "Transmitting final transaction."),
+    QT_TRANSLATE_NOOP("kema-core", "Unable to bind to %s on this computer (bind returned error %s)"),
+    QT_TRANSLATE_NOOP("kema-core", "Unable to sign spork message, wrong key?"),
+    QT_TRANSLATE_NOOP("kema-core", "Unknown network specified in -onlynet: '%s'"),
+    QT_TRANSLATE_NOOP("kema-core", "Unknown state: id = %u"),
+    QT_TRANSLATE_NOOP("kema-core", "Upgrade wallet to latest format"),
+    QT_TRANSLATE_NOOP("kema-core", "Use KeePass 2 integration using KeePassHttp plugin (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Use N separate masternodes to anonymize funds  (2-8, default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Use OpenSSL (https) for JSON-RPC connections"),
+    QT_TRANSLATE_NOOP("kema-core", "Use UPnP to map the listening port (default: %u)"),
+    QT_TRANSLATE_NOOP("kema-core", "Use UPnP to map the listening port (default: 1 when listening)"),
+    QT_TRANSLATE_NOOP("kema-core", "Use the test network"),
+    QT_TRANSLATE_NOOP("kema-core", "Username for JSON-RPC connections"),
+    QT_TRANSLATE_NOOP("kema-core", "Value more than Darksend pool maximum allows."),
+    QT_TRANSLATE_NOOP("kema-core", "Verifying blocks..."),
+    QT_TRANSLATE_NOOP("kema-core", "Verifying wallet..."),
+    QT_TRANSLATE_NOOP("kema-core", "Wallet %s resides outside data directory %s"),
+    QT_TRANSLATE_NOOP("kema-core", "Wallet is locked."),
+    QT_TRANSLATE_NOOP("kema-core", "Wallet needed to be rewritten: restart Kema Coin to complete"),
+    QT_TRANSLATE_NOOP("kema-core", "Wallet options:"),
+    QT_TRANSLATE_NOOP("kema-core", "Wallet window title"),
+    QT_TRANSLATE_NOOP("kema-core", "Warning"),
+    QT_TRANSLATE_NOOP("kema-core", "Warning: This version is obsolete, upgrade required!"),
+    QT_TRANSLATE_NOOP("kema-core", "Warning: Unsupported argument -benchmark ignored, use -debug=bench."),
+    QT_TRANSLATE_NOOP("kema-core", "Warning: Unsupported argument -debugnet ignored, use -debug=net."),
+    QT_TRANSLATE_NOOP("kema-core", "Will retry..."),
+    QT_TRANSLATE_NOOP("kema-core", "You need to rebuild the database using -reindex to change -txindex"),
+    QT_TRANSLATE_NOOP("kema-core", "Your entries added successfully."),
+    QT_TRANSLATE_NOOP("kema-core", "Your transaction was accepted into the pool!"),
+    QT_TRANSLATE_NOOP("kema-core", "Zapping all transactions from wallet..."),
+    QT_TRANSLATE_NOOP("kema-core", "on startup"),
+    QT_TRANSLATE_NOOP("kema-core", "wallet.dat corrupt, salvage failed"),
 };

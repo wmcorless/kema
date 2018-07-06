@@ -1262,9 +1262,9 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Kema-crypto/Kema-wallet-translations/</source>
+https://www.transifex.com/kema-crypto/Kema-wallet-translations/</source>
         <translation>Fehlt eine Sprache oder ist unvollständig übersetzt? Hier können Sie helfen:
-https://www.transifex.com/Kema-crypto/Kema-wallet-translations/</translation>
+https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -3320,7 +3320,7 @@ Dies kann passieren, wenn einige Kema aus ihrer Wallet bereits ausgegeben wurden
     </message>
 </context>
 <context>
-    <name>Kema-core</name>
+    <name>kema-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>An die angegebene Adresse binden und immer abhören. Für IPv6 "[Host]:Port"-Schreibweise verwenden</translation>

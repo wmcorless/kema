@@ -1020,7 +1020,7 @@ qt/qt_libbitcoinqt_a-moc_receiverequestdialog.o: \
  /usr/include/boost/variant/detail/element_index.hpp \
  /usr/include/boost/variant/visitor_ptr.hpp \
  /usr/include/boost/variant/bad_visit.hpp protocol.h netbase.h \
- config/Kema-config.h compat.h /usr/include/arpa/inet.h \
+ config/kema-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -3675,7 +3675,7 @@ protocol.h:
 
 netbase.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 compat.h:
 

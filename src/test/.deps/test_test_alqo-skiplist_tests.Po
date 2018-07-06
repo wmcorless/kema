@@ -1,5 +1,5 @@
 test/test_test_Kema-skiplist_tests.o: test/skiplist_tests.cpp \
- /usr/include/stdc-predef.h main.h config/Kema-config.h amount.h \
+ /usr/include/stdc-predef.h main.h config/kema-config.h amount.h \
  serialize.h /usr/include/c++/5/algorithm /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
@@ -1258,7 +1258,7 @@ test/test_test_Kema-skiplist_tests.o: test/skiplist_tests.cpp \
 
 main.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 amount.h:
 

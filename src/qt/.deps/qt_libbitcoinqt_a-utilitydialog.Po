@@ -339,7 +339,7 @@ qt/qt_libbitcoinqt_a-utilitydialog.o: qt/utilitydialog.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h qt/bitcoingui.h \
- config/Kema-config.h amount.h serialize.h /usr/include/assert.h \
+ config/kema-config.h amount.h serialize.h /usr/include/assert.h \
  /usr/include/c++/5/set /usr/include/c++/5/bits/stl_set.h \
  /usr/include/c++/5/bits/stl_multiset.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
@@ -774,7 +774,7 @@ qt/qt_libbitcoinqt_a-utilitydialog.o: qt/utilitydialog.cpp \
  /usr/include/c++/5/deque /usr/include/c++/5/bits/stl_deque.h \
  /usr/include/c++/5/bits/deque.tcc /usr/include/c++/5/bits/stl_stack.h \
  /usr/include/boost/filesystem/convenience.hpp clientversion.h \
- config/Kema-config.h init.h util.h compat.h /usr/include/arpa/inet.h \
+ config/kema-config.h init.h util.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -1604,7 +1604,7 @@ qt/forms/ui_helpmessagedialog.h:
 
 qt/bitcoingui.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 amount.h:
 
@@ -2564,7 +2564,7 @@ qt/guiutil.h:
 
 clientversion.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 init.h:
 

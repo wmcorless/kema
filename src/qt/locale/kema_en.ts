@@ -5000,7 +5000,7 @@ https://www.transifex.com/Kema-project/Kema-project-translations</source>
     </message>
 </context>
 <context>
-    <name>Kema-core</name>
+    <name>kema-core</name>
     <message>
         <location filename="../Kemastrings.cpp" line="+12"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>

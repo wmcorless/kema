@@ -7,7 +7,7 @@ export PYTHONPATH
 
 BITCOIND_BIN=$(top_builddir)/src/kemad$(EXEEXT)
 BITCOIN_QT_BIN=$(top_builddir)/src/qt/Kema-qt$(EXEEXT)
-BITCOIN_CLI_BIN=$(top_builddir)/src/Kema-cli$(EXEEXT)
+BITCOIN_CLI_BIN=$(top_builddir)/src/kema-cli$(EXEEXT)
 BITCOIN_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 
 empty :=

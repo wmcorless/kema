@@ -1,5 +1,5 @@
-/* src/config/Kema-config.h.  Generated from Kema-config.h.in by configure.  */
-/* src/config/Kema-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/kema-config.h.  Generated from kema-config.h.in by configure.  */
+/* src/config/kema-config.h.in.  Generated from configure.ac by autoheader.  */
 
 #ifndef Kema_CONFIG_H
 

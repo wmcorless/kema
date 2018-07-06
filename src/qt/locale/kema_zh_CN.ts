@@ -1264,9 +1264,9 @@ Address: %4
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Kema-crypto/Kema-wallet-translations/</source>
+https://www.transifex.com/kema-crypto/Kema-wallet-translations/</source>
         <translation>缺少相关语言或翻译不完整? 请到这里协助翻译:
-https://www.transifex.com/Kema-crypto/Kema-wallet-translations/</translation>
+https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -3301,7 +3301,7 @@ https://www.transifex.com/Kema-crypto/Kema-wallet-translations/</translation>
     </message>
 </context>
 <context>
-    <name>Kema-core</name>
+    <name>kema-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>与提供地址绑定，持续监听。使用[host]:标记IPv6端口</translation>

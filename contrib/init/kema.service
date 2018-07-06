@@ -12,7 +12,7 @@ PIDFile=/var/lib/kemad/kemad.pid
 ExecStart=/usr/bin/kemad -daemon -pid=/var/lib/kemad/kemad.pid \
           -conf=/etc/Kema/Kema.conf -datadir=/var/lib/kemad
 
-ExecStop=-/usr/bin/Kema-cli -conf=/etc/Kema/Kema.conf \
+ExecStop=-/usr/bin/kema-cli -conf=/etc/Kema/Kema.conf \
          -datadir=/var/lib/kemad stop
 
 Restart=always

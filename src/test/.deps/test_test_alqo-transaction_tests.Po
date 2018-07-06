@@ -1,6 +1,6 @@
 test/test_test_Kema-transaction_tests.o: test/transaction_tests.cpp \
  /usr/include/stdc-predef.h test/data/tx_invalid.json.h \
- test/data/tx_valid.json.h clientversion.h config/Kema-config.h \
+ test/data/tx_valid.json.h clientversion.h config/kema-config.h \
  /usr/include/c++/5/string \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
@@ -1297,7 +1297,7 @@ test/data/tx_valid.json.h:
 
 clientversion.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 /usr/include/c++/5/string:
 

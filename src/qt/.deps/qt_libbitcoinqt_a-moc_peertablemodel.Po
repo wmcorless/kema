@@ -1,6 +1,6 @@
 qt/qt_libbitcoinqt_a-moc_peertablemodel.o: qt/moc_peertablemodel.cpp \
  /usr/include/stdc-predef.h qt/peertablemodel.h main.h \
- config/Kema-config.h amount.h serialize.h /usr/include/c++/5/algorithm \
+ config/kema-config.h amount.h serialize.h /usr/include/c++/5/algorithm \
  /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
@@ -1280,7 +1280,7 @@ qt/peertablemodel.h:
 
 main.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 amount.h:
 

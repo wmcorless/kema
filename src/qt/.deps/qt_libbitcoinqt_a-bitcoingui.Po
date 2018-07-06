@@ -1,5 +1,5 @@
 qt/qt_libbitcoinqt_a-bitcoingui.o: qt/bitcoingui.cpp \
- /usr/include/stdc-predef.h qt/bitcoingui.h config/Kema-config.h amount.h \
+ /usr/include/stdc-predef.h qt/bitcoingui.h config/kema-config.h amount.h \
  serialize.h /usr/include/c++/5/algorithm /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
@@ -737,7 +737,7 @@ qt/qt_libbitcoinqt_a-bitcoingui.o: qt/bitcoingui.cpp \
  qt/openuridialog.h /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h qt/optionsdialog.h \
  qt/optionsmodel.h qt/rpcconsole.h qt/peertablemodel.h main.h \
- config/Kema-config.h amount.h chain.h pow.h primitives/block.h \
+ config/kema-config.h amount.h chain.h pow.h primitives/block.h \
  primitives/transaction.h script/script.h /usr/include/c++/5/climits \
  pubkey.h hash.h crypto/ripemd160.h crypto/sha256.h uint256.h version.h \
  crypto/sph_blake.h crypto/sph_types.h crypto/sph_bmw.h \
@@ -1465,7 +1465,7 @@ qt/qt_libbitcoinqt_a-bitcoingui.o: qt/bitcoingui.cpp \
 
 qt/bitcoingui.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 amount.h:
 
@@ -3143,7 +3143,7 @@ qt/peertablemodel.h:
 
 main.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 amount.h:
 

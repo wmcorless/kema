@@ -1,5 +1,5 @@
 qt/qt_libbitcoinqt_a-optionsmodel.o: qt/optionsmodel.cpp \
- /usr/include/stdc-predef.h config/Kema-config.h qt/optionsmodel.h \
+ /usr/include/stdc-predef.h config/kema-config.h qt/optionsmodel.h \
  amount.h serialize.h /usr/include/c++/5/algorithm \
  /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
@@ -713,7 +713,7 @@ qt/qt_libbitcoinqt_a-optionsmodel.o: qt/optionsmodel.cpp \
  /usr/include/c++/5/deque /usr/include/c++/5/bits/stl_deque.h \
  /usr/include/c++/5/bits/deque.tcc /usr/include/c++/5/bits/stl_stack.h \
  /usr/include/boost/filesystem/convenience.hpp init.h main.h \
- config/Kema-config.h amount.h chain.h pow.h primitives/block.h \
+ config/kema-config.h amount.h chain.h pow.h primitives/block.h \
  primitives/transaction.h script/script.h /usr/include/c++/5/climits \
  pubkey.h hash.h crypto/ripemd160.h crypto/sha256.h uint256.h version.h \
  crypto/sph_blake.h crypto/sph_types.h crypto/sph_bmw.h \
@@ -1384,7 +1384,7 @@ qt/qt_libbitcoinqt_a-optionsmodel.o: qt/optionsmodel.cpp \
 
 /usr/include/stdc-predef.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 qt/optionsmodel.h:
 
@@ -3000,7 +3000,7 @@ init.h:
 
 main.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 amount.h:
 

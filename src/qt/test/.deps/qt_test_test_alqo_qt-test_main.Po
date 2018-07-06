@@ -1,6 +1,6 @@
 qt/test/qt_test_test_Kema_qt-test_main.o: qt/test/test_main.cpp \
- /usr/include/stdc-predef.h config/Kema-config.h util.h \
- config/Kema-config.h compat.h /usr/include/arpa/inet.h \
+ /usr/include/stdc-predef.h config/kema-config.h util.h \
+ config/kema-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
@@ -1341,11 +1341,11 @@ qt/test/qt_test_test_Kema_qt-test_main.o: qt/test/test_main.cpp \
 
 /usr/include/stdc-predef.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 util.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 compat.h:
 

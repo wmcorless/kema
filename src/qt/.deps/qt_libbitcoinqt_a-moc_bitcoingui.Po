@@ -1,5 +1,5 @@
 qt/qt_libbitcoinqt_a-moc_bitcoingui.o: qt/moc_bitcoingui.cpp \
- /usr/include/stdc-predef.h qt/bitcoingui.h config/Kema-config.h amount.h \
+ /usr/include/stdc-predef.h qt/bitcoingui.h config/kema-config.h amount.h \
  serialize.h /usr/include/c++/5/algorithm /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
@@ -300,7 +300,7 @@ qt/qt_libbitcoinqt_a-moc_bitcoingui.o: qt/moc_bitcoingui.cpp \
 
 qt/bitcoingui.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 amount.h:
 

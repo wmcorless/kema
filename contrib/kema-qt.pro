@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/Darksend-relay.h \
            src/Darksend.h \
-           src/Kema-config.h \
+           src/kema-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/Kema-config.h \
+           src/config/kema-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -377,7 +377,7 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/Darksend-relay.cpp \
            src/Darksend.cpp \
-           src/Kema-cli.cpp \
+           src/kema-cli.cpp \
            src/Kema-tx.cpp \
            src/Kema.cpp \
            src/db.cpp \

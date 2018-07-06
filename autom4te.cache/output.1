@@ -1686,7 +1686,7 @@ Optional Packages:
                           enabled and libqrencode is found)
   --with-protoc-bindir=BIN_DIR
                           specify protoc bin path
-  --with-utils            build Kema-cli Kema-tx (default=yes)
+  --with-utils            build kema-cli Kema-tx (default=yes)
   --with-libs             build libraries (default=yes)
   --with-daemon           build kemad daemon (default=yes)
   --with-incompatible-bdb allow using a bdb version other than 4.8
@@ -2902,7 +2902,7 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
 
 
 
-ac_config_headers="$ac_config_headers src/config/Kema-config.h"
+ac_config_headers="$ac_config_headers src/config/kema-config.h"
 
 ac_aux_dir=
 for ac_dir in build-aux "$srcdir"/build-aux; do
@@ -21189,7 +21189,7 @@ ac_compiler_gnu=$ac_cv_cxx_compiler_gnu
 
 
 
-# The following macro will add the necessary defines to Kema-config.h, but
+# The following macro will add the necessary defines to kema-config.h, but
 # they also need to be passed down to any subprojects. Pull the results out of
 # the cache and add them to CPPFLAGS.
 @%:@ Check whether --enable-largefile was given.
@@ -28748,8 +28748,8 @@ fi
 { $as_echo "$as_me:${as_lineno-$LINENO}: result: $build_bitcoind" >&5
 $as_echo "$build_bitcoind" >&6; }
 
-{ $as_echo "$as_me:${as_lineno-$LINENO}: checking whether to build utils (Kema-cli Kema-tx)" >&5
-$as_echo_n "checking whether to build utils (Kema-cli Kema-tx)... " >&6; }
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking whether to build utils (kema-cli Kema-tx)" >&5
+$as_echo_n "checking whether to build utils (kema-cli Kema-tx)... " >&6; }
  if test x$build_bitcoin_utils = xyes; then
   BUILD_BITCOIN_UTILS_TRUE=
   BUILD_BITCOIN_UTILS_FALSE='#'
@@ -30364,7 +30364,7 @@ cat >>$CONFIG_STATUS <<\_ACEOF || ac_write_fail=1
 for ac_config_target in $ac_config_targets
 do
   case $ac_config_target in
-    "src/config/Kema-config.h") CONFIG_HEADERS="$CONFIG_HEADERS src/config/Kema-config.h" ;;
+    "src/config/kema-config.h") CONFIG_HEADERS="$CONFIG_HEADERS src/config/kema-config.h" ;;
     "depfiles") CONFIG_COMMANDS="$CONFIG_COMMANDS depfiles" ;;
     "libtool") CONFIG_COMMANDS="$CONFIG_COMMANDS libtool" ;;
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;

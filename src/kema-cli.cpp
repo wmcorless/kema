@@ -71,9 +71,9 @@ static bool AppInitRPC(int argc, char* argv[])
         std::string strUsage = _("Kema Coin RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  Kema-cli [options] <command> [params]  " + _("Send command to Kema Coin") + "\n" +
-                        "  Kema-cli [options] help                " + _("List commands") + "\n" +
-                        "  Kema-cli [options] help <command>      " + _("Get help for a command") + "\n";
+                        "  kema-cli [options] <command> [params]  " + _("Send command to Kema Coin") + "\n" +
+                        "  kema-cli [options] help                " + _("List commands") + "\n" +
+                        "  kema-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessageCli();
         }

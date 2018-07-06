@@ -1005,7 +1005,7 @@ test/test_test_Kema-script_tests.o: test/script_tests.cpp \
  /usr/include/boost/mpl/equal.hpp /usr/include/boost/variant/get.hpp \
  /usr/include/boost/variant/detail/element_index.hpp \
  /usr/include/boost/variant/visitor_ptr.hpp \
- /usr/include/boost/variant/bad_visit.hpp main.h config/Kema-config.h \
+ /usr/include/boost/variant/bad_visit.hpp main.h config/kema-config.h \
  amount.h chain.h pow.h primitives/block.h primitives/transaction.h \
  amount.h script/script.h pubkey.h serialize.h uint256.h tinyformat.h \
  util.h compat.h /usr/include/arpa/inet.h /usr/include/netinet/in.h \
@@ -3689,7 +3689,7 @@ threadsafety.h:
 
 main.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 amount.h:
 

@@ -239,7 +239,7 @@ qt/qt_libbitcoinqt_a-clientmodel.o: qt/clientmodel.cpp \
  /usr/include/c++/5/array /usr/include/c++/5/bits/uses_allocator.h \
  /usr/include/c++/5/bits/stl_multimap.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject_impl.h \
- qt/guiconstants.h qt/peertablemodel.h main.h config/Kema-config.h \
+ qt/guiconstants.h qt/peertablemodel.h main.h config/kema-config.h \
  amount.h serialize.h /usr/include/assert.h /usr/include/c++/5/set \
  /usr/include/c++/5/bits/stl_set.h /usr/include/c++/5/bits/stl_multiset.h \
  chain.h pow.h primitives/block.h primitives/transaction.h amount.h \
@@ -1878,7 +1878,7 @@ qt/peertablemodel.h:
 
 main.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 amount.h:
 

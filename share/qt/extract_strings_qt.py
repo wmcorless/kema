@@ -78,6 +78,6 @@ f.write('static const char UNUSED *Kema_strings[] = {\n')
 messages.sort(key=operator.itemgetter(0))
 for (msgid, msgstr) in messages:
     if msgid != EMPTY:
-        f.write('QT_TRANSLATE_NOOP("Kema-core", %s),\n' % ('\n'.join(msgid)))
+        f.write('QT_TRANSLATE_NOOP("kema-core", %s),\n' % ('\n'.join(msgid)))
 f.write('};\n')
 f.close()

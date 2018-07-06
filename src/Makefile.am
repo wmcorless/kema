@@ -68,7 +68,7 @@ if BUILD_BITCOIND
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += Kema-cli Kema-tx
+  bin_PROGRAMS += kema-cli Kema-tx
 endif
 
 .PHONY: FORCE
@@ -351,7 +351,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between Kema-cli and Kema-qt
+# cli: shared between kema-cli and Kema-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -390,7 +390,7 @@ kemad_CPPFLAGS = $(BITCOIN_INCLUDES)
 kemad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# Kema-cli binary #
+# kema-cli binary #
 Kema_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
@@ -399,7 +399,7 @@ Kema_cli_LDADD = \
   $(CRYPTO_LIBS)
 
 Kema_cli_SOURCES = \
-  Kema-cli.cpp
+  kema-cli.cpp
 
 Kema_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
@@ -420,7 +420,7 @@ Kema_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 Kema_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-Kema_cli_SOURCES += Kema-cli-res.rc
+Kema_cli_SOURCES += kema-cli-res.rc
 endif
 Kema_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 

@@ -1264,9 +1264,9 @@ Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/Kema-crypto/Kema-wallet-translations/</source>
+https://www.transifex.com/kema-crypto/Kema-wallet-translations/</source>
         <translation>Puuttuuko sopiva kieli tai käännös on kesken? Auta käännöstyössä täällä:
-https://www.transifex.com/Kema-crypto/Kema-wallet-translations/</translation>
+https://www.transifex.com/kema-crypto/Kema-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -3325,7 +3325,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
     </message>
 </context>
 <context>
-    <name>Kema-core</name>
+    <name>kema-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Kytkeydy annettuun osoitteeseen ja pidä linja aina auki. Käytä [host]:port merkintätapaa IPv6:lle.</translation>

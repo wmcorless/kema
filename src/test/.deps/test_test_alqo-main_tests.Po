@@ -212,7 +212,7 @@ test/test_test_Kema-main_tests.o: test/main_tests.cpp \
  /usr/include/c++/5/sstream /usr/include/c++/5/istream \
  /usr/include/c++/5/ostream /usr/include/c++/5/bits/ostream.tcc \
  /usr/include/c++/5/bits/istream.tcc /usr/include/c++/5/bits/sstream.tcc \
- serialize.h uint256.h main.h config/Kema-config.h amount.h chain.h pow.h \
+ serialize.h uint256.h main.h config/kema-config.h amount.h chain.h pow.h \
  primitives/block.h keystore.h key.h allocators.h \
  /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/detail/platform.hpp \
@@ -1828,7 +1828,7 @@ uint256.h:
 
 main.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 amount.h:
 

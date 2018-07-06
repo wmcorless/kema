@@ -1,5 +1,5 @@
 qt/qt_libbitcoinqt_a-addressbookpage.o: qt/addressbookpage.cpp \
- /usr/include/stdc-predef.h config/Kema-config.h qt/addressbookpage.h \
+ /usr/include/stdc-predef.h config/kema-config.h qt/addressbookpage.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
@@ -775,7 +775,7 @@ qt/qt_libbitcoinqt_a-addressbookpage.o: qt/addressbookpage.cpp \
 
 /usr/include/stdc-predef.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 qt/addressbookpage.h:
 

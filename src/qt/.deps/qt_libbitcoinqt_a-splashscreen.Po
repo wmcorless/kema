@@ -274,7 +274,7 @@ qt/qt_libbitcoinqt_a-splashscreen.o: qt/splashscreen.cpp \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h clientversion.h \
- config/Kema-config.h init.h qt/networkstyle.h \
+ config/kema-config.h init.h qt/networkstyle.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
@@ -1985,7 +1985,7 @@ qt/splashscreen.h:
 
 clientversion.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 init.h:
 

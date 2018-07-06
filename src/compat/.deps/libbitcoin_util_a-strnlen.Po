@@ -1,5 +1,5 @@
 compat/libbitcoin_util_a-strnlen.o: compat/strnlen.cpp \
- /usr/include/stdc-predef.h config/Kema-config.h \
+ /usr/include/stdc-predef.h config/kema-config.h \
  /usr/include/c++/5/cstring \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
@@ -13,7 +13,7 @@ compat/libbitcoin_util_a-strnlen.o: compat/strnlen.cpp \
 
 /usr/include/stdc-predef.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 /usr/include/c++/5/cstring:
 

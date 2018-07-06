@@ -1,5 +1,5 @@
 qt/qt_libbitcoinqt_a-moc_notificator.o: qt/moc_notificator.cpp \
- /usr/include/stdc-predef.h qt/notificator.h config/Kema-config.h \
+ /usr/include/stdc-predef.h qt/notificator.h config/kema-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
@@ -272,7 +272,7 @@ qt/qt_libbitcoinqt_a-moc_notificator.o: qt/moc_notificator.cpp \
 
 qt/notificator.h:
 
-config/Kema-config.h:
+config/kema-config.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon:
 
