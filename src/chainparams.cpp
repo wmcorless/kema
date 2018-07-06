@@ -207,7 +207,7 @@ public:
         genesis.nTime = 1515616140;
         genesis.nNonce = 22310717;
 
-
+    printf("%s\n", hashGenesisBlock.ToString().c_str());
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x000007cff63ef602a51bf074e384b3516f0dd202f14d52f7c8c9b1af9423ab2e"));
 
