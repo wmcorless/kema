@@ -99,7 +99,7 @@ public:
         pchMessageStart[3] = 0x46;
         vAlertPubKey = ParseHex("043b5de38bea9d9b3be3a03a43e7aecac0a4414027adc9fa4fab65d81f5f9af2ee7def561ed37a98ad2cec3c77ba6bca9de762a89ae3e7a7e133b9a8576ee41c66");
         nDefaultPort = 70565;
-        bnProofOfWorkLimit = ~uint256(0) >> 0;
+        bnProofOfWorkLimit = ~uint256(0) >> 20;
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
@@ -127,17 +127,16 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime = 1530845256;
-        genesis.nBits = 0;
-        genesis.nNonce = 0;
+        genesis.nBits = 504365040;
+        genesis.nNonce = 2114836;
 
         hashGenesisBlock = genesis.GetHash();
 	//printf("%s\n", hashGenesisBlock.ToString().c_str());
 	//printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
 
 
-        assert(hashGenesisBlock == uint256("0xd1be2ab3d0630e71499dfd57b6c59b81bd413360a639b403a0b44da5a41c19eb")); //0xc2ba69bb5a1861d5bb8f8b4426652d7fff7b3b7db0bf05271e9b70b1bc5fb682
-        assert(genesis.hashMerkleRoot == uint256("0xfbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6")); //0xfbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6
-
+        assert(hashGenesisBlock == uint256("0x00000a1410658815508e398228a280f4f5e476bf54dfe4a062ca37c344b3d178"));
+        assert(genesis.hashMerkleRoot == uint256("0x1ddd843f4bf074271621f13ba52212feec9bc4911b0b5e77affc933bb5b264a1"));
         vSeeds.push_back(CDNSSeedData("www.kema.io", "seed1.kema.io"));
 
         //vFixedSeeds.clear();
