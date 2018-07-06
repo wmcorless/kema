@@ -131,15 +131,12 @@ public:
         genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
-	//printf("%s\n", hashGenesisBlock.ToString().c_str());
-	//printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
-	int someInt = genesis.nBits;
-    char str[12];
-    sprintf(str, "%d", someInt);
-    //printf("%s\n", genesis.nBits.ToString().c_str());
+	printf("%s\n", hashGenesisBlock.ToString().c_str());
+	printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(hashGenesisBlock == uint256("0xc2ba69bb5a1861d5bb8f8b4426652d7fff7b3b7db0bf05271e9b70b1bc5fb682"));
-        assert(genesis.hashMerkleRoot == uint256("0xfbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6"));
+
+        assert(hashGenesisBlock == uint256("")); //0xc2ba69bb5a1861d5bb8f8b4426652d7fff7b3b7db0bf05271e9b70b1bc5fb682
+        assert(genesis.hashMerkleRoot == uint256("")); //0xfbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6
 
         vSeeds.push_back(CDNSSeedData("www.kema.io", "seed1.kema.io"));
 
