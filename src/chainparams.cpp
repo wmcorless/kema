@@ -271,13 +271,13 @@ public:
         nTargetTimespan = 24 * 60 * 60;
         nTargetSpacing = 1 * 60;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1527855805;
+        genesis.nTime = 1530845256;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 6;
+        genesis.nNonce = 21014061;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 70568;
-        assert(hashGenesisBlock == uint256("0x000008415bdca132b70cf161ecc548e5d0150fd6634a381ee2e99bb8bb77dbb3"));
+        assert(hashGenesisBlock == uint256("0xc174f9c443624af18b5052dfea707b54b72d9dd5b048ad68b4b193512f03b610"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
