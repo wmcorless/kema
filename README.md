@@ -1,4 +1,7 @@
-Installing Masternode:
-ubuntu VM type:
-wget https://raw.githubusercontent.com/wmcorless/Ketan-kema/master/mn-setup.sh
-bash mn-setup.sh
+Installing Masternode:</br>
+ubuntu VM type:</br>
+wget https://raw.githubusercontent.com/wmcorless/Ketan-kema/master/mn-setup.sh</br>
+bash mn-setup.sh</br>
+<quote>Hi my name is Kema.  I love the color purple.  This is my coin.</br>
+Thank you.</br>
+Kema</quote>
