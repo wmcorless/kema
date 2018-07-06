@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Ketan developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The Kema developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(KETAN);
-    unitlist.append(mKETAN);
-    unitlist.append(uKETAN);
+    unitlist.append(Kema);
+    unitlist.append(mKema);
+    unitlist.append(uKema);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case KETAN:
-    case mKETAN:
-    case uKETAN:
+    case Kema:
+    case mKema:
+    case uKema:
         return true;
     default:
         return false;
@@ -41,12 +41,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case KETAN:
-        return QString("ketan");
-    case mKETAN:
-        return QString("mketan");
-    case uKETAN:
-        return QString::fromUtf8("uketan");
+    case Kema:
+        return QString("Kema");
+    case mKema:
+        return QString("mKema");
+    case uKema:
+        return QString::fromUtf8("uKema");
     default:
         return QString("???");
     }
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case KETAN:
-            return QString("KETAN");
-        case mKETAN:
-            return QString("mKETAN");
-        case uKETAN:
-            return QString::fromUtf8("μKETAN");
+        case Kema:
+            return QString("Kema");
+        case mKema:
+            return QString("mKema");
+        case uKema:
+            return QString::fromUtf8("μKema");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case KETAN:
-            return QString("tKETAN");
-        case mKETAN:
-            return QString("mtKETAN");
-        case uKETAN:
-            return QString::fromUtf8("μtKETAN");
+        case Kema:
+            return QString("tKema");
+        case mKema:
+            return QString("mtKema");
+        case uKema:
+            return QString::fromUtf8("μtKema");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case KETAN:
-            return QString("KETAN");
-        case mKETAN:
-            return QString("Milli-KETAN (1 / 1" THIN_SP_UTF8 "000)");
-        case uKETAN:
-            return QString("Micro-KETAN (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case Kema:
+            return QString("Kema");
+        case mKema:
+            return QString("Milli-Kema (1 / 1" THIN_SP_UTF8 "000)");
+        case uKema:
+            return QString("Micro-Kema (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case KETAN:
-            return QString("TestKETANs");
-        case mKETAN:
-            return QString("Milli-TestKETAN (1 / 1" THIN_SP_UTF8 "000)");
-        case uKETAN:
-            return QString("Micro-TestKETAN (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case Kema:
+            return QString("TestKemas");
+        case mKema:
+            return QString("Milli-TestKema (1 / 1" THIN_SP_UTF8 "000)");
+        case uKema:
+            return QString("Micro-TestKema (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case KETAN:
+    case Kema:
         return 100000000;
-    case mKETAN:
+    case mKema:
         return 100000;
-    case uKETAN:
+    case uKema:
         return 100;
     default:
         return 100000000;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case KETAN:
+    case Kema:
         return 8;
-    case mKETAN:
+    case mKema:
         return 5;
-    case uKETAN:
+    case uKema:
         return 2;
     default:
         return 0;

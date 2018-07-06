@@ -1,7 +1,7 @@
 
 // Copyright (c) 2009-2012 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Ketan developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The Kema developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef SPORK_H
@@ -44,7 +44,7 @@ using namespace boost;
 
 #define SPORK_2_INSTANTX_DEFAULT 978307200                         //2001-1-1
 #define SPORK_3_INSTANTX_BLOCK_FILTERING_DEFAULT 1424217600        //2015-2-18
-#define SPORK_5_MAX_VALUE_DEFAULT 1000                            //1000 KETAN
+#define SPORK_5_MAX_VALUE_DEFAULT 1000                            //1000 Kema
 #define SPORK_7_MASTERNODE_SCANNING_DEFAULT 978307200             //2001-1-1
 #define SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT_DEFAULT 1512864000 //10. December 2017 00:00:00 UTC
 #define SPORK_9_MASTERNODE_BUDGET_ENFORCEMENT_DEFAULT 1512864000  //10. December 2017 00:00:00 UTC
@@ -54,7 +54,7 @@ using namespace boost;
 #define SPORK_13_ENABLE_SUPERBLOCKS_DEFAULT 1512864000            //OFF
 #define SPORK_14_NEW_PROTOCOL_ENFORCEMENT_DEFAULT 4070908800      //OFF
 #define SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2_DEFAULT 4070908800              // Age in seconds. This should be > MASTERNODE_REMOVAL_SECONDS to avoid
-#define SPORK_16_MN_WINNER_MINIMUM_AGE_DEFAULT 0                                                                 // misconfigured new nodes in the list. 
+#define SPORK_16_MN_WINNER_MINIMUM_AGE_DEFAULT 0                                                                 // misconfigured new nodes in the list.
                                                                   // Set this to zero to emulate classic behaviour
 class CSporkMessage;
 class CSporkManager;

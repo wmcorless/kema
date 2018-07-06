@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/ketan-config.h"
+#include "config/Kema-config.h"
 #endif
 
 #ifdef WIN32

@@ -1,8 +1,8 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Ketan developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The Kema developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -42,7 +42,7 @@ using namespace boost;
 using namespace std;
 
 #if defined(NDEBUG)
-#error "Ketan cannot be compiled without assertions."
+#error "Kema cannot be compiled without assertions."
 #endif
 
 /**
@@ -96,7 +96,7 @@ static void CheckBlockIndex();
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Ketan Signed Message:\n";
+const string strMessageMagic = "Kema Signed Message:\n";
 
 // Internal stuff
 namespace
@@ -1620,25 +1620,15 @@ double ConvertBitsToDouble(unsigned int nBits)
 
 int64_t GetBlockValue(int nHeight)
 {
- 
-	if (nHeight == 1) return 200000 * COIN;
-		
-	int64_t nSubsidy;
-	
-	if( nHeight > 1 && nHeight <= 4000 ) {
-	        nSubsidy = 1 * COIN;
-	} else if( nHeight > 4000 && nHeight <= 8000 ) {
-	        nSubsidy = 50 * COIN;
-	} else if( nHeight > 8000 && nHeight <= 14000 ) {
-	        nSubsidy = 100 * COIN;
-	} else if( nHeight > 14000 && nHeight <= 28000 ) {
-	        nSubsidy = 200 * COIN;
-	} else {
-		nSubsidy = 100 * COIN;
-	}
-	
-    return nSubsidy;
 
+    if (nHeight == 1) return 100000 * COIN;
+
+    int64_t nSubsidy;
+
+    if (nHeight > 1) {
+        nSubsidy = 100 * COIN;
+    }
+    return nSubsidy;
 }
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
@@ -1646,9 +1636,9 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
 
 	int64_t ret = 0;
-	
+
         ret = blockValue * 0.7;
-	
+
 	return ret;
 }
 
@@ -2036,7 +2026,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("ketan-scriptch");
+    RenameThread("Kema-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -3187,7 +3177,7 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
         return true;
     }
 */
-	
+
     if (block.nBits != nBitsRequired)
         return error("%s : incorrect proof of work at %d", __func__, pindexPrev->nHeight + 1);
 
@@ -3263,7 +3253,7 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
         if (!IsFinalTx(tx, nHeight, block.GetBlockTime())) {
             return state.DoS(10, error("%s : contains a non-final transaction", __func__), REJECT_INVALID, "bad-txns-nonfinal");
         }
-	
+
 	//Script expect = CScript() << nHeight;
 	//AAAA
     // Enforce block.nVersion=2 rule that the coinbase starts with serialized block height
@@ -5370,7 +5360,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 }
 
 // Note: whenever a protocol update is needed toggle between both implementations (comment out the formerly active one)
-//       so we can leave the existing clients untouched (old SPORK will stay on so they don't see even older clients). 
+//       so we can leave the existing clients untouched (old SPORK will stay on so they don't see even older clients).
 //       Those old clients won't react to the changes of the other (new) SPORK because at the time of their implementation
 //       it was the one which was commented out
 int ActiveProtocol()
@@ -5388,9 +5378,9 @@ int ActiveProtocol()
 */
 
 
-    // SPORK_15 is used for 70910. Nodes < 70910 don't see it and still get their protocol version via SPORK_14 and their 
+    // SPORK_15 is used for 70910. Nodes < 70910 don't see it and still get their protocol version via SPORK_14 and their
     // own ModifierUpgradeBlock()
- 
+
     if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
             return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 

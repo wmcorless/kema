@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Ketan developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The Kema developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -301,7 +301,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 
     CAmount blockValue = GetBlockValue(pindexPrev->nHeight +1 );
     CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight +1, blockValue);
-	
+
 	//TEMPORARY FIX
 	if(pindexPrev->nHeight +1 > 151200 && pindexPrev->nHeight +1 <= 152500) {
 		masternodePayment = GetMasternodePayment(152501, blockValue);
@@ -340,7 +340,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 }
 
 int CMasternodePayments::GetMinMasternodePaymentsProto()
-{    
+{
     if (IsSporkActive(SPORK_10_MASTERNODE_PAY_UPDATED_NODES))
         return ActiveProtocol();                          // Allow only updated peers
     else

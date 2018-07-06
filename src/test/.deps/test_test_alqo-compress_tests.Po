@@ -1,4 +1,4 @@
-test/test_test_ketan-compress_tests.o: test/compress_tests.cpp \
+test/test_test_Kema-compress_tests.o: test/compress_tests.cpp \
  /usr/include/stdc-predef.h compressor.h primitives/transaction.h \
  amount.h serialize.h /usr/include/c++/5/algorithm \
  /usr/include/c++/5/utility \
@@ -213,7 +213,7 @@ test/test_test_ketan-compress_tests.o: test/compress_tests.cpp \
  /usr/include/c++/5/sstream /usr/include/c++/5/istream \
  /usr/include/c++/5/ostream /usr/include/c++/5/bits/ostream.tcc \
  /usr/include/c++/5/bits/istream.tcc /usr/include/c++/5/bits/sstream.tcc \
- serialize.h uint256.h script/script.h util.h config/ketan-config.h \
+ serialize.h uint256.h script/script.h util.h config/Kema-config.h \
  compat.h /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
@@ -1319,7 +1319,7 @@ script/script.h:
 
 util.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 compat.h:
 

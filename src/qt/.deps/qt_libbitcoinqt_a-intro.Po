@@ -757,7 +757,7 @@ qt/qt_libbitcoinqt_a-intro.o: qt/intro.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/5/deque /usr/include/c++/5/bits/stl_deque.h \
  /usr/include/c++/5/bits/deque.tcc /usr/include/c++/5/bits/stl_stack.h \
  /usr/include/boost/filesystem/convenience.hpp util.h \
- config/ketan-config.h compat.h /usr/include/arpa/inet.h \
+ config/Kema-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -2501,7 +2501,7 @@ serialize.h:
 
 util.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 compat.h:
 

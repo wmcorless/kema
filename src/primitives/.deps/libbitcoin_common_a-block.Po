@@ -1003,7 +1003,7 @@ primitives/libbitcoin_common_a-block.o: primitives/block.cpp \
  /usr/include/boost/variant/visitor_ptr.hpp \
  /usr/include/boost/variant/bad_visit.hpp hash.h script/standard.h \
  script/interpreter.h script/script_error.h script/sign.h key.h \
- tinyformat.h utilstrencodings.h util.h config/ketan-config.h compat.h \
+ tinyformat.h utilstrencodings.h util.h config/Kema-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
@@ -3342,7 +3342,7 @@ utilstrencodings.h:
 
 util.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 compat.h:
 

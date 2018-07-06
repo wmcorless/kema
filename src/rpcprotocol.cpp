@@ -1,8 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Ketan developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The Kema developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -38,7 +38,7 @@ const size_t POST_READ_SIZE = 256 * 1024;
 
 /**
  * HTTP protocol
- * 
+ *
  * This ain't Apache.  We're just using HTTP header for the length field
  * and to be compatible with other JSON-RPC implementations.
  */
@@ -47,7 +47,7 @@ string HTTPPost(const string& strMsg, const map<string, string>& mapRequestHeade
 {
     ostringstream s;
     s << "POST / HTTP/1.1\r\n"
-      << "User-Agent: ketan-json-rpc/" << FormatFullVersion() << "\r\n"
+      << "User-Agent: Kema-json-rpc/" << FormatFullVersion() << "\r\n"
       << "Host: 127.0.0.1\r\n"
       << "Content-Type: application/json\r\n"
       << "Content-Length: " << strMsg.size() << "\r\n"
@@ -89,7 +89,7 @@ string HTTPError(int nStatus, bool keepalive, bool headersOnly)
     if (nStatus == HTTP_UNAUTHORIZED)
         return strprintf("HTTP/1.0 401 Authorization Required\r\n"
                          "Date: %s\r\n"
-                         "Server: ketan-json-rpc/%s\r\n"
+                         "Server: Kema-json-rpc/%s\r\n"
                          "WWW-Authenticate: Basic realm=\"jsonrpc\"\r\n"
                          "Content-Type: text/html\r\n"
                          "Content-Length: 296\r\n"
@@ -117,7 +117,7 @@ string HTTPReplyHeader(int nStatus, bool keepalive, size_t contentLength, const 
         "Connection: %s\r\n"
         "Content-Length: %u\r\n"
         "Content-Type: %s\r\n"
-        "Server: ketan-json-rpc/%s\r\n"
+        "Server: Kema-json-rpc/%s\r\n"
         "\r\n",
         nStatus,
         httpStatusDescription(nStatus),
@@ -249,10 +249,10 @@ int ReadHTTPMessage(std::basic_istream<char>& stream, map<string, string>& mapHe
 }
 
 /**
- * JSON-RPC protocol.  KETAN speaks version 1.0 for maximum compatibility,
+ * JSON-RPC protocol.  Kema speaks version 1.0 for maximum compatibility,
  * but uses JSON-RPC 1.1/2.0 standards for parts of the 1.0 standard that were
  * unspecified (HTTP errors and contents of 'error').
- * 
+ *
  * 1.0 spec: http://json-rpc.org/wiki/specification
  * 1.2 spec: http://jsonrpc.org/historical/json-rpc-over-http.html
  * http://www.codeproject.com/KB/recipes/JSON_Spirit.aspx

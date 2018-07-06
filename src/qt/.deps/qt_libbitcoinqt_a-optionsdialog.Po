@@ -1,5 +1,5 @@
 qt/qt_libbitcoinqt_a-optionsdialog.o: qt/optionsdialog.cpp \
- /usr/include/stdc-predef.h config/ketan-config.h qt/optionsdialog.h \
+ /usr/include/stdc-predef.h config/Kema-config.h qt/optionsdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
@@ -771,7 +771,7 @@ qt/qt_libbitcoinqt_a-optionsdialog.o: qt/optionsdialog.cpp \
  /usr/include/c++/5/deque /usr/include/c++/5/bits/stl_deque.h \
  /usr/include/c++/5/bits/deque.tcc /usr/include/c++/5/bits/stl_stack.h \
  /usr/include/boost/filesystem/convenience.hpp Darksend.h main.h \
- config/ketan-config.h amount.h chain.h pow.h primitives/block.h \
+ config/Kema-config.h amount.h chain.h pow.h primitives/block.h \
  primitives/transaction.h script/script.h /usr/include/c++/5/climits \
  pubkey.h hash.h crypto/ripemd160.h crypto/sha256.h uint256.h version.h \
  crypto/sph_blake.h crypto/sph_types.h crypto/sph_bmw.h \
@@ -1490,7 +1490,7 @@ qt/qt_libbitcoinqt_a-optionsdialog.o: qt/optionsdialog.cpp \
 
 /usr/include/stdc-predef.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 qt/optionsdialog.h:
 
@@ -3222,7 +3222,7 @@ Darksend.h:
 
 main.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 amount.h:
 

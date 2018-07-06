@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="KETANSupply">
+    <widget class="QLabel" name="KemaSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="KETANDemand">
+    <widget class="QLabel" name="KemaDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyKETAN">
+    <widget class="QPushButton" name="BuyKema">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,10 +442,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy KETAN</string>
+      <string>Buy Kema</string>
      </property>
      <property name="icon">
-      <iconset resource="../ketan.qrc">
+      <iconset resource="../Kema.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>KETAN</string>
+      <string>Kema</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,10 +1704,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>KETAN</string>
+      <string>Kema</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputKETAN">
+    <widget class="QLineEdit" name="UnitsInputKema">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellKETANBTN">
+    <widget class="QPushButton" name="SellKemaBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1751,10 +1751,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell KETAN</string>
+      <string>Sell Kema</string>
      </property>
      <property name="icon">
-      <iconset resource="../ketan">
+      <iconset resource="../Kema">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1777,12 +1777,12 @@
          </font>
         </property>
         <property name="text">
-         <string>KETAN Available:</string>
+         <string>Kema Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="KETANAvailableLabel">
+       <widget class="QLabel" name="KemaAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelKETAN">
+       <widget class="QLabel" name="labelKema">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>KETAN</string>
+         <string>Kema</string>
         </property>
        </widget>
       </item>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="KETANBalanceLabel">
+    <widget class="QLabel" name="KemaBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>KETAN Balance:</string>
+      <string>Kema Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="KETANAvailableLabel_2">
+    <widget class="QLabel" name="KemaAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>KETAN Available:</string>
+      <string>Kema Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,10 +2832,10 @@
       </font>
      </property>
      <property name="text">
-      <string>KETAN Pending:</string>
+      <string>Kema Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="KETANPendingLabel">
+    <widget class="QLabel" name="KemaPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex KETAN Deposit Address:</string>
+      <string>Bittrex Kema Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
@@ -2941,10 +2941,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate KETAN Deposit Address</string>
+      <string>Generate Kema Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../ketan.qrc">
+      <iconset resource="../Kema.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertKETAN">
+     <widget class="QPushButton" name="btnConvertKema">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../ketan.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../Kema.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../ketan.qrc">
+      <iconset resource="../Kema.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../ketan.qrc"/>
+  <include location="../Kema.qrc"/>
  </resources>
  <connections/>
 </ui>

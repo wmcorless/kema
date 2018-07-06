@@ -1,4 +1,4 @@
-test/test_test_ketan-script_tests.o: test/script_tests.cpp \
+test/test_test_Kema-script_tests.o: test/script_tests.cpp \
  /usr/include/stdc-predef.h test/data/script_invalid.json.h \
  test/data/script_valid.json.h core_io.h /usr/include/c++/5/string \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
@@ -1005,7 +1005,7 @@ test/test_test_ketan-script_tests.o: test/script_tests.cpp \
  /usr/include/boost/mpl/equal.hpp /usr/include/boost/variant/get.hpp \
  /usr/include/boost/variant/detail/element_index.hpp \
  /usr/include/boost/variant/visitor_ptr.hpp \
- /usr/include/boost/variant/bad_visit.hpp main.h config/ketan-config.h \
+ /usr/include/boost/variant/bad_visit.hpp main.h config/Kema-config.h \
  amount.h chain.h pow.h primitives/block.h primitives/transaction.h \
  amount.h script/script.h pubkey.h serialize.h uint256.h tinyformat.h \
  util.h compat.h /usr/include/arpa/inet.h /usr/include/netinet/in.h \
@@ -3689,7 +3689,7 @@ threadsafety.h:
 
 main.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 amount.h:
 

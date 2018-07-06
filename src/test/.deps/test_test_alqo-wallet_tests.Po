@@ -1,4 +1,4 @@
-test/test_test_ketan-wallet_tests.o: test/wallet_tests.cpp \
+test/test_test_Kema-wallet_tests.o: test/wallet_tests.cpp \
  /usr/include/stdc-predef.h wallet.h amount.h serialize.h \
  /usr/include/c++/5/algorithm /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
@@ -1003,7 +1003,7 @@ test/test_test_ketan-wallet_tests.o: test/wallet_tests.cpp \
  /usr/include/boost/variant/detail/element_index.hpp \
  /usr/include/boost/variant/visitor_ptr.hpp \
  /usr/include/boost/variant/bad_visit.hpp protocol.h netbase.h \
- config/ketan-config.h compat.h /usr/include/arpa/inet.h \
+ config/Kema-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -3563,7 +3563,7 @@ protocol.h:
 
 netbase.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 compat.h:
 

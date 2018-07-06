@@ -1,4 +1,4 @@
-test/test_test_ketan-timedata_tests.o: test/timedata_tests.cpp \
+test/test_test_Kema-timedata_tests.o: test/timedata_tests.cpp \
  /usr/include/stdc-predef.h timedata.h /usr/include/c++/5/algorithm \
  /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \

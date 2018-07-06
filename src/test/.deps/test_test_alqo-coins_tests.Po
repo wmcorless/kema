@@ -1,4 +1,4 @@
-test/test_test_ketan-coins_tests.o: test/coins_tests.cpp \
+test/test_test_Kema-coins_tests.o: test/coins_tests.cpp \
  /usr/include/stdc-predef.h coins.h compressor.h primitives/transaction.h \
  amount.h serialize.h /usr/include/c++/5/algorithm \
  /usr/include/c++/5/utility \

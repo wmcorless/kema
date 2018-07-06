@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/ketan-config.h"
+#include "config/Kema-config.h"
 #endif
 
 #include "optionsdialog.h"
@@ -214,7 +214,7 @@ void OptionsDialog::setMapper()
 
     /* Darksend Rounds */
     mapper->addMapping(ui->DarksendRounds, OptionsModel::DarksendRounds);
-    mapper->addMapping(ui->anonymizeKETAN, OptionsModel::AnonymizeKETANAmount);
+    mapper->addMapping(ui->anonymizeKema, OptionsModel::AnonymizeKemaAmount);
     mapper->addMapping(ui->showMasternodesTab, OptionsModel::ShowMasternodesTab);
 }
 

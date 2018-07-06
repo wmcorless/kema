@@ -2828,7 +2828,7 @@ m4trace:build-aux/m4/bitcoin_find_bdb48.m4:1: -1- AC_DEFUN([BITCOIN_FIND_BDB48],
     bdbpath="${bdb48path}"
   fi
   AC_SUBST(BDB_CPPFLAGS)
-  
+
   # TODO: Ideally this could find the library version and make sure it matches the headers being used
   for searchlib in db_cxx-4.8 db_cxx; do
     AC_CHECK_LIB([$searchlib],[main],[
@@ -2844,7 +2844,7 @@ m4trace:build-aux/m4/bitcoin_find_bdb48.m4:1: -1- AC_DEFUN([BITCOIN_FIND_BDB48],
 m4trace:build-aux/m4/bitcoin_qt.m4:3: -1- AC_DEFUN([BITCOIN_QT_FAIL], [
   if test "x$bitcoin_qt_want_version" = "xauto" && test x$bitcoin_qt_force != xyes; then
     if test x$bitcoin_enable_qt != xno; then
-      AC_MSG_WARN([$1; ketan-qt frontend will not be built])
+      AC_MSG_WARN([$1; Kema-qt frontend will not be built])
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -2877,7 +2877,7 @@ m4trace:build-aux/m4/bitcoin_qt.m4:49: -1- AC_DEFUN([BITCOIN_QT_INIT], [
   dnl enable qt support
   AC_ARG_WITH([gui],
     [AS_HELP_STRING([--with-gui@<:@=no|qt4|qt5|auto@:>@],
-    [build ketan-qt GUI (default=auto, qt5 tried first)])],
+    [build Kema-qt GUI (default=auto, qt5 tried first)])],
     [
      bitcoin_qt_want_version=$withval
      if test x$bitcoin_qt_want_version = xyes; then
@@ -4661,7 +4661,7 @@ if test $pkg_failed = yes; then
         _PKG_SHORT_ERRORS_SUPPORTED
         if test $_pkg_short_errors_supported = yes; then
 	        $1[]_PKG_ERRORS=`$PKG_CONFIG --short-errors --print-errors --cflags --libs "$2" 2>&1`
-        else 
+        else
 	        $1[]_PKG_ERRORS=`$PKG_CONFIG --print-errors --cflags --libs "$2" 2>&1`
         fi
 	# Put the nasty error message in config.log where it belongs
@@ -5138,7 +5138,7 @@ rm -f core conftest.err conftest.$ac_objext \
 fi
 done
 if ${ac_cv_search_pcre16_exec+:} false; then :
-  
+
 else
   ac_cv_search_pcre16_exec=no
 fi
@@ -5150,7 +5150,7 @@ $as_echo "$ac_cv_search_pcre16_exec" >&6; }
 ac_res=$ac_cv_search_pcre16_exec
 if test "$ac_res" != no; then :
   test "$ac_res" = "none required" || LIBS="$ac_res $LIBS"
-  
+
 else
   { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: libpcre16 not found. Assuming qt has it built-in" >&5
 $as_echo "$as_me: WARNING: libpcre16 not found. Assuming qt has it built-in" >&2;}
@@ -5197,7 +5197,7 @@ rm -f core conftest.err conftest.$ac_objext \
 fi
 done
 if ${ac_cv_search_hb_ot_tags_from_script_+:} false; then :
-  
+
 else
   ac_cv_search_hb_ot_tags_from_script_=no
 fi
@@ -5209,7 +5209,7 @@ $as_echo "$ac_cv_search_hb_ot_tags_from_script_" >&6; }
 ac_res=$ac_cv_search_hb_ot_tags_from_script_
 if test "$ac_res" != no; then :
   test "$ac_res" = "none required" || LIBS="$ac_res $LIBS"
-  
+
 else
   { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: libharfbuzz not found. Assuming qt has it built-in or support is disabled" >&5
 $as_echo "$as_me: WARNING: libharfbuzz not found. Assuming qt has it built-in or support is disabled" >&2;}
@@ -5256,11 +5256,11 @@ _ACEOF
   LIBS="-l${QT_LIB_PREFIX}Core    $LIBS"
 
 else
-  
+
   if test "x$bitcoin_qt_want_version" = "xauto" && test x$bitcoin_qt_force != xyes; then
     if test x$bitcoin_enable_qt != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib$QT_LIB_PREFIXCore not found; ketan-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: lib$QT_LIB_PREFIXCore not found; ketan-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib$QT_LIB_PREFIXCore not found; Kema-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: lib$QT_LIB_PREFIXCore not found; Kema-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -5311,11 +5311,11 @@ _ACEOF
   LIBS="-l${QT_LIB_PREFIX}Gui     $LIBS"
 
 else
-  
+
   if test "x$bitcoin_qt_want_version" = "xauto" && test x$bitcoin_qt_force != xyes; then
     if test x$bitcoin_enable_qt != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib$QT_LIB_PREFIXGui not found; ketan-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: lib$QT_LIB_PREFIXGui not found; ketan-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib$QT_LIB_PREFIXGui not found; Kema-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: lib$QT_LIB_PREFIXGui not found; Kema-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -5366,11 +5366,11 @@ _ACEOF
   LIBS="-l${QT_LIB_PREFIX}Network $LIBS"
 
 else
-  
+
   if test "x$bitcoin_qt_want_version" = "xauto" && test x$bitcoin_qt_force != xyes; then
     if test x$bitcoin_enable_qt != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib$QT_LIB_PREFIXNetwork not found; ketan-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: lib$QT_LIB_PREFIXNetwork not found; ketan-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib$QT_LIB_PREFIXNetwork not found; Kema-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: lib$QT_LIB_PREFIXNetwork not found; Kema-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -5421,11 +5421,11 @@ _ACEOF
   LIBS="-l${QT_LIB_PREFIX}Widgets $LIBS"
 
 else
-  
+
   if test "x$bitcoin_qt_want_version" = "xauto" && test x$bitcoin_qt_force != xyes; then
     if test x$bitcoin_enable_qt != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib$QT_LIB_PREFIXWidgets not found; ketan-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: lib$QT_LIB_PREFIXWidgets not found; ketan-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lib$QT_LIB_PREFIXWidgets not found; Kema-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: lib$QT_LIB_PREFIXWidgets not found; Kema-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no
@@ -5832,11 +5832,11 @@ $as_echo "$ac_res" >&6; }
 if eval test \"x\$"$as_ac_Lib"\" = x"yes"; then :
   PROTOBUF_LIBS=-lprotobuf
 else
-  
+
   if test "x$bitcoin_qt_want_version" = "xauto" && test x$bitcoin_qt_force != xyes; then
     if test x$bitcoin_enable_qt != xno; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: libprotobuf not found; ketan-qt frontend will not be built" >&5
-$as_echo "$as_me: WARNING: libprotobuf not found; ketan-qt frontend will not be built" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: libprotobuf not found; Kema-qt frontend will not be built" >&5
+$as_echo "$as_me: WARNING: libprotobuf not found; Kema-qt frontend will not be built" >&2;}
     fi
     bitcoin_enable_qt=no
     bitcoin_enable_qt_test=no

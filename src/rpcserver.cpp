@@ -1,8 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Ketan developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The Kema developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -220,10 +220,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Ketan server.");
+            "\nStop Kema server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Ketan server stopping";
+    return "Kema server stopping";
 }
 
 
@@ -300,16 +300,16 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* KETAN features */
-        {"ketan", "masternode", &masternode, true, true, false},
-        {"ketan", "masternodelist", &masternodelist, true, true, false},
-        {"ketan", "mnbudget", &mnbudget, true, true, false},
-        {"ketan", "mnbudgetvoteraw", &mnbudgetvoteraw, true, true, false},
-        {"ketan", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"ketan", "mnsync", &mnsync, true, true, false},
-        {"ketan", "spork", &spork, true, true, false},
+        /* Kema features */
+        {"Kema", "masternode", &masternode, true, true, false},
+        {"Kema", "masternodelist", &masternodelist, true, true, false},
+        {"Kema", "mnbudget", &mnbudget, true, true, false},
+        {"Kema", "mnbudgetvoteraw", &mnbudgetvoteraw, true, true, false},
+        {"Kema", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"Kema", "mnsync", &mnsync, true, true, false},
+        {"Kema", "spork", &spork, true, true, false},
 #ifdef ENABLE_WALLET
-        {"ketan", "Darksend", &Darksend, false, false, true}, /* not threadSafe because of SendMoney */
+        {"Kema", "Darksend", &Darksend, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -575,16 +575,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use ketand, or the -server option to ketan-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use Kemad, or the -server option to Kema-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=ketanrpc\n"
+                                               "rpcuser=Kemarpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"Ketan Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"Kema Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1024,14 +1024,14 @@ json_spirit::Value CRPCTable::execute(const std::string& strMethod, const json_s
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> ketan-cli " + methodname + " " + args + "\n";
+    return "> Kema-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:30013/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:70566/\n";
 }
 
 const CRPCTable tableRPC;

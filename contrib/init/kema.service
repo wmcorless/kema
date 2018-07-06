@@ -1,0 +1,26 @@
+[Unit]
+Description=Kema's distributed currency daemon
+After=network.target
+
+[Service]
+User=Kema
+Group=Kema
+
+Type=forking
+PIDFile=/var/lib/Kemad/Kemad.pid
+
+ExecStart=/usr/bin/Kemad -daemon -pid=/var/lib/Kemad/Kemad.pid \
+          -conf=/etc/Kema/Kema.conf -datadir=/var/lib/Kemad
+
+ExecStop=-/usr/bin/Kema-cli -conf=/etc/Kema/Kema.conf \
+         -datadir=/var/lib/Kemad stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

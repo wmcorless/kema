@@ -1,5 +1,5 @@
-test/test_test_ketan-test_ketan.o: test/test_ketan.cpp \
- /usr/include/stdc-predef.h main.h config/ketan-config.h amount.h \
+test/test_test_Kema-test_Kema.o: test/test_Kema.cpp \
+ /usr/include/stdc-predef.h main.h config/Kema-config.h amount.h \
  serialize.h /usr/include/c++/5/algorithm /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
@@ -1327,7 +1327,7 @@ test/test_test_ketan-test_ketan.o: test/test_ketan.cpp \
 
 main.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 amount.h:
 

@@ -1004,7 +1004,7 @@ qt/qt_libbitcoinqt_a-walletview.o: qt/walletview.cpp \
  /usr/include/boost/variant/detail/element_index.hpp \
  /usr/include/boost/variant/visitor_ptr.hpp \
  /usr/include/boost/variant/bad_visit.hpp protocol.h netbase.h \
- config/ketan-config.h compat.h /usr/include/arpa/inet.h \
+ config/Kema-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -1322,7 +1322,7 @@ qt/qt_libbitcoinqt_a-walletview.o: qt/walletview.cpp \
  qt/addressbookpage.h /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  qt/askpassphrasedialog.h qt/bip38tooldialog.h qt/bitcoingui.h \
- config/ketan-config.h /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
+ config/Kema-config.h /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
@@ -3754,7 +3754,7 @@ protocol.h:
 
 netbase.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 compat.h:
 
@@ -4488,7 +4488,7 @@ qt/bip38tooldialog.h:
 
 qt/bitcoingui.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel:
 

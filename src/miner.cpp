@@ -1,8 +1,8 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Ketan developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The Kema developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -31,7 +31,7 @@ using namespace std;
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// KETANMiner
+// KemaMiner
 //
 
 //
@@ -112,10 +112,10 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     txNew.vin[0].prevout.SetNull();
     txNew.vout.resize(1);
     txNew.vout[0].scriptPubKey = scriptPubKeyIn;
-	
-	CBlockIndex* prev = chainActive.Tip(); 
+
+	CBlockIndex* prev = chainActive.Tip();
 	txNew.vout[0].nValue = GetBlockValue(prev->nHeight);
-	
+
     pblock->vtx.push_back(txNew);
     pblocktemplate->vTxFees.push_back(-1);   // updated at end
     pblocktemplate->vTxSigOps.push_back(-1); // updated at end
@@ -421,7 +421,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("KETANMiner : generated block is stale");
+            return error("KemaMiner : generated block is stale");
     }
 
     // Remove key from key pool
@@ -436,7 +436,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     // Process this block the same as if we had received it from another node
     CValidationState state;
     if (!ProcessNewBlock(state, NULL, pblock))
-        return error("KETANMiner : ProcessNewBlock, block not accepted");
+        return error("KemaMiner : ProcessNewBlock, block not accepted");
 
     return true;
 }
@@ -447,9 +447,9 @@ bool fGenerateBitcoins = false;
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("KETANMiner started\n");
+    LogPrintf("KemaMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("ketan-miner");
+    RenameThread("Kema-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -471,7 +471,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 MilliSleep(5000);
                 continue;
             }
-			
+
 			bool test = false;
 			if(test){
 			if(chainActive.Tip()->nTime < 1471482000) LogPrintf("Point470 \n");
@@ -519,7 +519,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             LogPrintf("CPUMiner : proof-of-stake block found %s \n", pblock->GetHash().ToString().c_str());
 
             if (!pblock->SignBlock(*pwallet)) {
-                LogPrintf("KETANMiner(): Signing new block failed \n");
+                LogPrintf("KemaMiner(): Signing new block failed \n");
                 continue;
             }
 
@@ -531,7 +531,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
-        LogPrintf("Running KETANMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running KemaMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
             ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -548,7 +548,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 if (hash <= hashTarget) {
                     // Found a solution
                     SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                    LogPrintf("KETANMiner:\n");
+                    LogPrintf("KemaMiner:\n");
                     LogPrintf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex(), hashTarget.GetHex());
                     ProcessBlockFound(pblock, *pwallet, reservekey);
                     SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -620,12 +620,12 @@ void static ThreadBitcoinMiner(void* parg)
         BitcoinMiner(pwallet, false);
         boost::this_thread::interruption_point();
     } catch (std::exception& e) {
-        LogPrintf("ThreadKETANMiner() exception");
+        LogPrintf("ThreadKemaMiner() exception");
     } catch (...) {
-        LogPrintf("ThreadKETANMiner() exception");
+        LogPrintf("ThreadKemaMiner() exception");
     }
 
-    LogPrintf("ThreadKETANMiner exiting\n");
+    LogPrintf("ThreadKemaMiner exiting\n");
 }
 
 void GenerateBitcoins(bool fGenerate, CWallet* pwallet, int nThreads)

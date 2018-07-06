@@ -1,4 +1,4 @@
-test/test_test_ketan-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp \
+test/test_test_Kema-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp \
  /usr/include/stdc-predef.h rpcserver.h amount.h serialize.h \
  /usr/include/c++/5/algorithm /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
@@ -1592,7 +1592,7 @@ test/test_test_ketan-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp \
  /usr/include/boost/signals2/variadic_signal.hpp \
  /usr/include/boost/signals2/detail/variadic_slot_invoker.hpp \
  /usr/include/boost/signals2/detail/signal_template.hpp protocol.h \
- netbase.h config/ketan-config.h compat.h /usr/include/ifaddrs.h \
+ netbase.h config/Kema-config.h compat.h /usr/include/ifaddrs.h \
  /usr/include/x86_64-linux-gnu/sys/fcntl.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
@@ -5376,7 +5376,7 @@ protocol.h:
 
 netbase.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 compat.h:
 

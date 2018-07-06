@@ -1,4 +1,4 @@
-test/test_test_ketan-scriptnum_tests.o: test/scriptnum_tests.cpp \
+test/test_test_Kema-scriptnum_tests.o: test/scriptnum_tests.cpp \
  /usr/include/stdc-predef.h test/bignum.h /usr/include/c++/5/algorithm \
  /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \

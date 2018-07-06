@@ -1,12 +1,12 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Ketan developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The Kema developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/ketan-config.h"
+#include "config/Kema-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -62,7 +62,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::KETAN);
+        settings.setValue("nDisplayUnit", BitcoinUnits::Kema);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -76,11 +76,11 @@ void OptionsModel::Init()
     if (!settings.contains("nDarksendRounds"))
         settings.setValue("nDarksendRounds", 2);
 
-    if (!settings.contains("nAnonymizeKETANAmount"))
-        settings.setValue("nAnonymizeKETANAmount", 1000);
+    if (!settings.contains("nAnonymizeKemaAmount"))
+        settings.setValue("nAnonymizeKemaAmount", 1000);
 
     nDarksendRounds = settings.value("nDarksendRounds").toLongLong();
-    nAnonymizeKETANAmount = settings.value("nAnonymizeKETANAmount").toLongLong();
+    nAnonymizeKemaAmount = settings.value("nAnonymizeKemaAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -147,8 +147,8 @@ void OptionsModel::Init()
 
     if (settings.contains("nDarksendRounds"))
         SoftSetArg("-Darksendrounds", settings.value("nDarksendRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeKETANAmount"))
-        SoftSetArg("-anonymizeketanamount", settings.value("nAnonymizeKETANAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeKemaAmount"))
+        SoftSetArg("-anonymizeKemaamount", settings.value("nAnonymizeKemaAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -159,7 +159,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in ketan.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in Kema.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -228,8 +228,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("nThreadsScriptVerif");
         case DarksendRounds:
             return QVariant(nDarksendRounds);
-        case AnonymizeKETANAmount:
-            return QVariant(nAnonymizeKETANAmount);
+        case AnonymizeKemaAmount:
+            return QVariant(nAnonymizeKemaAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -338,10 +338,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             settings.setValue("nDarksendRounds", nDarksendRounds);
             emit DarksendRoundsChanged(nDarksendRounds);
             break;
-        case AnonymizeKETANAmount:
-            nAnonymizeKETANAmount = value.toInt();
-            settings.setValue("nAnonymizeKETANAmount", nAnonymizeKETANAmount);
-            emit anonymizeKETANAmountChanged(nAnonymizeKETANAmount);
+        case AnonymizeKemaAmount:
+            nAnonymizeKemaAmount = value.toInt();
+            settings.setValue("nAnonymizeKemaAmount", nAnonymizeKemaAmount);
+            emit anonymizeKemaAmountChanged(nAnonymizeKemaAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

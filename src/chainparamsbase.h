@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between ketan-cli and ketand)
- * of a given instance of the KETAN system.
+ * CBaseChainParams defines the base parameters (shared between Kema-cli and Kemad)
+ * of a given instance of the Kema system.
  */
 class CBaseChainParams
 {

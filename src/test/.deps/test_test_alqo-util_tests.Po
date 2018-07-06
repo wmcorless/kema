@@ -1,5 +1,5 @@
-test/test_test_ketan-util_tests.o: test/util_tests.cpp \
- /usr/include/stdc-predef.h util.h config/ketan-config.h compat.h \
+test/test_test_Kema-util_tests.o: test/util_tests.cpp \
+ /usr/include/stdc-predef.h util.h config/Kema-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -898,7 +898,7 @@ test/test_test_ketan-util_tests.o: test/util_tests.cpp \
 
 util.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 compat.h:
 

@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Ketan developers
+// Copyright (c) 2018 The Kema developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -55,14 +55,14 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of(0, uint256("0x00000609b52cb4ddc2d5932df0bf013dced1ed671d49919a61da696f9d794098"));
+    boost::assign::map_list_of(0, uint256("0xd6c25af25100f081bb562a064b1c8dfe216ba6bdf0cf4b189f222e985bcb019b"));
 ;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1527855803, // * UNIX timestamp of last checkpoint block
+    1530737905, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    1200        // * estimated number of transactions per day after checkpoint
+    2000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -93,12 +93,12 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x64;
-        pchMessageStart[1] = 0x44;
-        pchMessageStart[2] = 0x15;
-        pchMessageStart[3] = 0x54;
-        vAlertPubKey = ParseHex("04266db20be5c53b93678e2e41c9def7af38197280c65e813f682adf2ed501ac186022562dbdf2ce3204d07432660fb61ecad8e78b6b8d39c568fb892db8ecb736");
-        nDefaultPort = 30012;
+        pchMessageStart[0] = 0x69;
+        pchMessageStart[1] = 0x7C;
+        pchMessageStart[2] = 0x24;
+        pchMessageStart[3] = 0x46;
+        vAlertPubKey = ParseHex("043b5de38bea9d9b3be3a03a43e7aecac0a4414027adc9fa4fab65d81f5f9af2ee7def561ed37a98ad2cec3c77ba6bca9de762a89ae3e7a7e133b9a8576ee41c66");
+        nDefaultPort = 70565;
         bnProofOfWorkLimit = ~uint256(0) >> 20;
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
@@ -109,36 +109,36 @@ public:
         nTargetTimespan = 1 * 60;
         nTargetSpacing = 1 * 60;
         nLastPOWBlock = 400;
-        nMaturity = 181;
+        nMaturity = 30;
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 5000; //Params().MasternodeColleteralLimxDev()
         nModifierUpdateBlock = 1; // we use the version 2 for dmd
         nMaxMoneyOut = 210000000 * COIN;
 
-        const char* pszTimestamp = "Ketan is alive";
+        const char* pszTimestamp = "U.S. News & World Report July 3 2018 Bitcoin Prices: Regulations Are Bullish!";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 0 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04e928b57880e492fdd2f0cdfd45b52b078a32a5282b4784202ac53b1299837e271f780192a8b014d33b51a6f8bbfc4cfaa3385829452bec7b77bf2f8f97520526") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04ef39b51b088fed07de5d31318ef2d1544854225851c9a7ccfb7a758b94f12b782f145b70375a9e42d5ddfc172ba07e6a8d53050e4877cf0bf981b2edd419bd3b") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1527855803;
+        genesis.nTime = 1530737905;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 21014061;
-		
+
         hashGenesisBlock = genesis.GetHash();
 	//printf("%s\n", hashGenesisBlock.ToString().c_str());
 	//printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0x00000609b52cb4ddc2d5932df0bf013dced1ed671d49919a61da696f9d794098"));
-        assert(genesis.hashMerkleRoot == uint256("0x3b66059fd09027fcd7f0585d07406cf14c227c28e15b4215aabda82bd3e92583"));
-        
+        assert(hashGenesisBlock == uint256("0x4d9115fe227382081190f0f11a1d62be76ae49df8840f2ce749d362ad4c4f079"));
+        assert(genesis.hashMerkleRoot == uint256("0x8ac33d7036c1f1d6270306c905ff97c6a3f3485e35ce01bfbbba929f51876e93"));
 
-        vSeeds.push_back(CDNSSeedData("seed1.ketan.biz", "seed1.ketan.biz"));
-        vSeeds.push_back(CDNSSeedData("seed2.ketan.biz", "seed2.ketan.biz"));
+
+        vSeeds.push_back(CDNSSeedData("www.Kema.io", "seed1.Kema.io"));
+
         //vFixedSeeds.clear();
         //vSeeds.clear();
 
@@ -165,8 +165,8 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "0478c3e932fbe183b2f665de937866cb1cfc5ed4b0bf733b72286f265ffc03ff52dfd669fbb3f77d630e5393da65c721a9a891d2c4c6aa515dfd25ffe545582357";
-        strDarksendPoolDummyAddress = "AcmpqXViWUXNroqVNYRdKjKrFM6PNa1oTM";
-        nStartMasternodePayments = 1527855803; 
+        strDarksendPoolDummyAddress = "KcmpqXViWUXNroqVNYRdKjKrFM6PNa1oTM";
+        nStartMasternodePayments = 1527855803;
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
@@ -186,12 +186,12 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x14;
-        pchMessageStart[1] = 0x64;
-        pchMessageStart[2] = 0x54;
-        pchMessageStart[3] = 0x65;
-        vAlertPubKey = ParseHex("0485286086a0871308bf36519edb18d95bbe9b098abe14ec9b684b5255028ec644bacdbddb98a522a6bcd7ab8e7d3582d7a5b9bf59c427f7eabce447b5ba6de25f");
-        nDefaultPort = 56123;
+        pchMessageStart[0] = 0x43;
+        pchMessageStart[1] = 0x76;
+        pchMessageStart[2] = 0x65;
+        pchMessageStart[3] = 0xba;
+        vAlertPubKey = ParseHex("042292b1f401860eea99e1a8a103effbd7e1c013a59a1a3a0c91c9d1997a0bc6f338567278c11344802838c107055bf7c1641eaed61e879245c255a4f5be5746fc");
+        nDefaultPort = 51434;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
@@ -201,15 +201,15 @@ public:
         nLastPOWBlock = 200;
         nMaturity = 15;
         nModifierUpdateBlock = 51197; //approx Mon, 30 Apr 2018 04:00:00 GMT
-        nMaxMoneyOut = 90000000 * COIN;
+        nMaxMoneyOut = 43199500  * COIN;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1527855804;
+        genesis.nTime = 1515616140;
         genesis.nNonce = 22310717;
 
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000008fa86caa2d9bf26a93df5e49fde3e0b2f134f501336e3d986b08262e103"));
+        assert(hashGenesisBlock == uint256("0x000007cff63ef602a51bf074e384b3516f0dd202f14d52f7c8c9b1af9423ab2e"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -217,11 +217,11 @@ public:
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 193);
-        // Testnet Ketan BIP32 pubkeys start with 'DRKV'
+        // Testnet Kema BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Ketan BIP32 prvkeys start with 'DRKP'
+        // Testnet Kema BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet Ketan BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet Kema BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -275,10 +275,10 @@ public:
         genesis.nTime = 1527855805;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 6;
-		
+
         hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 57123;
-        assert(hashGenesisBlock == uint256("0x2c0316b4b244c03d1e705f31ac51967e59a2b0827b78eaa344c0bd64cfa6bba5"));
+        nDefaultPort = 70568;
+        assert(hashGenesisBlock == uint256("0x000008415bdca132b70cf161ecc548e5d0150fd6634a381ee2e99bb8bb77dbb3"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
@@ -308,7 +308,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 56123;
+        nDefaultPort = 70567;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 

@@ -44,7 +44,7 @@ public:
         DatabaseCache,       // int
         SpendZeroConfChange, // bool
         DarksendRounds,   // int
-        AnonymizeKETANAmount, //int
+        AnonymizeKemaAmount, //int
         ShowMasternodesTab,  // bool
         Listen,              // bool
         OptionIDRowCount,
@@ -90,7 +90,7 @@ private:
 signals:
     void displayUnitChanged(int unit);
     void DarksendRoundsChanged(int);
-    void anonymizeKETANAmountChanged(int);
+    void anonymizeKemaAmountChanged(int);
     void coinControlFeaturesChanged(bool);
 };
 

@@ -1,4 +1,4 @@
-test/test_test_ketan-uint256_tests.o: test/uint256_tests.cpp \
+test/test_test_Kema-uint256_tests.o: test/uint256_tests.cpp \
  /usr/include/stdc-predef.h /usr/include/boost/test/unit_test.hpp \
  /usr/include/boost/test/test_tools.hpp \
  /usr/include/boost/test/predicate_result.hpp \

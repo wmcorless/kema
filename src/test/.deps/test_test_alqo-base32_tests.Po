@@ -1,4 +1,4 @@
-test/test_test_ketan-base32_tests.o: test/base32_tests.cpp \
+test/test_test_Kema-base32_tests.o: test/base32_tests.cpp \
  /usr/include/stdc-predef.h utilstrencodings.h allocators.h \
  /usr/include/c++/5/map /usr/include/c++/5/bits/stl_tree.h \
  /usr/include/c++/5/bits/stl_algobase.h \

@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/Kema_bg.qm</file>
+        <file alias="de">locale/Kema_de.qm</file>
+        <file alias="en">locale/Kema_en.qm</file>
+        <file alias="es">locale/Kema_es.qm</file>
+        <file alias="fi">locale/Kema_fi.qm</file>
+        <file alias="fr">locale/Kema_fr.qm</file>
+        <file alias="it">locale/Kema_it.qm</file>
+        <file alias="ja">locale/Kema_ja.qm</file>
+        <file alias="pl">locale/Kema_pl.qm</file>
+        <file alias="pt">locale/Kema_pt.qm</file>
+        <file alias="ru">locale/Kema_ru.qm</file>
+        <file alias="sk">locale/Kema_sk.qm</file>
+        <file alias="sv">locale/Kema_sv.qm</file>
+        <file alias="vi">locale/Kema_vi.qm</file>
+        <file alias="zh_CN">locale/Kema_zh_CN.qm</file>
+        <file alias="zh_TW">locale/Kema_zh_TW.qm</file>
+    </qresource>
+</RCC>

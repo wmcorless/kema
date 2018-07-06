@@ -1,4 +1,4 @@
-test/test_test_ketan-Checkpoints_tests.o: test/Checkpoints_tests.cpp \
+test/test_test_Kema-Checkpoints_tests.o: test/Checkpoints_tests.cpp \
  /usr/include/stdc-predef.h checkpoints.h uint256.h /usr/include/assert.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

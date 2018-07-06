@@ -1,4 +1,4 @@
-test/test_test_ketan-mruset_tests.o: test/mruset_tests.cpp \
+test/test_test_Kema-mruset_tests.o: test/mruset_tests.cpp \
  /usr/include/stdc-predef.h mruset.h /usr/include/c++/5/deque \
  /usr/include/c++/5/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
@@ -99,7 +99,7 @@ test/test_test_ketan-mruset_tests.o: test/mruset_tests.cpp \
  /usr/include/c++/5/bits/basic_string.tcc /usr/include/c++/5/vector \
  /usr/include/c++/5/bits/stl_vector.h \
  /usr/include/c++/5/bits/stl_bvector.h /usr/include/c++/5/bits/vector.tcc \
- util.h config/ketan-config.h compat.h /usr/include/arpa/inet.h \
+ util.h config/Kema-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -1018,7 +1018,7 @@ uint256.h:
 
 util.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 compat.h:
 

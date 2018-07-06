@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Ketan developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The Kema developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
@@ -34,7 +34,7 @@ class TxViewDelegate2 : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate2() : QAbstractItemDelegate(), unit(BitcoinUnits::KETAN)
+    TxViewDelegate2() : QAbstractItemDelegate(), unit(BitcoinUnits::Kema)
     {
     }
 
@@ -68,13 +68,13 @@ public:
         QRect boundingRect;
         painter->drawText(addressRect, Qt::AlignLeft | Qt::AlignVCenter, address, &boundingRect);
 
-		
+
         if (index.data(TransactionTableModel::WatchonlyRole).toBool()) {
             QIcon iconWatchonly = qvariant_cast<QIcon>(index.data(TransactionTableModel::WatchonlyDecorationRole));
             QRect watchonlyRect(boundingRect.right() + 5, mainRect.top() + ypad + halfheight, 16, halfheight);
             iconWatchonly.paint(painter, watchonlyRect);
         }
-		
+
 
         if (amount < 0) {
             foreground = COLOR_NEGATIVE;
@@ -177,7 +177,7 @@ void Coinmix::setBalance(const CAmount& balance, const CAmount& unconfirmedBalan
     currentWatchUnconfBalance = watchUnconfBalance;
     currentWatchImmatureBalance = watchImmatureBalance;
 
-/*	
+/*
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -189,7 +189,7 @@ void Coinmix::setBalance(const CAmount& balance, const CAmount& unconfirmedBalan
     ui->labelWatchPending->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, watchUnconfBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, watchImmatureBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, watchOnlyBalance + watchUnconfBalance + watchImmatureBalance, false, BitcoinUnits::separatorAlways));
- 
+
     // only show immature (newly mined) balance if it's non-zero, so as not to complicate things
     // for the non-mining users
     bool showImmature = immatureBalance != 0;
@@ -275,7 +275,7 @@ void Coinmix::setWalletModel(WalletModel* model)
         //connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("KETAN")
+    // update the display unit, to not use the default ("Kema")
     //updateDisplayUnit();
 }
 
@@ -284,7 +284,7 @@ void Coinmix::updateDisplayUnit()
 {
     if (walletModel && walletModel->getOptionsModel()) {
         nDisplayUnit = walletModel->getOptionsModel()->getDisplayUnit();
-        
+
 		if (currentBalance != -1)
             setBalance(currentBalance, currentUnconfirmedBalance, currentImmatureBalance, currentAnonymizedBalance,
                 currentWatchOnlyBalance, currentWatchUnconfBalance, currentWatchImmatureBalance);
@@ -293,7 +293,7 @@ void Coinmix::updateDisplayUnit()
         txdelegate->unit = nDisplayUnit;
 
         ui->listTransactions->update();
-		
+
     }
 }
 */
@@ -320,15 +320,15 @@ void Coinmix::updateDarksendProgress()
     if (!pwalletMain) return;
 
     QString strAmountAndRounds;
-    QString strAnonymizeKETANAmount = BitcoinUnits::formatHtmlWithUnit(nDisplayUnit, nAnonymizeKETANAmount * COIN, false, BitcoinUnits::separatorAlways);
+    QString strAnonymizeKemaAmount = BitcoinUnits::formatHtmlWithUnit(nDisplayUnit, nAnonymizeKemaAmount * COIN, false, BitcoinUnits::separatorAlways);
 
     if (currentBalance == 0) {
         ui->DarksendProgress->setValue(0);
         ui->DarksendProgress->setToolTip(tr("No inputs detected"));
 
         // when balance is zero just show info from settings
-        strAnonymizeKETANAmount = strAnonymizeKETANAmount.remove(strAnonymizeKETANAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
-        strAmountAndRounds = strAnonymizeKETANAmount + " / " + tr("%n Rounds", "", nDarksendRounds);
+        strAnonymizeKemaAmount = strAnonymizeKemaAmount.remove(strAnonymizeKemaAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
+        strAmountAndRounds = strAnonymizeKemaAmount + " / " + tr("%n Rounds", "", nDarksendRounds);
 
         ui->labelAmountRounds->setToolTip(tr("No inputs detected"));
         ui->labelAmountRounds->setText(strAmountAndRounds);
@@ -355,20 +355,20 @@ void Coinmix::updateDarksendProgress()
     CAmount nMaxToAnonymize = nAnonymizableBalance + currentAnonymizedBalance + nDenominatedUnconfirmedBalance;
 
     // If it's more than the anon threshold, limit to that.
-    if (nMaxToAnonymize > nAnonymizeKETANAmount * COIN) nMaxToAnonymize = nAnonymizeKETANAmount * COIN;
+    if (nMaxToAnonymize > nAnonymizeKemaAmount * COIN) nMaxToAnonymize = nAnonymizeKemaAmount * COIN;
 
     if (nMaxToAnonymize == 0) return;
 
-    if (nMaxToAnonymize >= nAnonymizeKETANAmount * COIN) {
+    if (nMaxToAnonymize >= nAnonymizeKemaAmount * COIN) {
         ui->labelAmountRounds->setToolTip(tr("Found enough compatible inputs to anonymize %1")
-                                              .arg(strAnonymizeKETANAmount));
-        strAnonymizeKETANAmount = strAnonymizeKETANAmount.remove(strAnonymizeKETANAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
-        strAmountAndRounds = strAnonymizeKETANAmount + " / " + tr("%n Rounds", "", nDarksendRounds);
+                                              .arg(strAnonymizeKemaAmount));
+        strAnonymizeKemaAmount = strAnonymizeKemaAmount.remove(strAnonymizeKemaAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
+        strAmountAndRounds = strAnonymizeKemaAmount + " / " + tr("%n Rounds", "", nDarksendRounds);
     } else {
         QString strMaxToAnonymize = BitcoinUnits::formatHtmlWithUnit(nDisplayUnit, nMaxToAnonymize, false, BitcoinUnits::separatorAlways);
         ui->labelAmountRounds->setToolTip(tr("Not enough compatible inputs to anonymize <span style='color:red;'>%1</span>,<br>"
                                              "will anonymize <span style='color:red;'>%2</span> instead")
-                                              .arg(strAnonymizeKETANAmount)
+                                              .arg(strAnonymizeKemaAmount)
                                               .arg(strMaxToAnonymize));
         strMaxToAnonymize = strMaxToAnonymize.remove(strMaxToAnonymize.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
         strAmountAndRounds = "<span style='color:red;'>" +
@@ -537,9 +537,9 @@ void Coinmix::toggleDarksend()
     } else {
         ui->toggleDarksend->setText(tr("Stop Darksend"));
 
-        //show Darksend configuration if client has defaults set 
+        //show Darksend configuration if client has defaults set
 
-        if (nAnonymizeKETANAmount == 0) {
+        if (nAnonymizeKemaAmount == 0) {
             DarksendConfig dlg(this);
             dlg.setModel(walletModel);
             dlg.exec();

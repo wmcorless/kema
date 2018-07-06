@@ -1,5 +1,5 @@
-qt/qt_ketan_qt-ketan.o: qt/ketan.cpp /usr/include/stdc-predef.h \
- config/ketan-config.h qt/bitcoingui.h amount.h serialize.h \
+qt/qt_Kema_qt-Kema.o: qt/Kema.cpp /usr/include/stdc-predef.h \
+ config/Kema-config.h qt/bitcoingui.h amount.h serialize.h \
  /usr/include/c++/5/algorithm /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
@@ -733,7 +733,7 @@ qt/qt_ketan_qt-ketan.o: qt/ketan.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmutex.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QThread \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h net.h bloom.h \
- compat.h config/ketan-config.h /usr/include/arpa/inet.h \
+ compat.h config/Kema-config.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -1993,11 +1993,11 @@ qt/qt_ketan_qt-ketan.o: qt/ketan.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTranslator \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qtranslator.h qt/ketan.moc
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtranslator.h qt/Kema.moc
 
 /usr/include/stdc-predef.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 qt/bitcoingui.h:
 
@@ -3661,7 +3661,7 @@ bloom.h:
 
 compat.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 /usr/include/arpa/inet.h:
 
@@ -6507,4 +6507,4 @@ util.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtranslator.h:
 
-qt/ketan.moc:
+qt/Kema.moc:

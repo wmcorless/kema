@@ -75,7 +75,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Use 2 separate masternodes to mix funds up to 10000 KETAN</string>
+    <string>Use 2 separate masternodes to mix funds up to 10000 Kema</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -88,7 +88,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Use 8 separate masternodes to mix funds up to 10000 KETAN</string>
+    <string>Use 8 separate masternodes to mix funds up to 10000 Kema</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -114,7 +114,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>This option is the quickest and will cost about ~0.025 KETAN to anonymize 10000 KETAN</string>
+    <string>This option is the quickest and will cost about ~0.025 Kema to anonymize 10000 Kema</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_7">
@@ -127,7 +127,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>This option is moderately fast and will cost about 0.05 KETAN to anonymize 10000 KETAN</string>
+    <string>This option is moderately fast and will cost about 0.05 Kema to anonymize 10000 Kema</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_8">
@@ -153,7 +153,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>0.1 KETAN per 10000 KETAN you anonymize.</string>
+    <string>0.1 Kema per 10000 Kema you anonymize.</string>
    </property>
   </widget>
   <widget class="Line" name="line">

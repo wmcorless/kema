@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>2.0.0, Copyright © 2009-2017 The Bitcoin Core developers, 2014-2017 The Dash and PIVX Core Developers, 2018 The Ketan Core developers</string>
+  <string>2.0.0, Copyright © 2009-2017 The Bitcoin Core developers, 2014-2017 The Dash and PIVX Core Developers, 2018 The Kema Coin developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>2.0.0</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Ketan-Qt</string>
+  <string>Kema-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.ketan.Ketan-Qt</string>
+  <string>io.Kema.Kema-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.ketan.KetanPayment</string>
+      <string>io.Kema.KemaPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>ketan</string>
+        <string>Kema</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.ketan.paymentrequest</string>
+      <string>io.Kema.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Ketan payment request</string>
+      <string>Kema payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-ketan-payment-request</string>
+        <string>application/x-Kema-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>ketanpaymentrequest</string>
+          <string>Kemapaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.ketan.paymentrequest</string>
+        <string>io.Kema.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

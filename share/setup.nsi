@@ -1,4 +1,4 @@
-Name "Ketan Core (-bit)"
+Name "Kema Coin (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,23 +6,23 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 2.0.0
-!define COMPANY "Ketan Core project"
-!define URL http://bit.ketans/
+!define COMPANY "Kema Coin project"
+!define URL http://bit.Kemas/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/root/KETAN/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/KETAN/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/root/Kema/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/Kema/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/root/KETAN/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/root/Kema/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Ketan Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\ketan-qt.exe
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Kema Coin"
+!define MUI_FINISHPAGE_RUN $INSTDIR\Kema-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/KETAN/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/Kema/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,18 +48,18 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /root/KETAN/ketan-${VERSION}-win-setup.exe
+OutFile /root/Kema/Kema-${VERSION}-win-setup.exe
 !if "" == "64"
-InstallDir $PROGRAMFILES64\KETAN
+InstallDir $PROGRAMFILES64\Kema
 !else
-InstallDir $PROGRAMFILES\KETAN
+InstallDir $PROGRAMFILES\Kema
 !endif
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion ${VERSION}.3
-VIAddVersionKey ProductName "Ketan Core"
+VIAddVersionKey ProductName "Kema Coin"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -73,19 +73,19 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /root/KETAN/release/ketan-qt.exe
-    File /oname=COPYING.txt /root/KETAN/COPYING
-    File /oname=readme.txt /root/KETAN/doc/README_windows.txt
+    File /root/Kema/release/Kema-qt.exe
+    File /oname=COPYING.txt /root/Kema/COPYING
+    File /oname=readme.txt /root/Kema/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /root/KETAN/release/ketand.exe
-    File /root/KETAN/release/ketan-cli.exe
+    File /root/Kema/release/Kemad.exe
+    File /root/Kema/release/Kema-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /root/KETAN/doc\*.*
+    File /r /root/Kema/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
-    # Remove old wxwidgets-based-ketan executable and locales:
-    Delete /REBOOTOK $INSTDIR\ketan.exe
+    # Remove old wxwidgets-based-Kema executable and locales:
+    Delete /REBOOTOK $INSTDIR\Kema.exe
     RMDir /r /REBOOTOK $INSTDIR\locale
 SectionEnd
 
@@ -95,7 +95,7 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\ketan-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\Kema-qt.exe
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -106,10 +106,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "ketan" "URL Protocol" ""
-    WriteRegStr HKCR "ketan" "" "URL:KETAN"
-    WriteRegStr HKCR "ketan\DefaultIcon" "" $INSTDIR\ketan-qt.exe
-    WriteRegStr HKCR "ketan\shell\open\command" "" '"$INSTDIR\ketan-qt.exe" "%1"'
+    WriteRegStr HKCR "Kema" "URL Protocol" ""
+    WriteRegStr HKCR "Kema" "" "URL:Kema"
+    WriteRegStr HKCR "Kema\DefaultIcon" "" $INSTDIR\Kema-qt.exe
+    WriteRegStr HKCR "Kema\shell\open\command" "" '"$INSTDIR\Kema-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -127,7 +127,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\ketan-qt.exe
+    Delete /REBOOTOK $INSTDIR\Kema-qt.exe
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -139,7 +139,7 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\KETAN.lnk"
+    Delete /REBOOTOK "$SMSTARTUP\Kema.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -147,7 +147,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "ketan"
+    DeleteRegKey HKCR "Kema"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

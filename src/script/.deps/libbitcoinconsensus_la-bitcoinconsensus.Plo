@@ -1,6 +1,6 @@
 script/libbitcoinconsensus_la-bitcoinconsensus.lo: \
  script/bitcoinconsensus.cpp /usr/include/stdc-predef.h \
- script/bitcoinconsensus.h config/ketan-config.h primitives/transaction.h \
+ script/bitcoinconsensus.h config/Kema-config.h primitives/transaction.h \
  amount.h serialize.h /usr/include/c++/5/algorithm \
  /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
@@ -221,7 +221,7 @@ script/libbitcoinconsensus_la-bitcoinconsensus.lo: \
 
 script/bitcoinconsensus.h:
 
-config/ketan-config.h:
+config/Kema-config.h:
 
 primitives/transaction.h:
 

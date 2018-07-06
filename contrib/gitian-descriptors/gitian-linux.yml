@@ -1,11 +1,11 @@
 ---
-name: "ketan-linux-2.3"
+name: "Kema-linux-2.3"
 enable_cache: true
 suites:
 - "trusty"
 architectures:
 - "amd64"
-packages: 
+packages:
 - "curl"
 - "g++-aarch64-linux-gnu"
 - "g++-4.8-aarch64-linux-gnu"
@@ -29,8 +29,8 @@ packages:
 - "python"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/ketan/ketan.git"
-  "dir": "ketan"
+- "url": "https://github.com/Kema/Kema.git"
+  "dir": "Kema"
 files: []
 script: |
 
@@ -114,7 +114,7 @@ script: |
   chmod +x ${WRAP_DIR}/${prog}
   done
 
-  cd ketan
+  cd Kema
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
@@ -136,13 +136,13 @@ script: |
   ./autogen.sh
   CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/
   make dist
-  SOURCEDIST=`echo ketan-*.tar.gz`
+  SOURCEDIST=`echo Kema-*.tar.gz`
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
   # Correct tar file order
   mkdir -p temp
   pushd temp
   tar xf ../$SOURCEDIST
-  find ketan-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
+  find Kema-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
   popd
 
   ORIGPATH="$PATH"

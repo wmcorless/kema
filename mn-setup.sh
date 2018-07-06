@@ -1,17 +1,17 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='ketan.conf'
-CONFIGFOLDER='/root/.ketan'
-COIN_DAEMON='ketand'
-COIN_CLI='ketan-cli'
+CONFIG_FILE='Kema.conf'
+CONFIGFOLDER='/root/.Kema'
+COIN_DAEMON='Kemad'
+COIN_CLI='Kema-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_REPO='https://github.com/KetanTeam/Ketan.git'
-COIN_TGZ='https://github.com/KetanTeam/Ketan/releases/download/v1.0.0.1/Ketan-linux-binaries.tgz'
+COIN_REPO='https://github.com/KemaTeam/Kema.git'
+COIN_TGZ='https://github.com/KemaTeam/Kema/releases/download/v1.0.0.1/Kema-linux-binaries.tgz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='Ketan'
-COIN_PORT=30012
-RPC_PORT=30013
+COIN_NAME='Kema'
+COIN_PORT=70565
+RPC_PORT=70566
 
 NODEIP=$(curl -s4 icanhazip.com)
 
@@ -26,7 +26,7 @@ function compile_node() {
   git clone $COIN_REPO $TMP_FOLDER >/dev/null 2>&1
   compile_error
   cd $TMP_FOLDER
-  chmod +x ./autogen.sh 
+  chmod +x ./autogen.sh
   chmod +x ./share/genbuild.sh
   chmod +x ./src/leveldb/build_detect_platform
   ./autogen.sh

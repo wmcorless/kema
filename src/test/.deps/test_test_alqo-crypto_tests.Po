@@ -1,4 +1,4 @@
-test/test_test_ketan-crypto_tests.o: test/crypto_tests.cpp \
+test/test_test_Kema-crypto_tests.o: test/crypto_tests.cpp \
  /usr/include/stdc-predef.h crypto/rfc6979_hmac_sha256.h \
  crypto/hmac_sha256.h crypto/sha256.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
