@@ -1,25 +1,25 @@
-# /etc/conf.d/Kemad: config file for /etc/init.d/Kemad
+# /etc/conf.d/kemad: config file for /etc/init.d/kemad
 
 # Config file location
 #BITCOIND_CONFIGFILE="/etc/Kema/Kema.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/Kemad"
+#BITCOIND_PIDDIR="/var/run/kemad"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/Kemad.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/kemad.pid"
 
-# Where to write Kemad data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/Kemad"
+# Where to write kemad data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/kemad"
 
-# User and group to own Kemad process
+# User and group to own kemad process
 #BITCOIND_USER="Kema"
 #BITCOIND_GROUP="Kema"
 
-# Path to Kemad executable
-#BITCOIND_BIN="/usr/bin/Kemad"
+# Path to kemad executable
+#BITCOIND_BIN="/usr/bin/kemad"
 
-# Nice value to run Kemad under
+# Nice value to run kemad under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

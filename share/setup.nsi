@@ -77,7 +77,7 @@ Section -Main SEC0000
     File /oname=COPYING.txt /root/Kema/COPYING
     File /oname=readme.txt /root/Kema/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /root/Kema/release/Kemad.exe
+    File /root/Kema/release/kemad.exe
     File /root/Kema/release/Kema-cli.exe
     SetOutPath $INSTDIR\doc
     File /r /root/Kema/doc\*.*

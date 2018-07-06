@@ -1,8 +1,8 @@
 
 Debian
 ====================
-This directory contains files used to package Kemad/Kema-qt
-for Debian-based Linux systems. If you compile Kemad/Kema-qt yourself, there are some useful files here.
+This directory contains files used to package kemad/Kema-qt
+for Debian-based Linux systems. If you compile kemad/Kema-qt yourself, there are some useful files here.
 
 ## Kema: URI support ##
 

@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between Kema-cli and Kemad)
+ * CBaseChainParams defines the base parameters (shared between Kema-cli and kemad)
  * of a given instance of the Kema system.
  */
 class CBaseChainParams

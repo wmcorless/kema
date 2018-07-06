@@ -361,7 +361,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-Kemad_LDADD = \
+kemad_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -372,22 +372,22 @@ Kemad_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-Kemad_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+kemad_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-Kemad_LDADD += libbitcoin_wallet.a
+kemad_LDADD += libbitcoin_wallet.a
 endif
-Kemad_SOURCES = kemad.cpp
+kemad_SOURCES = kemad.cpp
 #
 
 if TARGET_WINDOWS
-Kemad_SOURCES += kemad-res.rc
+kemad_SOURCES += kemad-res.rc
 endif
 
-Kemad_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-Kemad_CPPFLAGS = $(BITCOIN_INCLUDES)
-Kemad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+kemad_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+kemad_CPPFLAGS = $(BITCOIN_INCLUDES)
+kemad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
 # Kema-cli binary #

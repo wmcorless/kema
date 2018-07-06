@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: Kemad.service
-Upstart: Kemad.conf
-OpenRC:  Kemad.openrc
-         Kemad.openrcconf
-CentOS:  Kemad.init
+SystemD: kemad.service
+Upstart: kemad.conf
+OpenRC:  kemad.openrc
+         kemad.openrcconf
+CentOS:  kemad.init
 
 have been made available to assist packagers in creating node packages here.
 

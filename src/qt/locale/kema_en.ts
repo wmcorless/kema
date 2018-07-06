@@ -5243,7 +5243,7 @@ https://www.transifex.com/Kema-project/Kema-project-translations</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>To use Kemad, or the -server option to Kema-qt, you must set an rpcpassword in the configuration file:
+        <source>To use kemad, or the -server option to Kema-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=Kemarpc

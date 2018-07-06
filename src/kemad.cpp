@@ -76,7 +76,7 @@ bool AppInit(int argc, char* argv[])
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  Kemad [options]                     " + _("Start Kema Coin Daemon") + "\n";
+                        "  kemad [options]                     " + _("Start Kema Coin Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -116,7 +116,7 @@ bool AppInit(int argc, char* argv[])
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in Kemad anymore. Use the Kema-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in kemad anymore. Use the Kema-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
@@ -175,7 +175,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect Kemad signal handlers
+    // Connect kemad signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

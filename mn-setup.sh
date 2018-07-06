@@ -3,7 +3,7 @@
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='Kema.conf'
 CONFIGFOLDER='/root/.Kema'
-COIN_DAEMON='Kemad'
+COIN_DAEMON='kemad'
 COIN_CLI='Kema-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/KemaTeam/Kema.git'

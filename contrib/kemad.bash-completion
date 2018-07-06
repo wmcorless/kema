@@ -1,11 +1,11 @@
-# bash programmable completion for Kemad(1) and Kema-cli(1)
+# bash programmable completion for kemad(1) and Kema-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have Kemad && {
+have kemad && {
 
-# call $Kemad for RPC
+# call $kemad for RPC
 _Kema_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
@@ -16,7 +16,7 @@ _Kema_rpc() {
                 ;;
         esac
     done
-    $Kemad "${rpcargs[@]}" "$@"
+    $kemad "${rpcargs[@]}" "$@"
 }
 
 # Add Kema accounts to COMPREPLY
@@ -26,13 +26,13 @@ _Kema_accounts() {
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_Kemad() {
+_kemad() {
     local cur prev words=() cword
-    local Kemad
+    local kemad
 
-    # save and use original argument to invoke Kemad
-    # Kemad might not be in $PATH
-    Kemad="$1"
+    # save and use original argument to invoke kemad
+    # kemad might not be in $PATH
+    kemad="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -114,7 +114,7 @@ _Kemad() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($Kemad --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($kemad --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
@@ -133,7 +133,7 @@ _Kemad() {
     esac
 }
 
-complete -F _Kemad Kemad Kema-cli
+complete -F _kemad kemad Kema-cli
 }
 
 # Local variables:
