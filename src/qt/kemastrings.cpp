@@ -205,10 +205,10 @@ static const char UNUSED* kema_strings[] = {
     QT_TRANSLATE_NOOP("kema-core", ""
                                    "You must specify a masternodeprivkey in the configuration. Please see "
                                    "documentation for help."),
-    QT_TRANSLATE_NOOP("kema-core", "(70565 could be used only on mainnet)"),
+    QT_TRANSLATE_NOOP("kema-core", "(65075 could be used only on mainnet)"),
     QT_TRANSLATE_NOOP("kema-core", "(default: %s)"),
     QT_TRANSLATE_NOOP("kema-core", "(default: 1)"),
-    QT_TRANSLATE_NOOP("kema-core", "(must be 70565 for mainnet)"),
+    QT_TRANSLATE_NOOP("kema-core", "(must be 65075 for mainnet)"),
     QT_TRANSLATE_NOOP("kema-core", "<category> can be:\n"),
     QT_TRANSLATE_NOOP("kema-core", "Accept command line and JSON-RPC commands"),
     QT_TRANSLATE_NOOP("kema-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

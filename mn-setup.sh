@@ -10,8 +10,8 @@ COIN_REPO='https://github.com/wmcorless/Ketan-kema.git'
 COIN_TGZ='https://github.com/wmcorless/Ketan-kema/releases/download/v1.0.0.1/kema-linux-binaries.tgz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='kema'
-COIN_PORT=70565
-RPC_PORT=70566
+COIN_PORT=65075
+RPC_PORT=65076
 
 NODEIP=$(curl -s4 icanhazip.com)
 

@@ -3757,8 +3757,8 @@ zum Beispiel: alertnotify=echo %%s | mail -s \"kema Alert\" admin@foo.com</trans
         <translation>Erlaubte Gegenstellen können nicht wegen DoS ausgeschlossen werden und ihre Transaktionen werden immer weitergeleitet, sogar wenn sie schon im Memory-Pool sind. Dies ist z.B. für Gateways nützlich.</translation>
     </message>
     <message>
-        <source>(70565 could be used only on mainnet)</source>
-        <translation>(70565 kann nur im Standardnetz benutzt werden)</translation>
+        <source>(65075 could be used only on mainnet)</source>
+        <translation>(65075 kann nur im Standardnetz benutzt werden)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4176,8 +4176,8 @@ kema Coin wird heruntergefahren.</translation>
         <translation>Masternode-Geheimschlüssel (masternodeprivkey) ist ungültig. Siehe Dokumentation. </translation>
     </message>
     <message>
-        <source>(must be70565 for mainnet)</source>
-        <translation>(muss für Standardnetz70565 sein)</translation>
+        <source>(must be65075 for mainnet)</source>
+        <translation>(muss für Standardnetz65075 sein)</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>

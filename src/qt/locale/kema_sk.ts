@@ -3757,8 +3757,8 @@ napríklad: alertnotify=echo %%s | mail -s "kema Upozornenie" admin@foo.com
         <translation>Uzle na zoznam povolených nemôžu byť DoS zakázané a ich transakcie vždy postúpené ďalej, aj v prípade, ak sú už pamäťovej fronte. Užitočné napr. pre brány</translation>
     </message>
     <message>
-        <source>(70565 could be used only on mainnet)</source>
-        <translation>(70565 nemôže byť použité pre hlavnú sieť)</translation>
+        <source>(65075 could be used only on mainnet)</source>
+        <translation>(65075 nemôže byť použité pre hlavnú sieť)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4175,7 +4175,7 @@ napríklad: alertnotify=echo %%s | mail -s "kema Upozornenie" admin@foo.com
         <translation>Neplatný masternodeprivkey. Prosím pozrite do dokumentácie.</translation>
     </message>
     <message>
-        <source>(must be70565 for mainnet)</source>
+        <source>(must be65075 for mainnet)</source>
         <translation>(pre hlavnú sieť musí byť 9999)</translation>
     </message>
     <message>

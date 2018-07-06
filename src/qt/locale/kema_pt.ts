@@ -3654,8 +3654,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>Aviso: Por favor verifique que a data e a hora do computador está correcta! Se o relógio estiver errado o kema Coin não vai funcionar correctamente.</translation>
     </message>
     <message>
-        <source>(70565 could be used only on mainnet)</source>
-        <translation>(70565 apenas pode ser usado para mainnet)</translation>
+        <source>(65075 could be used only on mainnet)</source>
+        <translation>(65075 apenas pode ser usado para mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4064,8 +4064,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>masternodeprivkey inválida. Por favor reveja a documentação.</translation>
     </message>
     <message>
-        <source>(must be70565 for mainnet)</source>
-        <translation>(deve ser70565 para mainnet)</translation>
+        <source>(must be65075 for mainnet)</source>
+        <translation>(deve ser65075 para mainnet)</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>
