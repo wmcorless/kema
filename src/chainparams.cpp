@@ -128,11 +128,11 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1530845256;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = ;
+        genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
 	//printf("%s\n", hashGenesisBlock.ToString().c_str());
-	//printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
+	printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
 	printf("%s\n", genesis.nNonce.ToString().c_str());
 
         assert(hashGenesisBlock == uint256("")); //0xc174f9c443624af18b5052dfea707b54b72d9dd5b048ad68b4b193512f03b610
