@@ -131,10 +131,10 @@ public:
         genesis.nNonce = 21014061;
 
         hashGenesisBlock = genesis.GetHash();
-	printf("%s\n", hashGenesisBlock.ToString().c_str());
-	printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0x4d9115fe227382081190f0f11a1d62be76ae49df8840f2ce749d362ad4c4f079"));
-        assert(genesis.hashMerkleRoot == uint256("0x8ac33d7036c1f1d6270306c905ff97c6a3f3485e35ce01bfbbba929f51876e93"));
+	//printf("%s\n", hashGenesisBlock.ToString().c_str());
+	//printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
+        assert(hashGenesisBlock == uint256("0xc174f9c443624af18b5052dfea707b54b72d9dd5b048ad68b4b193512f03b610"));
+        assert(genesis.hashMerkleRoot == uint256("0xfbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6"));
 
 
         vSeeds.push_back(CDNSSeedData("www.Kema.io", "seed1.Kema.io"));
