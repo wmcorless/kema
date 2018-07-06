@@ -1,8 +1,8 @@
 /* src/config/kema-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef Kema_CONFIG_H
+#ifndef kema_CONFIG_H
 
-#define Kema_CONFIG_H
+#define kema_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 #undef AC_APPLE_UNIVERSAL_BUILD
@@ -345,4 +345,4 @@
 /* Define for large files, on AIX-style hosts. */
 #undef _LARGE_FILES
 
-#endif //Kema_CONFIG_H
+#endif //kema_CONFIG_H

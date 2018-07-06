@@ -40,9 +40,9 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
 COVERAGE_INFO = baseline_filtered_combined.info baseline.info block_test.info \
-  leveldb_baseline.info test_Kema_filtered.info total_coverage.info \
+  leveldb_baseline.info test_kema_filtered.info total_coverage.info \
   baseline_filtered.info block_test_filtered.info \
-  leveldb_baseline_filtered.info test_Kema_coverage.info test_Kema.info
+  leveldb_baseline_filtered.info test_kema_coverage.info test_kema.info
 
 dist-hook:
 	-$(MAKE) -C $(top_distdir)/src/leveldb clean
@@ -174,16 +174,16 @@ leveldb_baseline_filtered.info: leveldb_baseline.info
 baseline_filtered_combined.info: leveldb_baseline_filtered.info baseline_filtered.info
 	$(LCOV) -a leveldb_baseline_filtered.info -a baseline_filtered.info -o $@
 
-test_Kema.info: baseline_filtered_combined.info
+test_kema.info: baseline_filtered_combined.info
 	$(MAKE) -C src/ check
-	$(LCOV) -c -d $(abs_builddir)/src -t test_Kema -o $@
+	$(LCOV) -c -d $(abs_builddir)/src -t test_kema -o $@
 	$(LCOV) -z -d $(abs_builddir)/src
 	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 
-test_Kema_filtered.info: test_Kema.info
+test_kema_filtered.info: test_kema.info
 	$(LCOV) -r $< "/usr/include/*" -o $@
 
-block_test.info: test_Kema_filtered.info
+block_test.info: test_kema_filtered.info
 	$(MKDIR_P) qa/tmp
 	-@TIMEOUT=15 qa/pull-tester/run-bitcoind-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool 0
 	$(LCOV) -c -d $(abs_builddir)/src --t BitcoinJBlockTest -o $@
@@ -193,13 +193,13 @@ block_test.info: test_Kema_filtered.info
 block_test_filtered.info: block_test.info
 	$(LCOV) -r $< "/usr/include/*" -o $@
 
-test_Kema_coverage.info: baseline_filtered_combined.info test_Kema_filtered.info
-	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_Kema_filtered.info -o $@
+test_kema_coverage.info: baseline_filtered_combined.info test_kema_filtered.info
+	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_kema_filtered.info -o $@
 
-total_coverage.info:  baseline_filtered_combined.info test_Kema_filtered.info block_test_filtered.info
-	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_Kema_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+total_coverage.info:  baseline_filtered_combined.info test_kema_filtered.info block_test_filtered.info
+	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_kema_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
-test_kema.coverage/.dirstamp:  test_Kema_coverage.info
+test_kema.coverage/.dirstamp:  test_kema_coverage.info
 	$(GENHTML) -s $< -o $(@D)
 	@touch $@
 
@@ -211,7 +211,7 @@ cov: test_kema.coverage/.dirstamp total.coverage/.dirstamp
 
 endif
 
-# Kema: disable the outdated comparison tool test
+# kema: disable the outdated comparison tool test
 # Ref https://github.com/bitcoin/bitcoin/issues/4545
 if USE_COMPARISON_TOOL
 check-local:

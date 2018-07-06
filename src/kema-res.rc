@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Kema"
-            VALUE "FileDescription",    "kemad (OSS daemon/client for Kema)"
+            VALUE "CompanyName",        "kema"
+            VALUE "FileDescription",    "kemad (OSS daemon/client for kema)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "kemad"
             VALUE "LegalCopyright",     COPYRIGHT_STR

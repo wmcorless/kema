@@ -10,7 +10,7 @@ import operator
 import os
 import sys
 
-OUT_CPP="qt/Kemastrings.cpp"
+OUT_CPP="qt/kemastrings.cpp"
 EMPTY=['""']
 
 def parse_po(text):
@@ -74,7 +74,7 @@ f.write("""
 #define UNUSED
 #endif
 """)
-f.write('static const char UNUSED *Kema_strings[] = {\n')
+f.write('static const char UNUSED *kema_strings[] = {\n')
 messages.sort(key=operator.itemgetter(0))
 for (msgid, msgstr) in messages:
     if msgid != EMPTY:

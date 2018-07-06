@@ -1,11 +1,11 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Kema
-Comment=Kema P2P Cryptocurrency
+Name=kema
+Comment=kema P2P Cryptocurrency
 Exec=kema-qt %u
 Terminal=false
 Type=Application
-Icon=Kema128
-MimeType=x-scheme-handler/Kema;
+Icon=kema128
+MimeType=x-scheme-handler/kema;
 Categories=Office;Finance;
 Name[en_US]=kema-qt.desktop

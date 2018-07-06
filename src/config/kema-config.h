@@ -1,9 +1,9 @@
 /* src/config/kema-config.h.  Generated from kema-config.h.in by configure.  */
 /* src/config/kema-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef Kema_CONFIG_H
+#ifndef kema_CONFIG_H
 
-#define Kema_CONFIG_H
+#define kema_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -274,16 +274,16 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "https://Kema.org"
+#define PACKAGE_BUGREPORT "https://kema.org"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Kema Coin"
+#define PACKAGE_NAME "kema Coin"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Kema Coin 2.0.0"
+#define PACKAGE_STRING "kema Coin 2.0.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "Kema"
+#define PACKAGE_TARNAME "kema"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
@@ -346,4 +346,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //Kema_CONFIG_H
+#endif //kema_CONFIG_H

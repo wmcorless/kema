@@ -62,11 +62,11 @@
         <translation>正在接收地址</translation>
     </message>
     <message>
-        <source>These are your Kema addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your kema addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>这些是你要付款过去的达世币地址。在付款之前，务必要检查金额和收款地址是否正确。</translation>
     </message>
     <message>
-        <source>These are your Kema addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your kema addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>这些是你用来收款的达世币地址。建议在每次交易时，都使用一个新的收款地址。</translation>
     </message>
     <message>
@@ -188,7 +188,7 @@
         <translation>钱包已加密</translation>
     </message>
     <message>
-        <source>Kema will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Kemas from being stolen by malware infecting your computer.</source>
+        <source>kema will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your kemas from being stolen by malware infecting your computer.</source>
         <translation>达世币软体现在要关闭，以完成加密过程。请注意，加密钱包不能完全防止恶意软件入侵你的电脑盗取你的达世币。</translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Kema Coin</source>
+        <source>kema Coin</source>
         <translation>达世币核心</translation>
     </message>
     <message>
@@ -255,7 +255,7 @@
         <translation>发送(&amp;S)</translation>
     </message>
     <message>
-        <source>Send coins to a Kema address</source>
+        <source>Send coins to a kema address</source>
         <translation>发送币至达世币地址</translation>
     </message>
     <message>
@@ -263,7 +263,7 @@
         <translation>接收(&amp;R)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Kema: URIs)</source>
+        <source>Request payments (generates QR codes and kema: URIs)</source>
         <translation>请求付款(生成二维码和达世币付款协议的URI)</translation>
     </message>
     <message>
@@ -283,11 +283,11 @@
         <translation>退出程序</translation>
     </message>
     <message>
-        <source>&amp;About Kema Coin</source>
+        <source>&amp;About kema Coin</source>
         <translation>&amp;关于达世币核心</translation>
     </message>
     <message>
-        <source>Show information about Kema Coin</source>
+        <source>Show information about kema Coin</source>
         <translation>显示关于达世币核心信息</translation>
     </message>
     <message>
@@ -303,7 +303,7 @@
         <translation>选项(&amp;O)...</translation>
     </message>
     <message>
-        <source>Modify configuration options for Kema</source>
+        <source>Modify configuration options for kema</source>
         <translation>修改达世币配置选项</translation>
     </message>
     <message>
@@ -355,7 +355,7 @@
         <translation>消息签名(&amp;M)...</translation>
     </message>
     <message>
-        <source>Sign messages with your Kema addresses to prove you own them</source>
+        <source>Sign messages with your kema addresses to prove you own them</source>
         <translation>用达世币地址签署讯息来证明地址是你的</translation>
     </message>
     <message>
@@ -363,7 +363,7 @@
         <translation>验证消息(&amp;V)...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Kema addresses</source>
+        <source>Verify messages to ensure they were signed with specified kema addresses</source>
         <translation>验证讯息是用来确定讯息是用指定的达世币地址签署的</translation>
     </message>
     <message>
@@ -443,7 +443,7 @@
         <translation>打开 &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a Kema: URI or payment request</source>
+        <source>Open a kema: URI or payment request</source>
         <translation>打开达世币：网页或付款请求</translation>
     </message>
     <message>
@@ -451,7 +451,7 @@
         <translation>&amp;命令行 选项</translation>
     </message>
     <message>
-        <source>Kema Coin client</source>
+        <source>kema Coin client</source>
         <translation>达世币核心客户端</translation>
     </message>
     <message numerus="yes">
@@ -463,7 +463,7 @@
         <translation>正在同步附加数据:%p%</translation>
     </message>
     <message>
-        <source>Show the Kema Coin help message to get a list with possible Kema command-line options</source>
+        <source>Show the kema Coin help message to get a list with possible kema command-line options</source>
         <translation>打开达世币核心帮助信息取得可使用的命令行列表</translation>
     </message>
     <message>
@@ -487,7 +487,7 @@
         <translation>分页工具栏</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Kema network</source>
+        <source>%n active connection(s) to kema network</source>
         <translation><numerusform>%n 已连接至达世币网络</numerusform></translation>
     </message>
     <message>
@@ -896,15 +896,15 @@ Address: %4
         <translation>匿名发送配置</translation>
     </message>
     <message>
-        <source>Obfuscate was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Kema's configuration screen.</source>
+        <source>Obfuscate was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening kema's configuration screen.</source>
         <translation>匿名发送已成功设置为一般(%1到2次循环)。可以通过打开达世币配置窗口来随时修改。</translation>
     </message>
     <message>
-        <source>Obfuscate was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Kema's configuration screen.</source>
+        <source>Obfuscate was successfully set to high (%1 and 8 rounds). You can change this at any time by opening kema's configuration screen.</source>
         <translation>匿名发送已成功设置为高(%1到8次循环)。可以通过打开达世币配置窗口来随时修改。</translation>
     </message>
     <message>
-        <source>Obfuscate was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Kema's configuration screen.</source>
+        <source>Obfuscate was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening kema's configuration screen.</source>
         <translation>匿名发送已成功设置为最高(%1到16次循环)。可以通过打开达世币配置窗口来随时修改。</translation>
     </message>
 </context>
@@ -947,7 +947,7 @@ Address: %4
         <translation>编辑发送地址</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Kema address.</source>
+        <source>The entered address "%1" is not a valid kema address.</source>
         <translation>输入的地址"%1"不是有效的达世币地址。</translation>
     </message>
     <message>
@@ -989,7 +989,7 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Kema Coin</source>
+        <source>kema Coin</source>
         <translation>达世币核心</translation>
     </message>
     <message>
@@ -1001,7 +1001,7 @@ Address: %4
         <translation>(%1 位)</translation>
     </message>
     <message>
-        <source>About Kema Coin</source>
+        <source>About kema Coin</source>
         <translation>关于 达世币核心</translation>
     </message>
     <message>
@@ -1049,15 +1049,15 @@ Address: %4
         <translation>欢迎</translation>
     </message>
     <message>
-        <source>Welcome to Kema Coin.</source>
+        <source>Welcome to kema Coin.</source>
         <translation>欢迎来到达世币核心。</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Kema Coin will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where kema Coin will store its data.</source>
         <translation>此次为第一次程序启动，你可以选择储存达世币核心数据的路径。</translation>
     </message>
     <message>
-        <source>Kema Coin will download and store a copy of the Kema block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>kema Coin will download and store a copy of the kema block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>达世币核心将会下载并存储达世币数据链。至少有%1GB的数据会保存到此路径下，并且随着时间增长。钱包文件也将存储到此路径下。</translation>
     </message>
     <message>
@@ -1069,7 +1069,7 @@ Address: %4
         <translation>使用自定义的数据目录：</translation>
     </message>
     <message>
-        <source>Kema Coin</source>
+        <source>kema Coin</source>
         <translation>达世币核心</translation>
     </message>
     <message>
@@ -1123,11 +1123,11 @@ Address: %4
         <translation>主要(&amp;M)</translation>
     </message>
     <message>
-        <source>Automatically start Kema after logging in to the system.</source>
+        <source>Automatically start kema after logging in to the system.</source>
         <translation>登录系统后自动启动达世币程序</translation>
     </message>
     <message>
-        <source>&amp;Start Kema on system login</source>
+        <source>&amp;Start kema on system login</source>
         <translation>&amp;系统登录时启动达世币程序</translation>
     </message>
     <message>
@@ -1155,7 +1155,7 @@ Address: %4
         <translation>此金额为关闭匿名发送的极限.</translation>
     </message>
     <message>
-        <source>Amount of Kema to keep anonymized</source>
+        <source>Amount of kema to keep anonymized</source>
         <translation>保持匿名化的达世币数</translation>
     </message>
     <message>
@@ -1175,7 +1175,7 @@ Address: %4
         <translation>接受外来链接</translation>
     </message>
     <message>
-        <source>Connect to the Kema network through a SOCKS5 proxy.</source>
+        <source>Connect to the kema network through a SOCKS5 proxy.</source>
         <translation>通过SOCKS5代理链接达世币网络。</translation>
     </message>
     <message>
@@ -1207,7 +1207,7 @@ Address: %4
         <translation>网络(&amp;N)</translation>
     </message>
     <message>
-        <source>Automatically open the Kema client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the kema client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自动对路由器打开达世币客户端端口。此项只在路由器支持UPnP时有效。</translation>
     </message>
     <message>
@@ -1259,7 +1259,7 @@ Address: %4
         <translation>用户界面语言(&amp;L)：</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Kema.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting kema.</source>
         <translation>用户界面语言在这里设置。在重启达世币程序后生效。</translation>
     </message>
     <message>
@@ -1348,7 +1348,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>表单</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Kema network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the kema network after a connection is established, but this process has not completed yet.</source>
         <translation>显示信息也许已过期。当与达世币网络连接后钱包程序会自动同步，但现在还未完成。</translation>
     </message>
     <message>
@@ -1561,7 +1561,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>支付请求出错</translation>
     </message>
     <message>
-        <source>Cannot start Kema: click-to-pay handler</source>
+        <source>Cannot start kema: click-to-pay handler</source>
         <translation>无法启动达世币程序：click-to-pay handler</translation>
     </message>
     <message>
@@ -1581,7 +1581,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>无效的付款地址 %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Kema address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid kema address or malformed URI parameters.</source>
         <translation>链接不能被解析! 原因可能是无效的达世币地址或输入的链接有错。</translation>
     </message>
     <message>
@@ -1667,7 +1667,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>金额</translation>
     </message>
     <message>
-        <source>Enter a Kema address (e.g. %1)</source>
+        <source>Enter a kema address (e.g. %1)</source>
         <translation>输入达世币地址(e.g. %1)</translation>
     </message>
     <message>
@@ -1757,7 +1757,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>连接数</translation>
     </message>
     <message>
-        <source>Open the Kema debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the kema debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>从数据路径打开达世币Debug日志，这个过程可能需要几秒钟。</translation>
     </message>
     <message>
@@ -1965,7 +1965,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>输出：</translation>
     </message>
     <message>
-        <source>Welcome to the Kema RPC console.</source>
+        <source>Welcome to the kema RPC console.</source>
         <translation>欢迎来到达世币RPC控制台。</translation>
     </message>
     <message>
@@ -2028,7 +2028,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>重用现有的接收地址（不推荐）</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Kema network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the kema network.</source>
         <translation>附加在付款要求中的讯息，可以不填，打开要求内容时会显示。注意: 这个讯息不会随着付款送到达世币网路上。</translation>
     </message>
     <message>
@@ -2040,7 +2040,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>可为新建的收款地址添加一个标签。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Kema network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the kema network.</source>
         <translation>附加在付款要求中的讯息，可以不填，打开要求内容时会显示。&lt;br&gt;注意: 这个讯息不会随着付款送到达世币网路上。</translation>
     </message>
     <message>
@@ -2289,7 +2289,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
 但如果交易信息大于一千字节,那么两者都要支付千字节费用.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Kema transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for kema transactions than the network can process.</source>
         <translation>当交易量少于区块可容纳的空间时,只需支付最低手续费.&lt;br /&gt;但当交易量的需求增长到超过总体网络可处理的量时,可能会造成一笔一直不被确认的交易.</translation>
     </message>
     <message>
@@ -2489,7 +2489,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>只付最低手续费%1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Kema address</source>
+        <source>Warning: Invalid kema address</source>
         <translation>警告：无效的达世币地址</translation>
     </message>
     <message>
@@ -2512,7 +2512,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>付给(&amp;T)：</translation>
     </message>
     <message>
-        <source>The Kema address to send the payment to</source>
+        <source>The kema address to send the payment to</source>
         <translation>选择发款地址</translation>
     </message>
     <message>
@@ -2552,7 +2552,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>消息：</translation>
     </message>
     <message>
-        <source>A message that was attached to the Kema: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Kema network.</source>
+        <source>A message that was attached to the kema: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the kema network.</source>
         <translation>附加在达世币付款协议URI中的信息,会和交易内容一并存储,可供您参考.提示:此信息不会发送到达世币网络上.</translation>
     </message>
     <message>
@@ -2579,7 +2579,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Kema Coin is shutting down...</source>
+        <source>kema Coin is shutting down...</source>
         <translation>达世币核心正在关闭...</translation>
     </message>
     <message>
@@ -2602,7 +2602,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>您可以用你的地址对消息进行签名，以证明您是该地址的所有人。注意不要对模棱两可的消息签名，以免遭受钓鱼式攻击。请确保消息内容准确的表达了您的真实意愿。</translation>
     </message>
     <message>
-        <source>The Kema address to sign the message with</source>
+        <source>The kema address to sign the message with</source>
         <translation>对此地址进行签名</translation>
     </message>
     <message>
@@ -2634,7 +2634,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>复制当前签名至剪切板</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Kema address</source>
+        <source>Sign the message to prove you own this kema address</source>
         <translation>签署信息证明你拥有此达世币地址</translation>
     </message>
     <message>
@@ -2658,11 +2658,11 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>在下面输入签名地址，消息（请确保换行符、空格符、制表符等等一个不漏）和签名以验证消息。请确保签名信息准确，提防中间人攻击。</translation>
     </message>
     <message>
-        <source>The Kema address the message was signed with</source>
+        <source>The kema address the message was signed with</source>
         <translation>已签名的地址</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Kema address</source>
+        <source>Verify the message to ensure it was signed with the specified kema address</source>
         <translation>验证信息用来确保此被签署信息对应相对的达世币地址</translation>
     </message>
     <message>
@@ -2729,7 +2729,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Kema Coin</source>
+        <source>kema Coin</source>
         <translation>达世币核心</translation>
     </message>
     <message>
@@ -2741,7 +2741,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>Bitcoin Core 的开发者</translation>
     </message>
     <message>
-        <source>The Kema Coin developers</source>
+        <source>The kema Coin developers</source>
         <translation>达世币核心开发人员</translation>
     </message>
     <message>
@@ -3307,7 +3307,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>与提供地址绑定，持续监听。使用[host]:标记IPv6端口</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Kema Coin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. kema Coin is probably already running.</source>
         <translation>不能获得锁定的数据目录 %s. 达世币核心可能已经在运行。</translation>
     </message>
     <message>
@@ -3339,7 +3339,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>即时支付功能需要6步确认，您可以稍后重试。</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Kema Coin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. kema Coin is probably already running.</source>
         <translation>无法绑定%s此计算机. 达世币核心应该已经在运行中了.</translation>
     </message>
     <message>
@@ -3531,7 +3531,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>删除钱包里的所有交易信息, 并且在下次启动时, 使用 -rescan 来从区块链中恢复</translation>
     </message>
     <message>
-        <source>Disable all Kema specific functionality (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all kema specific functionality (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, default: %u)</source>
         <translation>禁止所有达世币附加功能(主节点, 匿名发送, 即时发送, 预算) (0-1, default: %u)</translation>
     </message>
     <message>
@@ -3603,7 +3603,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>警告: -maxtxfee 设定的金额过高! 这是一次交易就要支付的手续费.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Kema Coin will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong kema Coin will not work properly.</source>
         <translation>警告: 请检查电脑日期和时间是否正确！达世币核心没办法在时钟不准的情况下正常运作。</translation>
     </message>
     <message>
@@ -3653,8 +3653,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>版权(C) 2009-%i The Bitcoin Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Kema Coin Developers</source>
-        <translation>版权 (C) 2014-%i The Kema Coin Developers</translation>
+        <source>Copyright (C) 2014-%i The kema Coin Developers</source>
+        <translation>版权 (C) 2014-%i The kema Coin Developers</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
@@ -3685,7 +3685,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>连接到主节点时发生错误.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Kema Coin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of kema Coin</source>
         <translation>读取钱包文件错误: 需要较为新版本的达世币核心来读取钱包</translation>
     </message>
     <message>
@@ -3742,7 +3742,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>信息</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Kema Coin is shutting down.</source>
+        <source>Initialization sanity check failed. kema Coin is shutting down.</source>
         <translation>初始化检查失败。达世币核心正在关闭。</translation>
     </message>
     <message>
@@ -3938,7 +3938,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>断开的作弊节点临界值(默认: %u)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Kema Coin to complete</source>
+        <source>Wallet needed to be rewritten: restart kema Coin to complete</source>
         <translation>錢包需要重寫: 請重新啓動達世幣核心來完成
 钱包需要重写: 请重新启动达世币核心来完成</translation>
     </message>

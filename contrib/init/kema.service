@@ -1,18 +1,18 @@
 [Unit]
-Description=Kema's distributed currency daemon
+Description=kema's distributed currency daemon
 After=network.target
 
 [Service]
-User=Kema
-Group=Kema
+User=kema
+Group=kema
 
 Type=forking
 PIDFile=/var/lib/kemad/kemad.pid
 
 ExecStart=/usr/bin/kemad -daemon -pid=/var/lib/kemad/kemad.pid \
-          -conf=/etc/Kema/kema.conf -datadir=/var/lib/kemad
+          -conf=/etc/kema/kema.conf -datadir=/var/lib/kemad
 
-ExecStop=-/usr/bin/kema-cli -conf=/etc/Kema/kema.conf \
+ExecStop=-/usr/bin/kema-cli -conf=/etc/kema/kema.conf \
          -datadir=/var/lib/kemad stop
 
 Restart=always

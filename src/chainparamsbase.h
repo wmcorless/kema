@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between kema-cli and kemad)
- * of a given instance of the Kema system.
+ * of a given instance of the kema system.
  */
 class CBaseChainParams
 {

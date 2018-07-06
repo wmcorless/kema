@@ -1,6 +1,6 @@
 [Protocol]
 exec=kema-qt '%u'
-protocol=Kema
+protocol=kema
 input=none
 output=none
 helper=true

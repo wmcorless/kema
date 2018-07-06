@@ -72,7 +72,7 @@ if BUILD_BITCOIN_UTILS
 endif
 
 .PHONY: FORCE
-# Kema Coin #
+# kema Coin #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -391,21 +391,21 @@ kemad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
 # kema-cli binary #
-Kema_cli_LDADD = \
+kema_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
   $(SSL_LIBS) \
   $(CRYPTO_LIBS)
 
-Kema_cli_SOURCES = \
+kema_cli_SOURCES = \
   kema-cli.cpp
 
-Kema_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+kema_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
 # kema-tx binary #
-Kema_tx_LDADD = \
+kema_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -414,15 +414,15 @@ Kema_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-Kema_tx_SOURCES = kema-tx.cpp
-Kema_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+kema_tx_SOURCES = kema-tx.cpp
+kema_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-Kema_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+kema_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-Kema_cli_SOURCES += kema-cli-res.rc
+kema_cli_SOURCES += kema-cli-res.rc
 endif
-Kema_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+kema_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

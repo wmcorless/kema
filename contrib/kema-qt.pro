@@ -334,7 +334,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/Kema.moc \
+           src/qt/kema.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
 		   src/qt/coinmix.moc \
@@ -475,7 +475,7 @@ SOURCES += src/activemasternode.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/Darksendconfig.cpp \
            src/qt/kema.cpp \
-           src/qt/Kemastrings.cpp \
+           src/qt/kemastrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -645,21 +645,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/Kema.qrc src/qt/Kema_locale.qrc
+RESOURCES += src/qt/kema.qrc src/qt/kema_locale.qrc
 
-TRANSLATIONS += src/qt/locale/Kema_bg.ts \
-                src/qt/locale/Kema_de.ts \
-                src/qt/locale/Kema_en.ts \
-                src/qt/locale/Kema_es.ts \
-                src/qt/locale/Kema_fi.ts \
-                src/qt/locale/Kema_fr.ts \
-                src/qt/locale/Kema_it.ts \
-                src/qt/locale/Kema_ja.ts \
-                src/qt/locale/Kema_pl.ts \
-                src/qt/locale/Kema_pt.ts \
-                src/qt/locale/Kema_ru.ts \
-                src/qt/locale/Kema_sk.ts \
-                src/qt/locale/Kema_sv.ts \
-                src/qt/locale/Kema_vi.ts \
-                src/qt/locale/Kema_zh_CN.ts \
-                src/qt/locale/Kema_zh_TW.ts
+TRANSLATIONS += src/qt/locale/kema_bg.ts \
+                src/qt/locale/kema_de.ts \
+                src/qt/locale/kema_en.ts \
+                src/qt/locale/kema_es.ts \
+                src/qt/locale/kema_fi.ts \
+                src/qt/locale/kema_fr.ts \
+                src/qt/locale/kema_it.ts \
+                src/qt/locale/kema_ja.ts \
+                src/qt/locale/kema_pl.ts \
+                src/qt/locale/kema_pt.ts \
+                src/qt/locale/kema_ru.ts \
+                src/qt/locale/kema_sk.ts \
+                src/qt/locale/kema_sv.ts \
+                src/qt/locale/kema_vi.ts \
+                src/qt/locale/kema_zh_CN.ts \
+                src/qt/locale/kema_zh_TW.ts

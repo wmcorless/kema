@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/Kema/Kema.SIGS.git"
+- "url": "https://github.com/kema/kema.SIGS.git"
   "dir": "signature"
 files:
 - "kema-osx-unsigned.tar.gz"

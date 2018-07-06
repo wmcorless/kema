@@ -2,14 +2,14 @@
 
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='kema.conf'
-CONFIGFOLDER='/root/.Kema'
+CONFIGFOLDER='/root/.kema'
 COIN_DAEMON='kemad'
 COIN_CLI='kema-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_REPO='https://github.com/KemaTeam/Kema.git'
-COIN_TGZ='https://github.com/KemaTeam/Kema/releases/download/v1.0.0.1/kema-linux-binaries.tgz'
+COIN_REPO='https://github.com/kemaTeam/kema.git'
+COIN_TGZ='https://github.com/kemaTeam/kema/releases/download/v1.0.0.1/kema-linux-binaries.tgz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='Kema'
+COIN_NAME='kema'
 COIN_PORT=70565
 RPC_PORT=70566
 

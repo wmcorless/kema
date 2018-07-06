@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Kema developers
+// Copyright (c) 2018 The kema developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -220,10 +220,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Kema server.");
+            "\nStop kema server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Kema server stopping";
+    return "kema server stopping";
 }
 
 
@@ -300,16 +300,16 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Kema features */
-        {"Kema", "masternode", &masternode, true, true, false},
-        {"Kema", "masternodelist", &masternodelist, true, true, false},
-        {"Kema", "mnbudget", &mnbudget, true, true, false},
-        {"Kema", "mnbudgetvoteraw", &mnbudgetvoteraw, true, true, false},
-        {"Kema", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"Kema", "mnsync", &mnsync, true, true, false},
-        {"Kema", "spork", &spork, true, true, false},
+        /* kema features */
+        {"kema", "masternode", &masternode, true, true, false},
+        {"kema", "masternodelist", &masternodelist, true, true, false},
+        {"kema", "mnbudget", &mnbudget, true, true, false},
+        {"kema", "mnbudgetvoteraw", &mnbudgetvoteraw, true, true, false},
+        {"kema", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"kema", "mnsync", &mnsync, true, true, false},
+        {"kema", "spork", &spork, true, true, false},
 #ifdef ENABLE_WALLET
-        {"Kema", "Darksend", &Darksend, false, false, true}, /* not threadSafe because of SendMoney */
+        {"kema", "Darksend", &Darksend, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -578,13 +578,13 @@ void StartRPCThreads()
                                              _("To use kemad, or the -server option to kema-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=Kemarpc\n"
+                                               "rpcuser=kemarpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"Kema Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"kema Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);

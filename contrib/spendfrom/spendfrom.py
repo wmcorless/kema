@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Use the raw transactions API to spend Kemas received on particular addresses,
+# Use the raw transactions API to spend kemas received on particular addresses,
 # and send any change back to that same address.
 #
 # Example usage:
@@ -33,12 +33,12 @@ def check_json_precision():
         raise RuntimeError("JSON encode/decode loses precision")
 
 def determine_db_dir():
-    """Return the default location of the Kema data directory"""
+    """Return the default location of the kema data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/Kema/")
+        return os.path.expanduser("~/Library/Application Support/kema/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "Kema")
-    return os.path.expanduser("~/.Kema")
+        return os.path.join(os.environ['APPDATA'], "kema")
+    return os.path.expanduser("~/.kema")
 
 def read_bitcoin_config(dbdir):
     """Read the kema.conf file from dbdir, returns dictionary of settings"""
@@ -63,7 +63,7 @@ def read_bitcoin_config(dbdir):
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
-    """Connect to a Kema JSON-RPC server"""
+    """Connect to a kema JSON-RPC server"""
     testnet = config.get('testnet', '0')
     testnet = (int(testnet) > 0)  # 0/1 in config file, convert to True/False
     if not 'rpcport' in config:
@@ -221,9 +221,9 @@ def main():
 
     parser = optparse.OptionParser(usage="%prog [options]")
     parser.add_option("--from", dest="fromaddresses", default=None,
-                      help="addresses to get Kemas from")
+                      help="addresses to get kemas from")
     parser.add_option("--to", dest="to", default=None,
-                      help="address to get send Kemas to")
+                      help="address to get send kemas to")
     parser.add_option("--amount", dest="amount", default=None,
                       help="amount to send")
     parser.add_option("--fee", dest="fee", default="0.0",

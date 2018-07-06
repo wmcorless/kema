@@ -2,22 +2,22 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/Kema/.Kema" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/Kema/.Kema"
+if [ -d "/var/lib/kema/.kema" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/kema/.kema"
 else
 	BITCOIND_DEFAULT_DATADIR="/var/lib/kemad"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/Kema/kema.conf}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/kema/kema.conf}
 BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/kemad}
 BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/kemad.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-Kema}
-BITCOIND_GROUP=${BITCOIND_GROUP:-Kema}
+BITCOIND_USER=${BITCOIND_USER:-kema}
+BITCOIND_GROUP=${BITCOIND_GROUP:-kema}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/kemad}
 
-name="Kema Coin Daemon"
-description="Kema crypto-currency p2p network daemon"
+name="kema Coin Daemon"
+description="kema crypto-currency p2p network daemon"
 
 command="/usr/bin/kemad"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Kema Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"kema Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

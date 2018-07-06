@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Kema"
-            VALUE "FileDescription",    "kema-cli (OSS RPC client for Kema)"
+            VALUE "CompanyName",        "kema"
+            VALUE "FileDescription",    "kema-cli (OSS RPC client for kema)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "kema-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR

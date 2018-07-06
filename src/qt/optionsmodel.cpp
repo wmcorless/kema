@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Kema developers
+// Copyright (c) 2018 The kema developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -62,7 +62,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::Kema);
+        settings.setValue("nDisplayUnit", BitcoinUnits::kema);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -76,11 +76,11 @@ void OptionsModel::Init()
     if (!settings.contains("nDarksendRounds"))
         settings.setValue("nDarksendRounds", 2);
 
-    if (!settings.contains("nAnonymizeKemaAmount"))
-        settings.setValue("nAnonymizeKemaAmount", 1000);
+    if (!settings.contains("nAnonymizekemaAmount"))
+        settings.setValue("nAnonymizekemaAmount", 1000);
 
     nDarksendRounds = settings.value("nDarksendRounds").toLongLong();
-    nAnonymizeKemaAmount = settings.value("nAnonymizeKemaAmount").toLongLong();
+    nAnonymizekemaAmount = settings.value("nAnonymizekemaAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -147,8 +147,8 @@ void OptionsModel::Init()
 
     if (settings.contains("nDarksendRounds"))
         SoftSetArg("-Darksendrounds", settings.value("nDarksendRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeKemaAmount"))
-        SoftSetArg("-anonymizeKemaamount", settings.value("nAnonymizeKemaAmount").toString().toStdString());
+    if (settings.contains("nAnonymizekemaAmount"))
+        SoftSetArg("-anonymizekemaamount", settings.value("nAnonymizekemaAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -228,8 +228,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("nThreadsScriptVerif");
         case DarksendRounds:
             return QVariant(nDarksendRounds);
-        case AnonymizeKemaAmount:
-            return QVariant(nAnonymizeKemaAmount);
+        case AnonymizekemaAmount:
+            return QVariant(nAnonymizekemaAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -338,10 +338,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             settings.setValue("nDarksendRounds", nDarksendRounds);
             emit DarksendRoundsChanged(nDarksendRounds);
             break;
-        case AnonymizeKemaAmount:
-            nAnonymizeKemaAmount = value.toInt();
-            settings.setValue("nAnonymizeKemaAmount", nAnonymizeKemaAmount);
-            emit anonymizeKemaAmountChanged(nAnonymizeKemaAmount);
+        case AnonymizekemaAmount:
+            nAnonymizekemaAmount = value.toInt();
+            settings.setValue("nAnonymizekemaAmount", nAnonymizekemaAmount);
+            emit anonymizekemaAmountChanged(nAnonymizekemaAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

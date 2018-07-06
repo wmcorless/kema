@@ -1,4 +1,4 @@
-qt/test/qt_test_test_Kema_qt-uritests.o: qt/test/uritests.cpp \
+qt/test/qt_test_test_kema_qt-uritests.o: qt/test/uritests.cpp \
  /usr/include/stdc-predef.h qt/test/uritests.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \

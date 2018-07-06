@@ -20,8 +20,8 @@ packages:
 - "python"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/Kema/Kema.git"
-  "dir": "Kema"
+- "url": "https://github.com/kema/kema.git"
+  "dir": "kema"
 files:
 - "raspberrypi-tools.tar.gz"
 script: |
@@ -70,7 +70,7 @@ script: |
   done
   export PATH=${WRAP_DIR}:${PATH}
 
-  cd Kema
+  cd kema
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do

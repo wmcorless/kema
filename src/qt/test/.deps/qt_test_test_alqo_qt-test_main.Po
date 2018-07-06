@@ -1,4 +1,4 @@
-qt/test/qt_test_test_Kema_qt-test_main.o: qt/test/test_main.cpp \
+qt/test/qt_test_test_kema_qt-test_main.o: qt/test/test_main.cpp \
  /usr/include/stdc-predef.h config/kema-config.h util.h \
  config/kema-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \

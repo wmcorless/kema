@@ -46,10 +46,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Kema Coin kema-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("kema Coin kema-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  kema-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded Kema transaction") + "\n" +
-                               "  kema-tx [options] -create [commands]   " + _("Create hex-encoded Kema transaction") + "\n" +
+                               "  kema-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded kema transaction") + "\n" +
+                               "  kema-tx [options] -create [commands]   " + _("Create hex-encoded kema transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -550,7 +550,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw runtime_error("too few parameters");
 
-            // param: hex-encoded Kema transaction
+            // param: hex-encoded kema transaction
             string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

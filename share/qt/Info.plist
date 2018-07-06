@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>2.0.0, Copyright © 2009-2017 The Bitcoin Core developers, 2014-2017 The Dash and PIVX Core Developers, 2018 The Kema Coin developers</string>
+  <string>2.0.0, Copyright © 2009-2017 The Bitcoin Core developers, 2014-2017 The Dash and PIVX Core Developers, 2018 The kema Coin developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>2.0.0</string>
@@ -32,7 +32,7 @@
   <string>kema-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.Kema.kema-Qt</string>
+  <string>io.kema.kema-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.Kema.KemaPayment</string>
+      <string>io.kema.kemaPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>Kema</string>
+        <string>kema</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.Kema.paymentrequest</string>
+      <string>io.kema.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Kema payment request</string>
+      <string>kema payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -65,7 +65,7 @@
         <string>application/x-kema-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>Kemapaymentrequest</string>
+          <string>kemapaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.Kema.paymentrequest</string>
+        <string>io.kema.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

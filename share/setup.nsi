@@ -1,4 +1,4 @@
-Name "Kema Coin (-bit)"
+Name "kema Coin (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,23 +6,23 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 2.0.0
-!define COMPANY "Kema Coin project"
-!define URL http://bit.Kemas/
+!define COMPANY "kema Coin project"
+!define URL http://bit.kemas/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/root/Kema/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/Kema/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/root/kema/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/kema/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/root/Kema/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/root/kema/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Kema Coin"
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "kema Coin"
 !define MUI_FINISHPAGE_RUN $INSTDIR\kema-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/Kema/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/kema/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,18 +48,18 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /root/Kema/kema-${VERSION}-win-setup.exe
+OutFile /root/kema/kema-${VERSION}-win-setup.exe
 !if "" == "64"
-InstallDir $PROGRAMFILES64\Kema
+InstallDir $PROGRAMFILES64\kema
 !else
-InstallDir $PROGRAMFILES\Kema
+InstallDir $PROGRAMFILES\kema
 !endif
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion ${VERSION}.3
-VIAddVersionKey ProductName "Kema Coin"
+VIAddVersionKey ProductName "kema Coin"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -73,19 +73,19 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /root/Kema/release/kema-qt.exe
-    File /oname=COPYING.txt /root/Kema/COPYING
-    File /oname=readme.txt /root/Kema/doc/README_windows.txt
+    File /root/kema/release/kema-qt.exe
+    File /oname=COPYING.txt /root/kema/COPYING
+    File /oname=readme.txt /root/kema/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /root/Kema/release/kemad.exe
-    File /root/Kema/release/kema-cli.exe
+    File /root/kema/release/kemad.exe
+    File /root/kema/release/kema-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /root/Kema/doc\*.*
+    File /r /root/kema/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
-    # Remove old wxwidgets-based-Kema executable and locales:
-    Delete /REBOOTOK $INSTDIR\Kema.exe
+    # Remove old wxwidgets-based-kema executable and locales:
+    Delete /REBOOTOK $INSTDIR\kema.exe
     RMDir /r /REBOOTOK $INSTDIR\locale
 SectionEnd
 
@@ -106,10 +106,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "Kema" "URL Protocol" ""
-    WriteRegStr HKCR "Kema" "" "URL:Kema"
-    WriteRegStr HKCR "Kema\DefaultIcon" "" $INSTDIR\kema-qt.exe
-    WriteRegStr HKCR "Kema\shell\open\command" "" '"$INSTDIR\kema-qt.exe" "%1"'
+    WriteRegStr HKCR "kema" "URL Protocol" ""
+    WriteRegStr HKCR "kema" "" "URL:kema"
+    WriteRegStr HKCR "kema\DefaultIcon" "" $INSTDIR\kema-qt.exe
+    WriteRegStr HKCR "kema\shell\open\command" "" '"$INSTDIR\kema-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -139,7 +139,7 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Kema.lnk"
+    Delete /REBOOTOK "$SMSTARTUP\kema.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -147,7 +147,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "Kema"
+    DeleteRegKey HKCR "kema"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

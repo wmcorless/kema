@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * Kema RPC command dispatcher.
+ * kema RPC command dispatcher.
  */
 class CRPCTable
 {

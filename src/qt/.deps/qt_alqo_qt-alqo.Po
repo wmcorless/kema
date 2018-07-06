@@ -1,4 +1,4 @@
-qt/qt_Kema_qt-Kema.o: qt/kema.cpp /usr/include/stdc-predef.h \
+qt/qt_kema_qt-kema.o: qt/kema.cpp /usr/include/stdc-predef.h \
  config/kema-config.h qt/bitcoingui.h amount.h serialize.h \
  /usr/include/c++/5/algorithm /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
@@ -1993,7 +1993,7 @@ qt/qt_Kema_qt-Kema.o: qt/kema.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTranslator \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qtranslator.h qt/Kema.moc
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtranslator.h qt/kema.moc
 
 /usr/include/stdc-predef.h:
 
@@ -6507,4 +6507,4 @@ util.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtranslator.h:
 
-qt/Kema.moc:
+qt/kema.moc:
