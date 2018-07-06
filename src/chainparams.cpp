@@ -131,8 +131,8 @@ public:
         genesis.nNonce = 2114836;
 
         hashGenesisBlock = genesis.GetHash();
-	printf("%s\n", hashGenesisBlock.ToString().c_str());
-	printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
+	//printf("%s\n", hashGenesisBlock.ToString().c_str());
+	//printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
 
 
         assert(hashGenesisBlock == uint256("0xee233833d21c729632513f2d562788d68b1cf9b8229cba8de2fb6440cc1c4c66")); //0x00000a1410658815508e398228a280f4f5e476bf54dfe4a062ca37c344b3d178
@@ -208,7 +208,7 @@ public:
         genesis.nNonce = 21014061;
 
         hashGenesisBlock = genesis.GetHash();
-    //printf("%s\n", hashGenesisBlock.ToString().c_str());
+    printf("%s\n", hashGenesisBlock.ToString().c_str());
         assert(hashGenesisBlock == uint256("0xbe3b9e59e57bf1c68889d0a2f104d771ebdc243023f0e2d920161d76c4045af6"));
 
         vFixedSeeds.clear();
