@@ -1082,7 +1082,7 @@ Address: %4
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+498"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Kema.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (kema.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

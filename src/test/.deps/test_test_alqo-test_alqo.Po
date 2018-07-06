@@ -1,4 +1,4 @@
-test/test_test_Kema-test_Kema.o: test/test_Kema.cpp \
+test/test_test_Kema-test_Kema.o: test/test_kema.cpp \
  /usr/include/stdc-predef.h main.h config/kema-config.h amount.h \
  serialize.h /usr/include/c++/5/algorithm /usr/include/c++/5/utility \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \

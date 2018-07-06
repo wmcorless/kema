@@ -379,7 +379,7 @@ SOURCES += src/activemasternode.cpp \
            src/Darksend.cpp \
            src/kema-cli.cpp \
            src/Kema-tx.cpp \
-           src/Kema.cpp \
+           src/kema.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -474,7 +474,7 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/Darksendconfig.cpp \
-           src/qt/Kema.cpp \
+           src/qt/kema.cpp \
            src/qt/Kemastrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
@@ -554,7 +554,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_Kema.cpp \
+           src/test/test_kema.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \

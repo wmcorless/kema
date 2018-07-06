@@ -103,7 +103,7 @@ bool isObscured(QWidget* w);
 // Open debug.log
 void openDebugLogfile();
 
-// Open Kema.conf
+// Open kema.conf
 void openConfigfile();
 
 // Open masternode.conf

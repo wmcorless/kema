@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='Kema.conf'
+CONFIG_FILE='kema.conf'
 CONFIGFOLDER='/root/.Kema'
 COIN_DAEMON='kemad'
 COIN_CLI='kema-cli'

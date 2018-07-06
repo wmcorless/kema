@@ -107,7 +107,7 @@ QT_MOC = \
   qt/coinmix.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_Kema.cpp
+QT_QRC_CPP = qt/qrc_kema.cpp
 QT_QRC = qt/Kema.qrc
 QT_QRC_LOCALE_CPP = qt/qrc_Kema_locale.cpp
 QT_QRC_LOCALE = qt/Kema_locale.qrc
@@ -348,7 +348,7 @@ $(QT_MOC_CPP): $(PROTOBUF_H)
 qt_Kema_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_Kema_qt_SOURCES = qt/Kema.cpp
+qt_Kema_qt_SOURCES = qt/kema.cpp
 if TARGET_DARWIN
   qt_Kema_qt_SOURCES += $(BITCOIN_MM)
 endif

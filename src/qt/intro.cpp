@@ -184,7 +184,7 @@ void Intro::pickDataDirectory()
         settings.setValue("strDataDir", dataDir);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the Kema.conf file in the default data directory
+     * override -datadir in the kema.conf file in the default data directory
      * (to be consistent with kemad behavior)
      */
     if (dataDir != getDefaultDataDirectory())
