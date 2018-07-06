@@ -133,7 +133,7 @@ public:
         hashGenesisBlock = genesis.GetHash();
 	//printf("%s\n", hashGenesisBlock.ToString().c_str());
 	printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
-	printf("%s\n", genesis.nNonce.ToString().c_str());
+	printf("%s\n", genesis.nNonce);
 
         assert(hashGenesisBlock == uint256("")); //0xc174f9c443624af18b5052dfea707b54b72d9dd5b048ad68b4b193512f03b610
         assert(genesis.hashMerkleRoot == uint256("")); //0xfbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6
