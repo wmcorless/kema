@@ -127,13 +127,15 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime = 1530845256;
-        genesis.nBits = 0x1e0ffff0;
+        genesis.nBits = 0;
         genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
 	//printf("%s\n", hashGenesisBlock.ToString().c_str());
 	//printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
-    printf("%s\n", genesis.nBits.ToString().c_str());
+    char str[12];
+    sprintf(str, "%d", genesis.nBits);
+    //printf("%s\n", genesis.nBits.ToString().c_str());
 
         assert(hashGenesisBlock == uint256("0xc2ba69bb5a1861d5bb8f8b4426652d7fff7b3b7db0bf05271e9b70b1bc5fb682"));
         assert(genesis.hashMerkleRoot == uint256("0xfbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6"));
