@@ -128,34 +128,15 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1530845256;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 21014061;
+        genesis.nNonce = ;
 
         hashGenesisBlock = genesis.GetHash();
 	//printf("%s\n", hashGenesisBlock.ToString().c_str());
 	//printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
+	printf("%s\n", genesis.nNonce.ToString().c_str());
 
-	if (false  && (block.GetHash() != hashGenesisBlock))
-       	{
-           printf("Mining genesis\n");
-           uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
-           while (block.GetHash() > hashTarget)
-           {
-               ++block.nNonce;
-               if (block.nNonce == 0)
-               {
-                   printf("NONCE WRAPPED, incrementing time");
-                   ++block.nTime;
-               }
-	       if (block.nNonce % 10000 == 0) {
-		   printf("nonce %08u: hash = %s \n", block.nNonce, block.GetHash().ToString().c_str());
-	       }
-           }
-}
-
-
-
-        assert(hashGenesisBlock == uint256("0xc174f9c443624af18b5052dfea707b54b72d9dd5b048ad68b4b193512f03b610"));
-        assert(genesis.hashMerkleRoot == uint256("0xfbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6"));
+        assert(hashGenesisBlock == uint256("")); //0xc174f9c443624af18b5052dfea707b54b72d9dd5b048ad68b4b193512f03b610
+        assert(genesis.hashMerkleRoot == uint256("")); //0xfbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6
 
         vSeeds.push_back(CDNSSeedData("www.kema.io", "seed1.kema.io"));
 
