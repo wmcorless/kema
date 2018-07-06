@@ -64,7 +64,7 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += Kemad
+  bin_PROGRAMS += kemad
 endif
 
 if BUILD_BITCOIN_UTILS
@@ -180,7 +180,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between Kemad and Kema-qt
+# server: shared between kemad and Kema-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(BOOST_CPPFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -224,7 +224,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between Kemad and Kema-qt, but only linked
+# wallet: shared between kemad and Kema-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -295,7 +295,7 @@ univalue_libbitcoin_univalue_a_SOURCES = \
   univalue/univalue_escapes.h \
   univalue/univalue.h
 
-# common: shared between Kemad, and Kema-qt and non-server tools
+# common: shared between kemad, and Kema-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   allocators.cpp \
@@ -378,11 +378,11 @@ endif
 if ENABLE_WALLET
 Kemad_LDADD += libbitcoin_wallet.a
 endif
-Kemad_SOURCES = Kemad.cpp
+Kemad_SOURCES = kemad.cpp
 #
 
 if TARGET_WINDOWS
-Kemad_SOURCES += Kemad-res.rc
+Kemad_SOURCES += kemad-res.rc
 endif
 
 Kemad_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
