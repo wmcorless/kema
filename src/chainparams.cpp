@@ -55,7 +55,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of(0, uint256("0xee233833d21c729632513f2d562788d68b1cf9b8229cba8de2fb6440cc1c4c66"));
+    boost::assign::map_list_of(0, uint256(""));
 ;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -126,7 +126,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1530845256;
+        genesis.nTime = 1531764238;
         genesis.nBits = 504365040;
         genesis.nNonce = 2114836;
 
@@ -135,8 +135,8 @@ public:
 	//printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
 
 
-        assert(hashGenesisBlock == uint256("0xee233833d21c729632513f2d562788d68b1cf9b8229cba8de2fb6440cc1c4c66"));
-        assert(genesis.hashMerkleRoot == uint256("0xfbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6"));
+        assert(hashGenesisBlock == uint256("d95b733e17624a7e613b050470f57e8c6f13f9a2c36e4efbfb1e0077a6161ae7"));
+        assert(genesis.hashMerkleRoot == uint256("fbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6"));
         vSeeds.push_back(CDNSSeedData("www.kema.io", "www.kema.io"));
         vSeeds.push_back(CDNSSeedData("www.paccoinexplorer.net", "www.paccoinexplorer.net"));
         vSeeds.push_back(CDNSSeedData("www.pacexc.com", "www.pacexc.com"));
