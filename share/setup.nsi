@@ -1,4 +1,4 @@
-Name "kema Coin (-bit)"
+Name "Kema Coin (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,8 +6,8 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 2.0.0
-!define COMPANY "kema Coin project"
-!define URL http://bit.kemas/
+!define COMPANY "Kema Coin project"
+!define URL http://kema.io/
 
 # MUI Symbol Definitions
 !define MUI_ICON "/root/kema/share/pixmaps/bitcoin.ico"
@@ -19,7 +19,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "kema Coin"
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Kema Coin"
 !define MUI_FINISHPAGE_RUN $INSTDIR\kema-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/kema/share/pixmaps/nsis-wizard.bmp"
@@ -59,7 +59,7 @@ XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion ${VERSION}.3
-VIAddVersionKey ProductName "kema Coin"
+VIAddVersionKey ProductName "Kema Coin"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
