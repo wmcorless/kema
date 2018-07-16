@@ -49,7 +49,7 @@ void CActiveMasternode::ManageStatus()
         }
 
         if (pwalletMain->GetBalance() == 0) {
-            notCapableReason = "Hot node, waiting for remote activation.";
+            notCapableReason = "Synced, waiting for remote activation.";
             LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
             return;
         }
@@ -138,13 +138,13 @@ std::string CActiveMasternode::GetStatus()
 {
     switch (status) {
     case ACTIVE_MASTERNODE_INITIAL:
-        return "Node just started, not yet activated";
+        return "Node not yet synced, not yet activated";
     case ACTIVE_MASTERNODE_SYNC_IN_PROCESS:
         return "Sync in progress. Must wait until sync is complete to start Masternode";
     case ACTIVE_MASTERNODE_INPUT_TOO_NEW:
         return strprintf("Masternode input must have at least %d confirmations", MASTERNODE_MIN_CONFIRMATIONS);
     case ACTIVE_MASTERNODE_NOT_CAPABLE:
-        return "Not capable masternode: " + notCapableReason;
+        return "Active: " + notCapableReason;
     case ACTIVE_MASTERNODE_STARTED:
         return "Masternode successfully started";
     default:

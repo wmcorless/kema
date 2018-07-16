@@ -49,6 +49,12 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         // ppcoin: target change every block
         // ppcoin: retarget with exponential moving toward target spacing
         uint256 bnNew;
+
+        if(pindexLast->nHeight >= Params().LAST_POW_BLOCK() && pindexLast->nHeight <= Params().LAST_POW_BLOCK() + 2) {
++			LogPrintf("DarkGravityWave: drop difficulty in PoS start\n");
++			uint256 bnTargetZero = (~uint256(0) >> 4);
++			bnNew = bnTargetZero;
++        } else
         bnNew.SetCompact(pindexLast->nBits);
 
         int64_t nInterval = nTargetTimespan / nTargetSpacing;
@@ -135,8 +141,8 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits)
         return error("CheckProofOfWork() : nBits below minimum work");
 
     // Check proof of work matches claimed amount
-//    if (hash > bnTarget)
-//		return error("CheckProofOfWork() : hash doesn't match nBits");
+    if (hash > bnTarget)
+		return error("CheckProofOfWork() : hash doesn't match nBits");
 
     return true;
 }
