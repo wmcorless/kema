@@ -157,8 +157,8 @@ public:
         fRequireRPCPassword = true;
         fMiningRequiresPeers = false;
         fAllowMinDifficultyBlocks = false;
-        fDefaultConsistencyChecks = true;
-        fRequireStandard = true;
+        fDefaultConsistencyChecks = false;
+        fRequireStandard = false;
         fMineBlocksOnDemand = false;
         fSkipProofOfWorkCheck = false;
         fTestnetToBeDeprecatedFieldRPC = false;
