@@ -108,7 +108,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60;
         nTargetSpacing = 1 * 60;
-        nLastPOWBlock = 400;
+        nLastPOWBlock = 800;
         nMaturity = 30;
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 5000; //Params().MasternodeColleteralLimxDev()
@@ -160,14 +160,14 @@ public:
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = true;
+        fSkipProofOfWorkCheck = false;
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
 
         nPoolMaxTransactions = 3;
         strSporkKey = "0478c3e932fbe183b2f665de937866cb1cfc5ed4b0bf733b72286f265ffc03ff52dfd669fbb3f77d630e5393da65c721a9a891d2c4c6aa515dfd25ffe545582357";
-        strDarksendPoolDummyAddress = "KcmpqXViWUXNroqVNYRdKjKrFM6PNa1oTM";
+        strDarksendPoolDummyAddress = "K7vJ7xLH33Ry1N1Cg6zYDC3WU3syPaT3Ne";
         nStartMasternodePayments = 1527855803;
     }
 
