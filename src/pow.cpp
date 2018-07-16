@@ -54,9 +54,9 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 +			LogPrintf("DarkGravityWave: drop difficulty in PoS start\n");
 +			uint256 bnTargetZero = (~uint256(0) >> 4);
 +			bnNew = bnTargetZero;
-+        } else
++        } else {
         bnNew.SetCompact(pindexLast->nBits);
-
+        }
         int64_t nInterval = nTargetTimespan / nTargetSpacing;
         bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
         bnNew /= ((nInterval + 1) * nTargetSpacing);

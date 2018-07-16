@@ -144,7 +144,7 @@ std::string CActiveMasternode::GetStatus()
     case ACTIVE_MASTERNODE_INPUT_TOO_NEW:
         return strprintf("Masternode input must have at least %d confirmations", MASTERNODE_MIN_CONFIRMATIONS);
     case ACTIVE_MASTERNODE_NOT_CAPABLE:
-        return "Active: " + notCapableReason;
+        return "Waiting: " + notCapableReason;
     case ACTIVE_MASTERNODE_STARTED:
         return "Masternode successfully started";
     default:
