@@ -192,7 +192,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount nLockedBalance = 0;
     CAmount nWatchOnlyLockedBalance = 0;
     if (pwalletMain) {
-        nLockedBalance = pwalletMain->GetLockedCoins();
+        nLockedBalance = pwalletMain->setLockedCoins();
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
 
