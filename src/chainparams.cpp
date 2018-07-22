@@ -137,9 +137,9 @@ public:
 
         assert(hashGenesisBlock == uint256("0xd95b733e17624a7e613b050470f57e8c6f13f9a2c36e4efbfb1e0077a6161ae7"));
         assert(genesis.hashMerkleRoot == uint256("0xfbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6"));
-        vSeeds.push_back(CDNSSeedData("www.kema.io", "www.kema.io"));
-        vSeeds.push_back(CDNSSeedData("www.paccoinexplorer.net", "www.paccoinexplorer.net"));
-        vSeeds.push_back(CDNSSeedData("www.pacexc.com", "www.pacexc.com"));
+        vSeeds.push_back(CDNSSeedData("seed1", "seed1.kema.io"));
+        vSeeds.push_back(CDNSSeedData("seed2", "seed2.paccoinexplorer.net"));
+        vSeeds.push_back(CDNSSeedData("seed3", "seed3.pacexc.com"));
 
         //vFixedSeeds.clear();
         //vSeeds.clear();
