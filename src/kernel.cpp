@@ -20,7 +20,7 @@ bool fTestNet = false; //Params().NetworkID() == CBaseChainParams::TESTNET;
 // Modifier interval: time to elapse before new modifier is computed
 // Set to 3-hour for production network and 20-minute for test network
 unsigned int nModifierInterval;
-int nStakeTargetSpacing = 300;
+int nStakeTargetSpacing = 60;
 unsigned int getIntervalVersion(bool fTestNet)
 {
     if (fTestNet)
@@ -328,8 +328,12 @@ bool CheckStakeKernelHash(unsigned int nBits, const CBlock blockFrom, const CTra
     bool fSuccess = false;
     unsigned int nTryTime = 0;
     unsigned int i;
+	int nHeightStart = chainActive.Height();
     for (i = 0; i < (nHashDrift); i++) //iterate the hashing
     {
+		//new block came in, move on
+        if (chainActive.Height() != nHeightStart)
+            break;
         //hash this iteration
         nTryTime = nTimeTx + nHashDrift - i;
         hashProofOfStake = stakeHash(nTryTime, ss, prevout.n, prevout.hash, nTimeBlockFrom);
