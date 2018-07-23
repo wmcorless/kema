@@ -246,7 +246,7 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent),
     connect(ui->btn_zapwallettxes2, SIGNAL(clicked()), this, SLOT(walletZaptxes2()));
     connect(ui->btn_upgradewallet, SIGNAL(clicked()), this, SLOT(walletUpgrade()));
     connect(ui->btn_reindex, SIGNAL(clicked()), this, SLOT(walletReindex()));
-	connect(ui->btn_rescan, SIGNAL(clicked()), this, SLOT(walletResync()));
+	connect(ui->btn_resync, SIGNAL(clicked()), this, SLOT(walletResync()));
 
     // set library version labels
     ui->openSSLVersion->setText(SSLeay_version(SSLEAY_VERSION));
