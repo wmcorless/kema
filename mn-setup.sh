@@ -275,6 +275,8 @@ function important_information() {
  echo -e "MASTERNODE PRIVATEKEY is: ${RED}$COINKEY${NC}"
  echo -e "Please check ${RED}$COIN_NAME${NC} is running with the following command: ${RED}systemctl status $COIN_NAME.service${NC}"
  echo -e "================================================================================================================================"
+ echo -e "Put the following in your Masternode Config File"
+ echo -e "${YELLOW}MN# $NODEIP:$COIN_PORT $COINKEY${NC}"
 }
 
 function setup_node() {
