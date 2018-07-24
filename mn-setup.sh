@@ -115,6 +115,7 @@ listen=1
 server=1
 daemon=1
 port=$COIN_PORT
+addnode=162.255.85.212
 EOF
 }
 
