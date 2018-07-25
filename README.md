@@ -21,13 +21,14 @@ Developers
 Developers work in their own forks.
 Pull requests can then be made and if accepted will be added to the repo.
 
-Installing Masternode:</br>
+Installing Masternode:
+=====================
 ubuntu VM type:</br>
 wget https://raw.githubusercontent.com/wmcorless/Ketan-kema/master/mn-setup.sh</br>
 bash mn-setup.sh</br>
-<quote>Hi my name is Kema.  I love the color purple.  This is my coin.</br>
-Thank you.</br>
-Kema</quote>
 
-systemctl start kema.service</br>
-systemctl stop kema.service</br>
+  systemctl start kema.service</br>
+  systemctl stop kema.service</br>
+
+  Hi my name is Kema.  I love the color purple.  This is my coin. Thank you.
+  Kema
