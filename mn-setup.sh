@@ -115,7 +115,6 @@ listen=1
 server=1
 daemon=1
 port=$COIN_PORT
-addnode=162.255.85.212
 EOF
 }
 
@@ -150,6 +149,19 @@ maxconnections=256
 masternode=1
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
+addnode=162.255.85.212
+addnode=165.227.118.35
+addnode=104.254.247.230
+addnode=167.99.226.193
+addnode=207.246.125.131
+addnode=144.202.119.23
+addnode=45.77.62.77
+addnode=149.28.240.100
+addnode=45.63.65.76
+addnode=144.202.25.136
+addnode=149.28.11.17
+addnode=144.202.110.161
+addnode=95.179.141.15
 EOF
 }
 
@@ -276,7 +288,7 @@ function important_information() {
  echo -e "Please check ${RED}$COIN_NAME${NC} is running with the following command: ${RED}systemctl status $COIN_NAME.service${NC}"
  echo -e "================================================================================================================================"
  echo -e "Put the following in your Masternode Config File"
- echo -e "${YELLOW}MN# $NODEIP:$COIN_PORT $COINKEY${NC}"
+ echo -e "MN# $NODEIP:$COIN_PORT $COINKEY"
 }
 
 function setup_node() {
