@@ -66,6 +66,7 @@ bool fReindex = false;
 bool fTxIndex = true;
 bool fIsBareMultisigStd = true;
 bool fCheckBlockIndex = false;
+bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
@@ -1620,6 +1621,7 @@ double ConvertBitsToDouble(unsigned int nBits)
 
 int64_t GetBlockValue(int nHeight)
 {
+    int64_t nSubsidy = 0;
 
     if (nHeight == 1) return 100000 * COIN;
 
@@ -3036,11 +3038,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
 			return state.DoS(100, error("CheckBlock() : CheckBlockHeader failed"),
 				REJECT_INVALID, "bad-header", true);
 }
-			/*
-			    if (!CheckBlockHeader(block, state, block.IsProofOfWork()))
-        return state.DoS(100, error("CheckBlock() : CheckBlockHeader failed"),
-REJECT_INVALID, "bad-header", true);
-*/
+
     // Check timestamp
     LogPrint("debug", "%s: block=%s  is proof of stake=%d\n", __func__, block.GetHash().ToString().c_str(), block.IsProofOfStake());
     if (block.GetBlockTime() > GetAdjustedTime() + (block.IsProofOfStake() ? 180 : 7200)) // 3 minute future drift for PoS
@@ -3207,7 +3205,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
 
     int nHeight = pindexPrev->nHeight + 1;
 
-    //If this is a reorg, check that it is not too depp
+    //If this is a reorg, check that it is not too deep
     if (chainActive.Height() - nHeight >= Params().MaxReorganizationDepth())
         return state.DoS(1, error("%s: forked chain older than max reorganization depth (height %d)", __func__, nHeight));
 
@@ -3461,12 +3459,14 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
         }
     }
 
-    while (true) {
+    /*while (true) {
         TRY_LOCK(cs_main, lockMain);
         if (!lockMain) {
             MilliSleep(50);
             continue;
-        }
+        }*/
+	{
+        LOCK(cs_main);   // Replaces the former TRY_LOCK loop because busy waiting wastes too much resources
 
         MarkBlockAsReceived(pblock->GetHash());
         if (!checked) {
