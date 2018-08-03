@@ -3482,7 +3482,7 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
         CheckBlockIndex();
         if (!ret)
             return error("%s : AcceptBlock FAILED", __func__);
-        break;
+//        break;
     }
 
     if (!ActivateBestChain(state, pblock))
