@@ -23,12 +23,7 @@ Pull requests can then be made and if accepted will be added to the repo.
 
 Installing Masternode:
 =====================
-ubuntu VM type:</br>
-wget https://raw.githubusercontent.com/wmcorless/Ketan-kema/master/mn-setup.sh</br>
-bash mn-setup.sh</br>
-
-  systemctl start kema.service</br>
-  systemctl stop kema.service</br>
-
-  Hi my name is Kema.  I love the color purple.  This is my coin. Thank you.
-  Kema
+See https://github.com/wmcorless/kema/blob/master/doc/masternode.md
+  
+    Hi my name is Kema.  I love the color purple.  This is my coin. 
+    Thank you. Kema
