@@ -3,7 +3,7 @@ SETTING UP KEMA MASTERNODE:
 * First set up a VPS server. We recommend VULTR.COM
 * Set up an account, and verify your email.
 
-### Setting up your Masternode.
+### Setting up your VPS
 
 * From your page at vultr.com Click on the "plus" sign to add server.
 * Server type choose Ubuntu 1604 x64
@@ -14,10 +14,10 @@ SETTING UP KEMA MASTERNODE:
 To access your server we recommend using PUTTY. 
 Download Putty at http://www.putty.org
 
-### Run Putty
+### Run PuTTY
 * Paste server address under session into Host Name (or IP address) section
 * Enter the server name "MN1" in the name block and click save
-* press the open button
+* Press the open button
 * When Security Alert box opens, click Yes
 * Enter Username and Password
 
@@ -68,7 +68,5 @@ Hit the enter key.
 
     kema-cli masternode status
 
-The last line should read: "status" : "Masternode successfully started".  It will take 10-15 minutes before the Active column shows 
-progress. If the minutes are a minus then you got synced but and asks for action to be completed, check your Masternode configuration 
-file to be sure there are no extra lines, spaces or carriage returns after the last line.
+The last line should read: "status" : "Masternode successfully started".  
 You may now close your PuTTY session and you are ready to create another server and start another node if desired.
