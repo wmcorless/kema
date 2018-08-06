@@ -36,37 +36,53 @@ It will run on its own after right clicking.
 Once completed running it will ask for private key (just hit the return key) 
 It will then say "kema server starting" will be displayed and a new key will be generated.
 
-When program finishes highlight complete line starting with "MN#". Once highlighted it will be copied into your clipboard.
-Now click on tools of your Kema Coin Wallet and then open Masternode configuration file.
+When program finishes highlight complete line starting with "MN#". 
+Once highlighted it will be copied into your clipboard.
+Now in the Kema Coin Wallet click on tools and then open Masternode configuration file.
 
-Paste the line you just copied into the Masternode Configuration file,
-Change # sign to latest number of the node.  CTRL "S" to save file.
-run debug console in wallet, "getaccountaddress MN#" --copy address generated and paste into
-the address box under Send.
+On a blank line paste the line you just copied into the Masternode Configuration file.
+Change # sign to 1 or the latest number of the node.  
+CTRL "S" to save file.
+In the wallet click Tools > Debug to go to the console 
+Type 
+
+    getaccountaddress MN1
+    
+Copy address generated
 
 ### Send 5000 coins
 
-Open Transactions and click on "Payment to yourself"
-RIGHT CLICK and copy TXID #. 
-You will then paste it in Masternode config file one space after
-MN# line.  CTRL S and save the file.  Go back to the Debug Console and run the below command.
+Click the send tab.
+Paste the address you created in the previous step in the "Pay to:" block
+You should see MN1 appear in the "Label" to confirm you have done this correctly.
+Enter 5000 coins in the amount and press send.
+
+Open Transactions and you should see the transaction you created.
+Double click on "Payment to yourself" to open a window.
+Double click on the txid number to highlight it, then copy it. 
+Go back to your masternode config file and then paste it in Masternode config file one space after MN# line.  
+CTRL S and save the file.  Go back to the Debug Console and run the below command.
 
     masternode outputs
 
-it will then give you a listing of all transaction ID's of your Masternodes.  
-Compare the last four digits of each ID.  
+It will then give you a listing of all transaction ID's of your Masternodes.  
+Compare the last four digits of each ID to find the one you just created.  
 The last digit of each line will be a 1 or a 0 (zero).  
-Now enter that digit at the end of the line following a blank space.  DO NOT HIT THE ENTER KEY.  
-That digit has to be the last character in the config file or your Node will not run.  
-Now close the configuration file and close the Kema Wallet program.  
-Once program has closed, it will take 15-30 seconds before all files are written.  
-Restart the wallet.  Once wallet is in sync open Masternodes Highlight the node you just created.  
-You can either click on "Start alias" or "Start MISSING" to ENABLE the newly created Masternode.
+Now enter that digit at the end of the line following a blank space. Your config line should not have any enter keys on the line just spaces seperating each item. The number has to be the last character in the config file or your Node will not run.  
+Now save and close the configuration file and close the Kema Wallet program.  
 
-Now we have to check if it is running on the server, to do so copy the below command and right click in your open session of PuTTY.  
-Hit the enter key.
+### Start Masternode
+
+Restart the wallet and wait for it to sync.  
+Select Masternode Tab and select the node you just created.  
+Click on "Start Alias"  button to ENABLE the newly created Masternode.
+If everything has been done correctly it should say "Enabled".
+Now we have to check if it is running on the server, open puTTY and log into your server.
+At the Prompt enter the following:
 
     kema-cli masternode status
 
 The last line should read: "status" : "Masternode successfully started".  
 You may now close your PuTTY session and you are ready to create another server and start another node if desired.
+If your server says "In Sync: Waiting for remote Activation" repeat Start Masternode again.
+If you have any questions or need assistance visit us at Discord.
