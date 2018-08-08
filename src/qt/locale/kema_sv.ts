@@ -219,8 +219,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>kema Coin</source>
-        <translation>kema Coin
+        <source>Kema Coin</source>
+        <translation>Kema Coin
 </translation>
     </message>
     <message>
@@ -272,8 +272,8 @@
         <translation>Avsluta applikationen</translation>
     </message>
     <message>
-        <source>&amp;About kema Coin</source>
-        <translation>&amp;Om kema Coin</translation>
+        <source>&amp;About Kema Coin</source>
+        <translation>&amp;Om Kema Coin</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -412,8 +412,8 @@
         <translation>&amp;Kommandoradalternativ</translation>
     </message>
     <message>
-        <source>Show the kema Coin help message to get a list with possible kema command-line options</source>
-        <translation>Visa kema Coin-hjälpmeddelandet för att få en lista med möjliga kema-kommandoradalternativ</translation>
+        <source>Show the Kema Coin help message to get a list with possible kema command-line options</source>
+        <translation>Visa Kema Coin-hjälpmeddelandet för att få en lista med möjliga kema-kommandoradalternativ</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -883,8 +883,8 @@ Adress: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>kema Coin</source>
-        <translation>kema Coin
+        <source>Kema Coin</source>
+        <translation>Kema Coin
 </translation>
     </message>
     <message>
@@ -931,16 +931,16 @@ Adress: %4
         <translation>Välkommen</translation>
     </message>
     <message>
-        <source>Welcome to kema Coin.</source>
-        <translation>Välkommen till kema Coin.</translation>
+        <source>Welcome to Kema Coin.</source>
+        <translation>Välkommen till Kema Coin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where kema Coin will store its data.</source>
-        <translation>Då detta är första gången programmet startas kan du välja var kema Coin ska lagra sin data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Kema Coin will store its data.</source>
+        <translation>Då detta är första gången programmet startas kan du välja var Kema Coin ska lagra sin data.</translation>
     </message>
     <message>
-        <source>kema Coin will download and store a copy of the kema block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>kema Coin kommer att laddas ned och lagra en kopia av kema:s blockkedja. Minst %1 GB data kommer att lagras i denna katalog och den kommer att växa med tiden. Plånboken kommer också att lagras i denna katalog.</translation>
+        <source>Kema Coin will download and store a copy of the kema block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Kema Coin kommer att laddas ned och lagra en kopia av kema:s blockkedja. Minst %1 GB data kommer att lagras i denna katalog och den kommer att växa med tiden. Plånboken kommer också att lagras i denna katalog.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1985,8 +1985,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>kema Coin is shutting down...</source>
-        <translation>kema Coin stängs ned...</translation>
+        <source>Kema Coin is shutting down...</source>
+        <translation>Kema Coin stängs ned...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2127,8 +2127,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>kema Coin</source>
-        <translation>kema Coin
+        <source>Kema Coin</source>
+        <translation>Kema Coin
 </translation>
     </message>
     <message>
@@ -2140,8 +2140,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>Bitcoin Core-utvecklarna</translation>
     </message>
     <message>
-        <source>The kema Coin developers</source>
-        <translation>kema Coin-utvecklarna</translation>
+        <source>The Kema Coin developers</source>
+        <translation>Kema Coin-utvecklarna</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2662,8 +2662,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>Sammanbind till fastställd adress och avlyssna alltid den. Använd [host]:port-notation för IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. kema Coin is probably already running.</source>
-        <translation>Kan inte erhålla ett lås på datakatalog %s. kema Coin körs förmodligen redan.</translation>
+        <source>Cannot obtain a lock on data directory %s. Kema Coin is probably already running.</source>
+        <translation>Kan inte erhålla ett lås på datakatalog %s. Kema Coin körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Obfuscate uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -2718,8 +2718,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>Detta är en förhandsutgiven testkompilering - använd på egen risk - använd inte för utvinning eller handlarapplikationer.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. kema Coin is probably already running.</source>
-        <translation>Det går inte att binda till %s till denna dator. kema Coin körs förmodligen redan.</translation>
+        <source>Unable to bind to %s on this computer. Kema Coin is probably already running.</source>
+        <translation>Det går inte att binda till %s till denna dator. Kema Coin körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscate denominated funds for this transaction.</source>
@@ -2942,8 +2942,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. kema Coin is shutting down.</source>
-        <translation>Initialiseringstillståndkontroll misslyckades. kema Coin stängs ned.</translation>
+        <source>Initialization sanity check failed. Kema Coin is shutting down.</source>
+        <translation>Initialiseringstillståndkontroll misslyckades. Kema Coin stängs ned.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>

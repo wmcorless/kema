@@ -231,8 +231,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>kema Coin</source>
-        <translation>kema Coin</translation>
+        <source>Kema Coin</source>
+        <translation>Kema Coin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -283,12 +283,12 @@
         <translation>Anwendung beenden</translation>
     </message>
     <message>
-        <source>&amp;About kema Coin</source>
-        <translation>&amp;Über kema Coin</translation>
+        <source>&amp;About Kema Coin</source>
+        <translation>&amp;Über Kema Coin</translation>
     </message>
     <message>
-        <source>Show information about kema Coin</source>
-        <translation>Informationen über kema Coin anzeigen</translation>
+        <source>Show information about Kema Coin</source>
+        <translation>Informationen über Kema Coin anzeigen</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -451,8 +451,8 @@
         <translation>&amp;Kommandozeilenoptionen</translation>
     </message>
     <message>
-        <source>kema Coin client</source>
-        <translation>kema Coin Client</translation>
+        <source>Kema Coin client</source>
+        <translation>Kema Coin Client</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -463,8 +463,8 @@
         <translation>Synchronisiere zusätzliche Daten:  %p%</translation>
     </message>
     <message>
-        <source>Show the kema Coin help message to get a list with possible kema command-line options</source>
-        <translation>Zeige den "kema Coin"-Hilfetext, um eine Liste mit möglichen Kommandozeilenoptionen zu erhalten</translation>
+        <source>Show the Kema Coin help message to get a list with possible kema command-line options</source>
+        <translation>Zeige den "Kema Coin"-Hilfetext, um eine Liste mit möglichen Kommandozeilenoptionen zu erhalten</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -988,8 +988,8 @@ Adresse: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>kema Coin</source>
-        <translation>kema Coin</translation>
+        <source>Kema Coin</source>
+        <translation>Kema Coin</translation>
     </message>
     <message>
         <source>version</source>
@@ -1000,8 +1000,8 @@ Adresse: %4</translation>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About kema Coin</source>
-        <translation>Über kema Coin</translation>
+        <source>About Kema Coin</source>
+        <translation>Über Kema Coin</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1047,16 +1047,16 @@ Adresse: %4</translation>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to kema Coin.</source>
-        <translation>Willkommen zu kema Coin.</translation>
+        <source>Welcome to Kema Coin.</source>
+        <translation>Willkommen zu Kema Coin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where kema Coin will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie kema Coin starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where Kema Coin will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie Kema Coin starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>kema Coin will download and store a copy of the kema block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>kema Coin wird jetzt die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Das Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>Kema Coin will download and store a copy of the kema block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Kema Coin wird jetzt die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Das Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1067,8 +1067,8 @@ Adresse: %4</translation>
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
     </message>
     <message>
-        <source>kema Coin</source>
-        <translation>kema Coin</translation>
+        <source>Kema Coin</source>
+        <translation>Kema Coin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2586,7 +2586,7 @@ Dies kann passieren, wenn einige kema aus ihrer Wallet bereits ausgegeben wurden
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>kema Coin is shutting down...</source>
+        <source>Kema Coin is shutting down...</source>
         <translation>kema-Core wird herunter gefahren...</translation>
     </message>
     <message>
@@ -2736,8 +2736,8 @@ Dies kann passieren, wenn einige kema aus ihrer Wallet bereits ausgegeben wurden
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>kema Coin</source>
-        <translation>kema Coin</translation>
+        <source>Kema Coin</source>
+        <translation>Kema Coin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2748,8 +2748,8 @@ Dies kann passieren, wenn einige kema aus ihrer Wallet bereits ausgegeben wurden
         <translation>Die "Bitcoin Core"-Entwickler</translation>
     </message>
     <message>
-        <source>The kema Coin developers</source>
-        <translation>Die "kema Coin"-Entwickler</translation>
+        <source>The Kema Coin developers</source>
+        <translation>Die "Kema Coin"-Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3326,7 +3326,7 @@ Dies kann passieren, wenn einige kema aus ihrer Wallet bereits ausgegeben wurden
         <translation>An die angegebene Adresse binden und immer abhören. Für IPv6 "[Host]:Port"-Schreibweise verwenden</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. kema Coin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Kema Coin is probably already running.</source>
         <translation>Das Programm kann das Daten-Verzeichnis %s nicht als "in Verwendung" markieren. Wahrscheinlich läuft das Programm bereits.</translation>
     </message>
     <message>
@@ -3382,8 +3382,8 @@ Dies kann passieren, wenn einige kema aus ihrer Wallet bereits ausgegeben wurden
         <translation>Dies ist eine Vorab-Testversion - Verwendung auf eigene Gefahr - nicht für Mining- oder Handelsanwendungen nutzen!</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. kema Coin is probably already running.</source>
-        <translation>kema Coin den Prozess %s auf dem Computer nicht an sich binden. Wahrscheinlich läuft das Programm bereits.</translation>
+        <source>Unable to bind to %s on this computer. Kema Coin is probably already running.</source>
+        <translation>Kema Coin den Prozess %s auf dem Computer nicht an sich binden. Wahrscheinlich läuft das Programm bereits.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscate denominated funds for this transaction.</source>
@@ -3745,8 +3745,8 @@ zum Beispiel: alertnotify=echo %%s | mail -s \"kema Alert\" admin@foo.com</trans
         <translation>Warnung: -maxtxfee ist auf einen sehr hohen Wert gesetzt! Diese Gebühr könnte schon beim Senden einer einzelnen Transaktion fällig werden.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong kema Coin will not work properly.</source>
-        <translation>Warnung: Bitte überprüfen Sie die Datums- und Uhrzeiteinstellungen ihres Computers, da kema Coin ansonsten nicht ordnungsgemäß funktionieren wird!</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Kema Coin will not work properly.</source>
+        <translation>Warnung: Bitte überprüfen Sie die Datums- und Uhrzeiteinstellungen ihres Computers, da Kema Coin ansonsten nicht ordnungsgemäß funktionieren wird!</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
@@ -3799,8 +3799,8 @@ zum Beispiel: alertnotify=echo %%s | mail -s \"kema Alert\" admin@foo.com</trans
         <translation>Copyright (C) 2009-%i Die "Bitcoin Core"-Entwickler</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The kema Coin Developers</source>
-        <translation>Copyright (C) 2014-%i Die "kema Coin"-Entwickler</translation>
+        <source>Copyright (C) 2014-%i The Kema Coin Developers</source>
+        <translation>Copyright (C) 2014-%i Die "Kema Coin"-Entwickler</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
@@ -3831,8 +3831,8 @@ zum Beispiel: alertnotify=echo %%s | mail -s \"kema Alert\" admin@foo.com</trans
         <translation>Fehler bei der Verbindung zum Masternode.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of kema Coin</source>
-        <translation>Fehler beim Laden von wallet.dat: Wallet benötigt neuere Version von kema Coin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Kema Coin</source>
+        <translation>Fehler beim Laden von wallet.dat: Wallet benötigt neuere Version von Kema Coin</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3903,9 +3903,9 @@ zum Beispiel: alertnotify=echo %%s | mail -s \"kema Alert\" admin@foo.com</trans
         <translation>Hinweis</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. kema Coin is shutting down.</source>
+        <source>Initialization sanity check failed. Kema Coin is shutting down.</source>
         <translation>Fehler beim Initialisieren (Plausibilitätsprüfung fehlgeschlagen).
-kema Coin wird heruntergefahren.</translation>
+Kema Coin wird heruntergefahren.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4156,7 +4156,7 @@ kema Coin wird heruntergefahren.</translation>
         <translation>UPnP verwenden, um eine Portweiterleitung einzurichten (Standard: %u)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart kema Coin to complete</source>
+        <source>Wallet needed to be rewritten: restart Kema Coin to complete</source>
         <translation>Die Wallet musste neu geschrieben werden. Bitte das Programm neu starten um den Vorgang abzuschließen</translation>
     </message>
     <message>

@@ -16,7 +16,7 @@ BITCOIND_USER=${BITCOIND_USER:-kema}
 BITCOIND_GROUP=${BITCOIND_GROUP:-kema}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/kemad}
 
-name="kema Coin Daemon"
+name="Kema Coin Daemon"
 description="kema crypto-currency p2p network daemon"
 
 command="/usr/bin/kemad"

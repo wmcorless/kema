@@ -13,7 +13,7 @@
  * for both kemad and kema-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("kema Coin");
+const std::string CLIENT_NAME("Kema Coin");
 
 /**
  * Client version number

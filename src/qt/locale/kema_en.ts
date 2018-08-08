@@ -776,7 +776,7 @@
     <message>
         <location line="-413"/>
         <location line="+853"/>
-        <source>kema Coin</source>
+        <source>Kema Coin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -801,12 +801,12 @@
     </message>
     <message>
         <location line="+29"/>
-        <source>&amp;About kema Coin</source>
+        <source>&amp;About Kema Coin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about kema Coin</source>
+        <source>Show information about Kema Coin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -871,7 +871,7 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the kema Coin help message to get a list with possible kema command-line options</source>
+        <source>Show the Kema Coin help message to get a list with possible kema command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -881,7 +881,7 @@
     </message>
     <message>
         <location line="+147"/>
-        <source>kema Coin client</source>
+        <source>Kema Coin client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
@@ -1517,7 +1517,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>kema Coin</source>
+        <source>Kema Coin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1528,7 +1528,7 @@ Address: %4
     </message>
     <message>
         <location line="+5"/>
-        <source>About kema Coin</source>
+        <source>About Kema Coin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1586,17 +1586,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to kema Coin.</source>
+        <source>Welcome to Kema Coin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where kema Coin will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Kema Coin will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>kema Coin will download and store a copy of the kema block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Kema Coin will download and store a copy of the kema block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1611,7 +1611,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+82"/>
-        <source>kema Coin</source>
+        <source>Kema Coin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4024,7 +4024,7 @@ https://www.transifex.com/kema-project/kema-project-translations</source>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+43"/>
-        <source>kema Coin is shutting down...</source>
+        <source>Kema Coin is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4219,7 +4219,7 @@ https://www.transifex.com/kema-project/kema-project-translations</source>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+37"/>
-        <source>kema Coin</source>
+        <source>Kema Coin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4239,7 +4239,7 @@ https://www.transifex.com/kema-project/kema-project-translations</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>The kema Coin developers</source>
+        <source>The Kema Coin developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5033,7 +5033,7 @@ https://www.transifex.com/kema-project/kema-project-translations</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Cannot obtain a lock on data directory %s. kema Coin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Kema Coin is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5258,7 +5258,7 @@ for example: alertnotify=echo %%s | mail -s &quot;kema Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. kema Coin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Kema Coin is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5293,7 +5293,7 @@ for example: alertnotify=echo %%s | mail -s &quot;kema Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong kema Coin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Kema Coin will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5490,7 +5490,7 @@ for example: alertnotify=echo %%s | mail -s &quot;kema Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The kema Coin Developers</source>
+        <source>Copyright (C) 2015-%i The Kema Coin Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5580,7 +5580,7 @@ for example: alertnotify=echo %%s | mail -s &quot;kema Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of kema Coin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Kema Coin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5720,7 +5720,7 @@ for example: alertnotify=echo %%s | mail -s &quot;kema Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. kema Coin is shutting down.</source>
+        <source>Initialization sanity check failed. Kema Coin is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6440,7 +6440,7 @@ for example: alertnotify=echo %%s | mail -s &quot;kema Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart kema Coin to complete</source>
+        <source>Wallet needed to be rewritten: restart Kema Coin to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

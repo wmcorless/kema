@@ -277,10 +277,10 @@
 #define PACKAGE_BUGREPORT "https://kema.org"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "kema Coin"
+#define PACKAGE_NAME "Kema Coin"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "kema Coin 2.0.0"
+#define PACKAGE_STRING "Kema Coin 2.0.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "kema"

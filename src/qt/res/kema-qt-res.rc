@@ -20,13 +20,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "kema"
-            VALUE "FileDescription",    "kema Coin (OSS GUI client for kema)"
+            VALUE "FileDescription",    "Kema Coin (OSS GUI client for kema)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "kema-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "kema-qt.exe"
-            VALUE "ProductName",        "kema Coin"
+            VALUE "ProductName",        "Kema Coin"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

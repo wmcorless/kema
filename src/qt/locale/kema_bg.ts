@@ -231,7 +231,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>kema Coin</source>
+        <source>Kema Coin</source>
         <translation>kema Ядро</translation>
     </message>
     <message>
@@ -283,12 +283,12 @@
         <translation>Изход от приложението</translation>
     </message>
     <message>
-        <source>&amp;About kema Coin</source>
+        <source>&amp;About Kema Coin</source>
         <translation>&amp;За kema ядрото</translation>
     </message>
     <message>
-        <source>Show information about kema Coin</source>
-        <translation>Покаци информация за kema Coin</translation>
+        <source>Show information about Kema Coin</source>
+        <translation>Покаци информация за Kema Coin</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -451,8 +451,8 @@
         <translation>&amp;Опции на командния ред</translation>
     </message>
     <message>
-        <source>kema Coin client</source>
-        <translation>kema Coin клиент</translation>
+        <source>Kema Coin client</source>
+        <translation>Kema Coin клиент</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -463,7 +463,7 @@
         <translation>Синхронизиране на допълнителни данни: %p%</translation>
     </message>
     <message>
-        <source>Show the kema Coin help message to get a list with possible kema command-line options</source>
+        <source>Show the Kema Coin help message to get a list with possible kema command-line options</source>
         <translation>Покажи съобщението за помощ на kema ядрото за да получиш списък на възможните опции за командния ред</translation>
     </message>
     <message>
@@ -989,7 +989,7 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>kema Coin</source>
+        <source>Kema Coin</source>
         <translation>kema ядро</translation>
     </message>
     <message>
@@ -1001,7 +1001,7 @@ Address: %4
         <translation>(%1-битов)</translation>
     </message>
     <message>
-        <source>About kema Coin</source>
+        <source>About Kema Coin</source>
         <translation>За kema ядрото</translation>
     </message>
     <message>
@@ -1048,15 +1048,15 @@ Address: %4
         <translation>Добре дошли</translation>
     </message>
     <message>
-        <source>Welcome to kema Coin.</source>
+        <source>Welcome to Kema Coin.</source>
         <translation>Добре дошли в ядрото на kema.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where kema Coin will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Kema Coin will store its data.</source>
         <translation>Тъй като програмата се стартира за първи път вие може да изберете къде kema да съхранява своята информация.</translation>
     </message>
     <message>
-        <source>kema Coin will download and store a copy of the kema block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Kema Coin will download and store a copy of the kema block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>kema ще свали и съхрани копие на kema регистъра на блокове. Информацията ще заеме поне %1ГБ  пространство и ще нараства с времето. В тази папка ще бъде съхранен и портфейла. </translation>
     </message>
     <message>
@@ -1068,7 +1068,7 @@ Address: %4
         <translation>Определете папка по ваш избор:</translation>
     </message>
     <message>
-        <source>kema Coin</source>
+        <source>Kema Coin</source>
         <translation>kema ядро</translation>
     </message>
     <message>
@@ -2586,7 +2586,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>kema Coin is shutting down...</source>
+        <source>Kema Coin is shutting down...</source>
         <translation>kema ядрото се изключва...</translation>
     </message>
     <message>
@@ -2736,7 +2736,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>kema Coin</source>
+        <source>Kema Coin</source>
         <translation>kema Ядро</translation>
     </message>
     <message>
@@ -2748,7 +2748,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>Водещи Bitcoin разработчици</translation>
     </message>
     <message>
-        <source>The kema Coin developers</source>
+        <source>The Kema Coin developers</source>
         <translation>Водещи kema разработчици</translation>
     </message>
     <message>
@@ -3326,7 +3326,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>Свързва се с посочения адрес и винаги слуша за него. Използвайте [хост]:порт за изписване при IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. kema Coin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Kema Coin is probably already running.</source>
         <translation>Не може да се заключи дата директорията %s. kema ядрото вече работи.</translation>
     </message>
     <message>
@@ -3382,7 +3382,7 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>Това е предварителна тест версия - използвайте я на ваша отговорност - не използвайте за копане или за търговски приложения.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. kema Coin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Kema Coin is probably already running.</source>
         <translation>Не може да се свърже с %s на този компютър. kema ядрото най-вероятно вече работи.</translation>
     </message>
     <message>
@@ -3737,8 +3737,8 @@ for example: alertnotify=echo %%s | mail -s "kema Alert" admin@foo.com
         <translation>Внимание: -maxtxfee  е с много голяма зададена стойност! Това е транзакционната такса, която ще платите ако направите единична транзакция.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong kema Coin will not work properly.</source>
-        <translation>Внимание: Моля проверете дали датата и часът на вашият компютър са верни! Ако часовникът ви не е сверен, kema Coin няма да работи правилно.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Kema Coin will not work properly.</source>
+        <translation>Внимание: Моля проверете дали датата и часът на вашият компютър са верни! Ако часовникът ви не е сверен, Kema Coin няма да работи правилно.</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
@@ -3791,8 +3791,8 @@ for example: alertnotify=echo %%s | mail -s "kema Alert" admin@foo.com
         <translation>Запазени права (C) 2009-%i Bitcoin Core разработчици</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The kema Coin Developers</source>
-        <translation>Запазени права (C) 2014-%i kema Coin разработчиците</translation>
+        <source>Copyright (C) 2014-%i The Kema Coin Developers</source>
+        <translation>Запазени права (C) 2014-%i Kema Coin разработчиците</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
@@ -3823,8 +3823,8 @@ for example: alertnotify=echo %%s | mail -s "kema Alert" admin@foo.com
         <translation>Грешка при свързване с Masternode.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of kema Coin</source>
-        <translation>Грешка при зареждане на wallet.dat: портфейлът изисква по-нова версия на kema Coin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Kema Coin</source>
+        <translation>Грешка при зареждане на wallet.dat: портфейлът изисква по-нова версия на Kema Coin</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3895,7 +3895,7 @@ for example: alertnotify=echo %%s | mail -s "kema Alert" admin@foo.com
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. kema Coin is shutting down.</source>
+        <source>Initialization sanity check failed. Kema Coin is shutting down.</source>
         <translation>Инициализационната проверка не успешна. kema ядрото се изключва.</translation>
     </message>
     <message>
@@ -4147,7 +4147,7 @@ for example: alertnotify=echo %%s | mail -s "kema Alert" admin@foo.com
         <translation>Използвай UPnP за определяне на порта за слушане (по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart kema Coin to complete</source>
+        <source>Wallet needed to be rewritten: restart Kema Coin to complete</source>
         <translation>Портфейлът трябва да бъде презаписан: рестартирайте kema за да завършите</translation>
     </message>
     <message>

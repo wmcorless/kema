@@ -306,7 +306,7 @@ void AddressTableModel::updateEntry(const QString& address,
     const QString& purpose,
     int status)
 {
-    // Update address book model from kema Coin
+    // Update address book model from Kema Coin
     priv->updateEntry(address, label, isMine, purpose, status);
 }
 

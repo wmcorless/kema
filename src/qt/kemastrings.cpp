@@ -30,7 +30,7 @@ static const char UNUSED* kema_strings[] = {
                                    "notation for IPv6. This option can be specified multiple times (default: "
                                    "bind to all interfaces)"),
     QT_TRANSLATE_NOOP("kema-core", ""
-                                   "Cannot obtain a lock on data directory %s. kema Coin is probably already "
+                                   "Cannot obtain a lock on data directory %s. Kema Coin is probably already "
                                    "running."),
     QT_TRANSLATE_NOOP("kema-core", ""
                                    "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
@@ -162,7 +162,7 @@ static const char UNUSED* kema_strings[] = {
                                    "It is also recommended to set alertnotify so you are notified of problems;\n"
                                    "for example: alertnotify=echo %%s | mail -s \"kema Alert\" admin@foo.com\n"),
     QT_TRANSLATE_NOOP("kema-core", ""
-                                   "Unable to bind to %s on this computer. kema Coin is probably already running."),
+                                   "Unable to bind to %s on this computer. Kema Coin is probably already running."),
     QT_TRANSLATE_NOOP("kema-core", ""
                                    "Unable to locate enough Darksend denominated funds for this transaction."),
     QT_TRANSLATE_NOOP("kema-core", ""
@@ -182,7 +182,7 @@ static const char UNUSED* kema_strings[] = {
                                    "pay if you send a transaction."),
     QT_TRANSLATE_NOOP("kema-core", ""
                                    "Warning: Please check that your computer's date and time are correct! If "
-                                   "your clock is wrong kema Coin will not work properly."),
+                                   "your clock is wrong Kema Coin will not work properly."),
     QT_TRANSLATE_NOOP("kema-core", ""
                                    "Warning: The network does not appear to fully agree! Some miners appear to "
                                    "be experiencing issues."),
@@ -236,7 +236,7 @@ static const char UNUSED* kema_strings[] = {
     QT_TRANSLATE_NOOP("kema-core", "Connection options:"),
     QT_TRANSLATE_NOOP("kema-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
     QT_TRANSLATE_NOOP("kema-core", "Copyright (C) 2014-%i The Dash and PIVX Core Developers"),
-    QT_TRANSLATE_NOOP("kema-core", "Copyright (C) 2018-%i The kema Coin Developers"),
+    QT_TRANSLATE_NOOP("kema-core", "Copyright (C) 2018-%i The Kema Coin Developers"),
     QT_TRANSLATE_NOOP("kema-core", "Corrupted block database detected"),
     QT_TRANSLATE_NOOP("kema-core", "Could not parse -rpcbind value %s as network address"),
     QT_TRANSLATE_NOOP("kema-core", "Could not parse masternode.conf"),
@@ -254,7 +254,7 @@ static const char UNUSED* kema_strings[] = {
     QT_TRANSLATE_NOOP("kema-core", "Error loading block database"),
     QT_TRANSLATE_NOOP("kema-core", "Error loading wallet.dat"),
     QT_TRANSLATE_NOOP("kema-core", "Error loading wallet.dat: Wallet corrupted"),
-    QT_TRANSLATE_NOOP("kema-core", "Error loading wallet.dat: Wallet requires newer version of kema Coin"),
+    QT_TRANSLATE_NOOP("kema-core", "Error loading wallet.dat: Wallet requires newer version of Kema Coin"),
     QT_TRANSLATE_NOOP("kema-core", "Error opening block database"),
     QT_TRANSLATE_NOOP("kema-core", "Error reading from database, shutting down."),
     QT_TRANSLATE_NOOP("kema-core", "Error recovering public key."),
@@ -282,7 +282,7 @@ static const char UNUSED* kema_strings[] = {
     QT_TRANSLATE_NOOP("kema-core", "Incompatible version."),
     QT_TRANSLATE_NOOP("kema-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
     QT_TRANSLATE_NOOP("kema-core", "Information"),
-    QT_TRANSLATE_NOOP("kema-core", "Initialization sanity check failed. kema Coin is shutting down."),
+    QT_TRANSLATE_NOOP("kema-core", "Initialization sanity check failed. Kema Coin is shutting down."),
     QT_TRANSLATE_NOOP("kema-core", "Input is not valid."),
     QT_TRANSLATE_NOOP("kema-core", "Insufficient funds."),
     QT_TRANSLATE_NOOP("kema-core", "Invalid -onion address: '%s'"),
@@ -426,7 +426,7 @@ static const char UNUSED* kema_strings[] = {
     QT_TRANSLATE_NOOP("kema-core", "Verifying wallet..."),
     QT_TRANSLATE_NOOP("kema-core", "Wallet %s resides outside data directory %s"),
     QT_TRANSLATE_NOOP("kema-core", "Wallet is locked."),
-    QT_TRANSLATE_NOOP("kema-core", "Wallet needed to be rewritten: restart kema Coin to complete"),
+    QT_TRANSLATE_NOOP("kema-core", "Wallet needed to be rewritten: restart Kema Coin to complete"),
     QT_TRANSLATE_NOOP("kema-core", "Wallet options:"),
     QT_TRANSLATE_NOOP("kema-core", "Wallet window title"),
     QT_TRANSLATE_NOOP("kema-core", "Warning"),

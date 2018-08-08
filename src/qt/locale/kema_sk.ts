@@ -231,8 +231,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>kema Coin</source>
-        <translation>kema Coin</translation>
+        <source>Kema Coin</source>
+        <translation>Kema Coin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -283,12 +283,12 @@
         <translation>Ukončiť program</translation>
     </message>
     <message>
-        <source>&amp;About kema Coin</source>
-        <translation>&amp;O kema Coin</translation>
+        <source>&amp;About Kema Coin</source>
+        <translation>&amp;O Kema Coin</translation>
     </message>
     <message>
-        <source>Show information about kema Coin</source>
-        <translation>Zobraziť informácie o kema Coin</translation>
+        <source>Show information about Kema Coin</source>
+        <translation>Zobraziť informácie o Kema Coin</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -451,8 +451,8 @@
         <translation>Možnosti príkazového riadku</translation>
     </message>
     <message>
-        <source>kema Coin client</source>
-        <translation>kema Coin klient</translation>
+        <source>Kema Coin client</source>
+        <translation>Kema Coin klient</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -463,8 +463,8 @@
         <translation>Synchronizujú sa ďalšie dáta: %p%</translation>
     </message>
     <message>
-        <source>Show the kema Coin help message to get a list with possible kema command-line options</source>
-        <translation>Zobraziť kema Coin nápovedu k získaniu zoznamu možností príkazového riadku kema.</translation>
+        <source>Show the Kema Coin help message to get a list with possible kema command-line options</source>
+        <translation>Zobraziť Kema Coin nápovedu k získaniu zoznamu možností príkazového riadku kema.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -988,8 +988,8 @@ Adresa: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>kema Coin</source>
-        <translation>kema Coin</translation>
+        <source>Kema Coin</source>
+        <translation>Kema Coin</translation>
     </message>
     <message>
         <source>version</source>
@@ -1000,8 +1000,8 @@ Adresa: %4</translation>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About kema Coin</source>
-        <translation>O kema Coin</translation>
+        <source>About Kema Coin</source>
+        <translation>O Kema Coin</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1047,16 +1047,16 @@ Adresa: %4</translation>
         <translation>Vitajte</translation>
     </message>
     <message>
-        <source>Welcome to kema Coin.</source>
-        <translation>Vitajte v kema Coin.</translation>
+        <source>Welcome to Kema Coin.</source>
+        <translation>Vitajte v Kema Coin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where kema Coin will store its data.</source>
-        <translation>Keďže toto je prvý krát čo spúšťate tento program, môžete vybrať kam bude kema Coin ukladať svoje dáta.</translation>
+        <source>As this is the first time the program is launched, you can choose where Kema Coin will store its data.</source>
+        <translation>Keďže toto je prvý krát čo spúšťate tento program, môžete vybrať kam bude Kema Coin ukladať svoje dáta.</translation>
     </message>
     <message>
-        <source>kema Coin will download and store a copy of the kema block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>kema Coin stiahne a uloží kópiu reťazca blokov kema. Pri najmenej %1GB dát bude uložených v tejto zložke and bude ďalej rásť. Peňaženka bude tiež uložená v tejto zložke.</translation>
+        <source>Kema Coin will download and store a copy of the kema block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Kema Coin stiahne a uloží kópiu reťazca blokov kema. Pri najmenej %1GB dát bude uložených v tejto zložke and bude ďalej rásť. Peňaženka bude tiež uložená v tejto zložke.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1067,8 +1067,8 @@ Adresa: %4</translation>
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-        <source>kema Coin</source>
-        <translation>kema Coin</translation>
+        <source>Kema Coin</source>
+        <translation>Kema Coin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2585,8 +2585,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>kema Coin is shutting down...</source>
-        <translation>kema Coin sa vypína...</translation>
+        <source>Kema Coin is shutting down...</source>
+        <translation>Kema Coin sa vypína...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2735,8 +2735,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>kema Coin</source>
-        <translation>kema Coin</translation>
+        <source>Kema Coin</source>
+        <translation>Kema Coin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2747,8 +2747,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>Vývojári jadra Bitcoin</translation>
     </message>
     <message>
-        <source>The kema Coin developers</source>
-        <translation>Vývojári kema Coin</translation>
+        <source>The Kema Coin developers</source>
+        <translation>Vývojári Kema Coin</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3325,8 +3325,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>Spojiť s danou adresou a vždy na nej počúvať. Použite zápis [host]:port pre IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. kema Coin is probably already running.</source>
-        <translation>Nedá sa zamknúť dátový adresár %s. kema Coin už pravdepodobne beží.</translation>
+        <source>Cannot obtain a lock on data directory %s. Kema Coin is probably already running.</source>
+        <translation>Nedá sa zamknúť dátový adresár %s. Kema Coin už pravdepodobne beží.</translation>
     </message>
     <message>
         <source>Obfuscate uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -3381,8 +3381,8 @@ https://www.transifex.com/kema-crypto/kema-wallet-translations/</translation>
         <translation>Toto je predbežná testovacia zostava - používate na vlastné riziko - nepoužívajte na ťaženie alebo obchodné aplikácie</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. kema Coin is probably already running.</source>
-        <translation>Nedá sa viazať ku %s na tomto počítači. kema Coin už pravdepodobne beží.</translation>
+        <source>Unable to bind to %s on this computer. Kema Coin is probably already running.</source>
+        <translation>Nedá sa viazať ku %s na tomto počítači. Kema Coin už pravdepodobne beží.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscate denominated funds for this transaction.</source>
@@ -3745,8 +3745,8 @@ napríklad: alertnotify=echo %%s | mail -s "kema Upozornenie" admin@foo.com
         <translation>Upozornenie: -maxtxfee je nastavené príliš vysoko! Takto vysoké poplatky by mali byť zaplatené za jednu transakciu.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong kema Coin will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte si prosím či máte správny čas a dátum na Vašom počítači. Ak je Vaše nastavenie zlé, kema Coin nebude pracovať správne.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Kema Coin will not work properly.</source>
+        <translation>Upozornenie: Skontrolujte si prosím či máte správny čas a dátum na Vašom počítači. Ak je Vaše nastavenie zlé, Kema Coin nebude pracovať správne.</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
@@ -3799,7 +3799,7 @@ napríklad: alertnotify=echo %%s | mail -s "kema Upozornenie" admin@foo.com
         <translation>Autorské práva (C) 2009-%i Vývojári jadra Bitcoin</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The kema Coin Developers</source>
+        <source>Copyright (C) 2014-%i The Kema Coin Developers</source>
         <translation>Autorské práva (C) 2014-%i Vývojári jadra kema</translation>
     </message>
     <message>
@@ -3831,8 +3831,8 @@ napríklad: alertnotify=echo %%s | mail -s "kema Upozornenie" admin@foo.com
         <translation>Chyba pripojenia k Masternode.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of kema Coin</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu kema Coin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Kema Coin</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Kema Coin</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3903,8 +3903,8 @@ napríklad: alertnotify=echo %%s | mail -s "kema Upozornenie" admin@foo.com
         <translation>Informácia</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. kema Coin is shutting down.</source>
-        <translation>Inicializácia kontroly zdravia zlyhala. kema Coin sa vypína.</translation>
+        <source>Initialization sanity check failed. Kema Coin is shutting down.</source>
+        <translation>Inicializácia kontroly zdravia zlyhala. Kema Coin sa vypína.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4155,8 +4155,8 @@ napríklad: alertnotify=echo %%s | mail -s "kema Upozornenie" admin@foo.com
         <translation>Použiť UPnP pre mapovanie počúvajúceho portu (predvolené: %u)</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart kema Coin to complete</source>
-        <translation>Bolo potrebné prepísať peňaženku: k dokončeniu reštartujte kema Coin</translation>
+        <source>Wallet needed to be rewritten: restart Kema Coin to complete</source>
+        <translation>Bolo potrebné prepísať peňaženku: k dokončeniu reštartujte Kema Coin</translation>
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
