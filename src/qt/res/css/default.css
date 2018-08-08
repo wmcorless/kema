@@ -2,7 +2,6 @@
 /*************** [COLOR CODES] DARK PURPLE:#750cb7 LIGHT PURPLE:#a020f0 *****************/
 /****************************************************************************************/
 
-
 WalletFrame {
 border-image: url(':/images/walletFrame_bgdark') 0 0 0 0 stretch stretch;
 border-top:0px solid #000;
@@ -178,7 +177,7 @@ padding-bottom:5px;
 }
 
 QPushButton:hover {
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #ffaa5f, stop: .1 #ffaa5f, stop: .95 #ffaa5f, stop: 1 #a020f0);
+background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #a020f0, stop: .1 #a020f0, stop: .95 #a020f0, stop: 1 #a020f0);
 }
 
 QPushButton:focus {
