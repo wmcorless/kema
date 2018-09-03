@@ -6,9 +6,9 @@ Kema Coin is a lightweight and secure coin that is focused on fast and safe tran
 We use masternodes as the backbone of the system.
 
 Mining:
-* Proof of Work/Proof of Stake Hybrid
-* Miners: 30%
-* Masternodes: 70%
+* Proof of Stake
+* Miners: 30 Kemas (minus fees)
+* Masternode Reward: 70 Kemas
 * Algo: Quark
 
 Ports:
