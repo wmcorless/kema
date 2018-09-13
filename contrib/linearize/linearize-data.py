@@ -264,7 +264,9 @@ if __name__ == '__main__':
 	f.close()
 
 	if 'netmagic' not in settings:
-		settings['netmagic'] = 'f9beb4d9'
+		settings['netmagic'] = '697c2446'
+	if 'genesis' not in settings:
+		settings['genesis'] = 'd95b733e17624a7e613b050470f57e8c6f13f9a2c36e4efbfb1e0077a6161ae7'
 	if 'input' not in settings:
 		settings['input'] = 'input'
 	if 'hashlist' not in settings:
@@ -291,8 +293,8 @@ if __name__ == '__main__':
 	blkindex = get_block_hashes(settings)
 	blkmap = mkblockmap(blkindex)
 
-	if not "0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818" in blkmap:
-		print("not found")
+	if not settings['genesis'] in blkmap:
+		print("Genesis Block not found")
 	else:
 		BlockDataCopier(settings, blkindex, blkmap).run()
 
