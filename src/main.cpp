@@ -3157,7 +3157,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
     return true;
 }
 
-bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
+bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev, CValidationState& state)
 {
     if (pindexPrev == NULL)
         return error("%s : null pindexPrev for block %s", __func__, block.GetHash().ToString().c_str());
@@ -3176,7 +3176,8 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
 */
 
     if (block.nBits != nBitsRequired)
-        return error("%s : incorrect proof of work at %d", __func__, pindexPrev->nHeight + 1);
+        //return error("%s : incorrect proof of work at %d", __func__, pindexPrev->nHeight + 1);
+	    return state.DoS(100, error("%s : incorrect proof of work at %d", __func__, pindexPrev->nHeight + 1));
 
     if (block.IsProofOfStake()) {
         uint256 hashProofOfStake;
@@ -3331,7 +3332,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             return state.DoS(100, error("%s : prev block invalid", __func__), REJECT_INVALID, "bad-prevblk");
     }
 
-    if (block.GetHash() != Params().HashGenesisBlock() && !CheckWork(block, pindexPrev))
+    if (block.GetHash() != Params().HashGenesisBlock() && !CheckWork(block, pindexPrev, state))
         return false;
 
     if (!AcceptBlockHeader(block, state, &pindex))
