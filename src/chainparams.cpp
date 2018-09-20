@@ -110,9 +110,9 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60;   //1 day
-        nTargetSpacing = 1 * 60;    //1 minutes
+        nTargetSpacing = 5 * 60;    //5 minutes
         nLastPOWBlock = 22000;
-        nMaturity = 6;              //6 minutes
+        nMaturity = 3;              //15 minutes
         nMasternodeCountDrift = 20;
         nMasternodeColleteralLimxDev = 5000; //Params().MasternodeColleteralLimxDev()
         nModifierUpdateBlock = 1; // we use the version 2 for dmd
