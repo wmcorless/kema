@@ -3175,13 +3175,13 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev, CValidationSta
     }
 */
 
-    if (block.nBits != nBitsRequired)
-        if (pindexPrev->nHeight < 60101){
+    if (block.nBits != nBitsRequired) {
+        if (pindexPrev->nHeight < 60101) {
                //this mod is due to the change in blocktime
         } else {
                return error("%s : incorrect proof of work at %d", __func__, pindexPrev->nHeight + 1);
         }
-
+    }
     if (block.IsProofOfStake()) {
         uint256 hashProofOfStake;
         uint256 hash = block.GetHash();
