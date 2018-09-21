@@ -59,6 +59,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (0, uint256("d95b733e17624a7e613b050470f57e8c6f13f9a2c36e4efbfb1e0077a6161ae7"))
     (22000, uint256("00000022c7437c388b8de00aa2df17dcd9e27c84f2cf9a8db9fa108c65458c32")) //end of POW
     (58000, uint256("b44501ff72a24f1e21b4101daed8a21f3115dad8d7df2729561b1089e3539a8a"))
+    (60101, uint256("7d74cdd0ee0ebaa2acc39c458adbf318655fce5da1206cdf2ce22a8a16c81f40")) //Change from 1 minute to 5 minute blocktime
 ;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
