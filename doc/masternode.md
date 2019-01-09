@@ -16,7 +16,7 @@ Download Putty at http://www.putty.org
 
 ### Run PuTTY
 * Paste server address under session into Host Name (or IP address) section
-* Enter the server name "MN1" in the name block and click save
+* Enter the server name "MN1" in the saved sessions and click save
 * Press the open button
 * When Security Alert box opens, click Yes
 * Enter Username and Password
@@ -78,6 +78,7 @@ Now save and close the configuration file and close the Kema Wallet program.
 ### Start Masternode
 
 * Restart the wallet and wait for it to sync.  
+* Make sure your sent transaction has at least 15 confirmations
 * Select Masternode Tab and select the node you just created.  
 * Click on "Start Alias"  button to ENABLE the newly created Masternode.
 * If everything has been done correctly it should say "Enabled".
