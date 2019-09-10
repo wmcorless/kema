@@ -66,13 +66,13 @@ You should now be in the container, type:
     
 Next we setup a new ubuntu 16.04 container:
 
-    docker run -it --privileged --cap-add=NET_ADMIN --restart always --name mn ubuntu:16.04 /bin/bash
+    docker run -it --privileged --cap-add=NET_ADMIN --restart always --name mn1 ubuntu:16.04 /bin/bash
 
 This will put you in the container, now enter the following:
 
     cd
     apt update && apt upgrade -y
-    apt install nano wget lsb-core net-tools iptables dbus -y
+    apt install nano wget lsb-core net-tools iptables -y
 When this is finished we will download and install the masternode script:
 
     wget https://raw.githubusercontent.com/wmcorless/kema/master/mn-setup.sh -O mn-setup.sh
