@@ -1,11 +1,11 @@
 SETTING UP KEMA MASTERNODE:
 ===========================
-* First set up a VPS server. We recommend VULTR.COM
+* First set up a VPS server. We recommend Amazon Web Services or Digital Ocean.
 * Set up an account, and verify your email.
 
 ### Setting up your VPS
 
-* From your page at vultr.com Click on the "plus" sign to add server.
+* Add server.
 * Server type choose Ubuntu 1604 x64
 * Select the 25GB SSD
 * Label the Server MN1 (for masternode 1 and so on.)
@@ -51,12 +51,12 @@ Type:
     
 Copy address generated.
 
-### Send coins
+### Send Collateral
 
 * Click the send tab.
 * Paste the address you created in the previous step in the "Pay to:" block
 You should see MN1 appear in the "Label" to confirm you have done this correctly.
-Enter 5000 coins in the amount and press send.
+Enter 5000 coins for the required collateral in the amount and press send.
 
 Open Transactions and you should see the transaction you created.
 Double click on "Payment to yourself" to open a window.
@@ -68,10 +68,10 @@ Go back to the Debug Console and run the below command.
     masternode outputs
 
 It will then give you a listing of all transaction ID's of your Masternodes.  
-Compare the last three digits of each ID to find the one you just created.  
+Compare the first three digits of each ID to find the one you just created.  
 The last digit of each line will be a 1 or a 0 (zero).  
 Now enter that digit at the end of the line following a blank space. 
-Your config line should not have any enter keys on the line just spaces seperating each item. 
+Your config line should not have any "enter" keys on the line just spaces seperating each item. 
 The number has to be the last character in the config file or your Node will not run.  
 Now save and close the configuration file and close the Kema Wallet program.  
 
