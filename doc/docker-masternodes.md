@@ -98,10 +98,12 @@ Now list your images with:
 Copy the container label for masternode and place it in the line below:
 
     docker commit [container label] masternode
+    
 Now list docker images with:
 
     docker images
-copy the tag for the id for masternode and place it in the line below:
+    
+Copy the tag for the id for masternode and place it in the line below:
 
     docker image tag [id] localhost:5000/masternode
 Now we push and pull it:
@@ -120,10 +122,13 @@ Here is an example:
     nano kema.conf
 Replace the masternode key with the correct one. Save the file and exit.
 
-Then run the Kema daemon with:
+Then run the Kema daemon from the VPS root with:
 
     docker exec -it mn1 kemad -daemon
 You can change the name for each of the masternodes as appropriate.
+
+To connect to individual containers use:
+    docker attach mn1
 
 ### Setting up cron to automatically load all of your masternodes.
 
