@@ -110,7 +110,8 @@ Now we push and pull it:
 
     docker push localhost:5000/masternode
     docker pull localhost:5000/masternode
-Setup your first Masternode:
+    
+### Setup your first Masternode:
 
     docker run -dit --restart always --name mn1 localhost:5000/masternode
     
@@ -145,14 +146,17 @@ Add additional lines as needed.
 Save your file and make it executable:
 
     chmod +x start.sh
-Now edit your crontab with the following:
+
+To test the file use: 
+
+    ./start.sh
+If it works good edit your crontab with the following:
 
     crontab -e
-The first time you use it select Nano.
-Add the following to the bottom of the file:
+The first time you use it select Nano.  Add the following to the bottom of the file:
 
     @reboot sleep 30; /root/start.sh
-Test your system by rebooting and use top to see what files.
+Test your system by rebooting and use "top" to see what files are running.
 
     top
 You should see the COMMAND "kemad" loaded for each container.
