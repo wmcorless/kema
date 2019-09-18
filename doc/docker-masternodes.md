@@ -72,6 +72,7 @@ This will put you in the container, now enter the following:
 
     cd
     apt update && apt upgrade -y
+    
     apt install nano wget lsb-core net-tools iptables -y
 When this is finished we will download and install the masternode script:
 
