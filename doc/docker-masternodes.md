@@ -19,7 +19,7 @@ We recommend using the latest version ubuntu server.
 First run the following in your VPS while in root:
 
     apt update 
-    apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+    apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
 Once that is done you want to add the docker key:
 
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -66,7 +66,7 @@ You should now be in the container, type:
     
 Next we setup a new ubuntu 16.04 container:
 
-    docker run -it --privileged --cap-add=NET_ADMIN --restart always --name mn1 ubuntu:16.04 /bin/bash
+    docker run -it --privileged --cap-add=NET_ADMIN --restart always --name mn ubuntu:16.04 /bin/bash
 
 This will put you in the container, now enter the following:
 
