@@ -87,9 +87,7 @@ We want to start the Masternode with:
 It will take some time for the Masternode to sync up. To check the status use:
 
     kema-cli masternode status
-Make sure your masternode is in sync. Once synchronized exit container with:
-
-    ctrl-p ctrl-q 
+Make sure your masternode is in sync. Once synchronized exit container by typing "ctrl-p ctrl-q"
 Next we will start the registry locally.
 
     docker run -d -p 5000:5000 --restart always --name registry registry:2
