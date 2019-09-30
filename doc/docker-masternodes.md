@@ -29,7 +29,7 @@ Now add the docker repository:
 Update and install files:
 
     apt update
-    apt install docker-ce docker-ce-cli containerd.io
+    apt install docker-ce docker-ce-cli containerd.io -y
 
 Test the installation:
 
@@ -98,7 +98,7 @@ Now list your images with:
     docker ps
 Copy the container label for masternode and place it in the line below:
 
-    docker commit [container label] masternode
+    docker commit mn masternode
     
 Now list docker images with:
 
