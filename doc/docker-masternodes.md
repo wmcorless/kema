@@ -110,7 +110,7 @@ Now we push and pull it:
     docker push localhost:5000/masternode
     docker pull localhost:5000/masternode
     
-### Setup your first Masternode:
+### Setup your next Masternode:
 
     docker run -dit --restart always --name mn1 localhost:5000/masternode
     
