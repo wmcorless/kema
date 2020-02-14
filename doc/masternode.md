@@ -78,7 +78,7 @@ Now save and close the configuration file and close the Kema Wallet program.
 ### Start Masternode
 
 * Restart the wallet and wait for it to sync.  
-* Make sure your sent transaction has at least 15 confirmations
+* Make sure your sent transaction has at least 17 confirmations
 * Select Masternode Tab and select the node you just created.  
 * Click on "Start Alias"  button to ENABLE the newly created Masternode.
 * If everything has been done correctly it should say "Enabled".
