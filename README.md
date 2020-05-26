@@ -24,6 +24,3 @@ Pull requests can then be made and if accepted will be added to the repo.
 Installing Masternode:
 =====================
 See https://github.com/wmcorless/kema/blob/master/doc/masternode.md
-  
-    Hi my name is Kema.  I love the color purple.  This is my coin. 
-    Thank you. Kema
