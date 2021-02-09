@@ -60,6 +60,8 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (22000, uint256("00000022c7437c388b8de00aa2df17dcd9e27c84f2cf9a8db9fa108c65458c32")) //end of POW
     (58000, uint256("b44501ff72a24f1e21b4101daed8a21f3115dad8d7df2729561b1089e3539a8a"))
     (60101, uint256("7d74cdd0ee0ebaa2acc39c458adbf318655fce5da1206cdf2ce22a8a16c81f40")) //Change from 1 minute to 5 minute blocktime
+	(100000, uint256("2655505598fd586e0850fea081f616b4b3891fffc0ddb528d643f95058fcca75")) 
+	(200000, uint256("8971448223b0b112dd788d738f5836c2462f1b36c17883836a0816cec3d45030"))
 ;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -142,8 +144,8 @@ public:
         assert(hashGenesisBlock == uint256("d95b733e17624a7e613b050470f57e8c6f13f9a2c36e4efbfb1e0077a6161ae7"));
         assert(genesis.hashMerkleRoot == uint256("fbbfadf1a74fe46a60011a392709d7d99d38202fc6d4d84aa211581ded64fef6"));
         vSeeds.push_back(CDNSSeedData("seed1", "www.kema.io"));
-        vSeeds.push_back(CDNSSeedData("seed2", "www.paccoinexplorer.net"));
-        vSeeds.push_back(CDNSSeedData("seed3", "www.pacexc.com"));
+        vSeeds.push_back(CDNSSeedData("seed2", "142.93.67.230"));
+        vSeeds.push_back(CDNSSeedData("seed3", "167.99.226.193"));
 
         //vFixedSeeds.clear();
         //vSeeds.clear();
