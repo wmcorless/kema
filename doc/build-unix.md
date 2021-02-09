@@ -2,9 +2,11 @@ UNIX BUILD NOTES
 ====================
 Some notes on how to build Kemacoin Core in Unix.
 
-On fresh ubuntu server
+On a ubuntu 16.04 server from root
 
 	apt update && apt upgrade -y
+	
+	apt-get install software-properties-common
 	
 	apt-add-repository -y ppa:bitcoin/bitcoin
 	
