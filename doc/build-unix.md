@@ -30,6 +30,7 @@ the usage of the absolute path.
 
 To Build
 ---------------------
+CD into the directory you cloned the files.
 
 ```bash
 ./autogen.sh
