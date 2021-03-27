@@ -93,7 +93,7 @@ Value getpeerinfo(const Array& params, bool fHelp)
             "    \"pingtime\": n,             (numeric) ping time\n"
             "    \"pingwait\": n,             (numeric) ping wait\n"
             "    \"version\": v,              (numeric) The peer version, such as 7001\n"
-            "    \"subver\": \"/Kema Coin:x.x.x.x/\",  (string) The string version\n"
+            "    \"subver\": \"Kema Coin:x.x.x.x\",  (string) The string version\n"
             "    \"inbound\": true|false,     (boolean) Inbound (true) or Outbound (false)\n"
             "    \"startingheight\": n,       (numeric) The starting height (block) of the peer\n"
             "    \"banscore\": n,             (numeric) The ban score\n"
