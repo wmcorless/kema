@@ -146,6 +146,7 @@ public:
         vSeeds.push_back(CDNSSeedData("seed1", "www.kema.io"));
         vSeeds.push_back(CDNSSeedData("seed2", "142.93.67.230"));
         vSeeds.push_back(CDNSSeedData("seed3", "167.99.226.193"));
+	vSeeds.push_back(CDNSSeedData("seed4", "165.232.156.102"));
 
         //vFixedSeeds.clear();
         //vSeeds.clear();
