@@ -12,12 +12,26 @@ On a ubuntu 16.04 server from root
 	
 	apt-get update
 	
-	apt install -y make build-essential libtool software-properties-common autoconf libssl-dev libboost-dev libboost-chrono-dev libboost-filesystem-dev \
+	apt install -y make build-essential libtool software-properties-common autoconf libssl1.0-dev libboost-dev libboost-chrono-dev libboost-filesystem-dev \
 	libboost-program-options-dev libboost-system-dev libboost-test-dev libboost-thread-dev sudo automake git curl libdb4.8-dev \
 	bsdmainutils libdb4.8++-dev libminiupnpc-dev libgmp3-dev ufw fail2ban pkg-config libevent-dev libzmq5
 	
 	git clone https://github.com/wmcorless/kema.git
 
+To build with Qt 5 (recommended) you need the following:
+
+    sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
+
+To Build
+---------------------
+CD into the kema directory you cloned the files.
+
+```bash
+./autogen.sh
+./configure
+make
+make install # optional
+```
 Note
 ---------------------
 Always use absolute paths to configure and compile kemacoin and the dependencies,
@@ -27,18 +41,6 @@ for example, when specifying the path of the dependency:
 
 Here BDB_PREFIX must be an absolute path - it is defined using $(pwd) which ensures
 the usage of the absolute path.
-
-To Build
----------------------
-CD into the directory you cloned the files.
-
-```bash
-./autogen.sh
-./configure
-make
-make install # optional
-```
-
 This will build kemacoin-qt as well if the dependencies are met.
 
 Dependencies
@@ -110,7 +112,7 @@ See the section "Disable-wallet mode" to build Bitcoin Core without wallet.
 
 Optional:
 
-    sudo apt-get install libminiupnpc-dev (see --with-miniupnpc and --enable-upnp-default)
+    sudo apt-get install libminiupnpc-dev #(see --with-miniupnpc and --enable-upnp-default)
 
 ZMQ dependencies:
 
