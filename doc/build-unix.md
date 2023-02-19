@@ -2,7 +2,7 @@ UNIX BUILD NOTES
 ====================
 Some notes on how to build Kemacoin Core in Unix.
 
-On a ubuntu 16.04 server from root
+On a ubuntu 16.04 -18.04 server from root
 
 	apt update && apt upgrade -y
 	
