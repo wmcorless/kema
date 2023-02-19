@@ -22,8 +22,9 @@ BerkeleyDB is required for the wallet.
 
     sudo apt-get install software-properties-common
     sudo add-apt-repository ppa:pivx/pivx
+    
     sudo apt-get update
-    sudo apt-get install libdb4.8-dev libdb4.8++-dev
+    sudo apt-get install libdb4.8-dev libdb4.8++-dev autoconf
     
     git clone https://github.com/wmcorless/kema.git
 
