@@ -32,7 +32,8 @@ Optional port mapping libraries (see: `--with-miniupnpc`, and `--enable-upnp-def
     sudo apt install libminiupnpc-dev libnatpmp-dev
 
 ZMQ dependencies (provides ZMQ API):
-sudo apt-get install libzmq3-dev
+
+    sudo apt-get install libzmq3-dev
 
 GUI dependencies:
 
