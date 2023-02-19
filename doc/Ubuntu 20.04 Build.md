@@ -14,7 +14,7 @@ Build requirements:
 
     sudo apt-get install build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3
 
-Now, you can either build from self-compiled [depends](/depends/README.md) or install the required dependencies:
+Now, you can either build from self-compiled or install the required dependencies:
 
     sudo apt-get install libgmp-dev libevent-dev libboost-all-dev libsodium-dev cargo
 
@@ -24,6 +24,8 @@ BerkeleyDB is required for the wallet.
     sudo add-apt-repository ppa:pivx/pivx
     sudo apt-get update
     sudo apt-get install libdb4.8-dev libdb4.8++-dev
+    
+    git clone https://github.com/wmcorless/kema.git
 
 Optional port mapping libraries (see: `--with-miniupnpc`, and `--enable-upnp-default`, `--with-natpmp`, `--enable-natpmp-default`):
 
@@ -44,8 +46,9 @@ To build with Qt 5 you need the following:
 
 To Build
 ---------------------
-
+    
 ```bash
+cd kema
 ./autogen.sh
 ./configure
 make
