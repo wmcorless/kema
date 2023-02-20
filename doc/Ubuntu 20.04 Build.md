@@ -1,5 +1,7 @@
 UNIX BUILD NOTES
 ====================
+This does not work. It is a work in progress.
+
 Some notes on how to build Kemacoin Core in Unix.
 
 On a ubuntu 20.04 - 22.04 server from root
