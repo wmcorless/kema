@@ -1,6 +1,6 @@
 SETTING UP KEMA MASTERNODE:
 ===========================
-* First set up a VPS server. We recommend Amazon Web Services or Digital Ocean.
+* First set up a VPS server. We recommend Digital Ocean.
 * Set up an account, and verify your email.
 
 ### Setting up your VPS
