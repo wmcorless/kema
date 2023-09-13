@@ -18,7 +18,7 @@ On a ubuntu 16.04 -18.04 server from root
 	
 	git clone https://github.com/wmcorless/kema.git
 
-To build with Qt 5 (recommended) you need the following:
+To build with Qt 5 (recommended if you want a gui version) you need the following:
 
     sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 
@@ -30,9 +30,17 @@ CD into the kema directory you cloned the files.
 ./autogen.sh
 ./configure
 make
-make install # optional
 ```
 If the compile fails due to lack of memory see next section.
+
+To make the kemad file smaller run the strip command:
+```bash
+cd src
+strip kemad
+cd ..
+make install # optional
+```
+
 
 Memory Requirements
 --------------------
