@@ -32,8 +32,22 @@ CD into the kema directory you cloned the files.
 make
 make install # optional
 ```
+If the compile fails due to lack of memory see next section.
+
+Memory Requirements
+--------------------
+
+C++ compilers are memory-hungry. It is recommended to have at least 1.5 GB of
+memory available when compiling Kemacoin Core. On systems with less, gcc can be
+tuned to conserve memory with additional CXXFLAGS:
+
+
+    ./configure CXXFLAGS="--param ggc-min-expand=1 --param ggc-min-heapsize=32768"
+    
 Note
 ---------------------
+
+
 Always use absolute paths to configure and compile kemacoin and the dependencies,
 for example, when specifying the path of the dependency:
 
@@ -67,16 +81,6 @@ Optional dependencies:
  libzmq3     | ZMQ notification | Optional, allows generating ZMQ notifications (requires ZMQ version >= 4.x)
 
 For the versions used in the release, see [release-process.md](release-process.md) under *Fetch and build inputs*.
-
-Memory Requirements
---------------------
-
-C++ compilers are memory-hungry. It is recommended to have at least 1.5 GB of
-memory available when compiling Kemacoin Core. On systems with less, gcc can be
-tuned to conserve memory with additional CXXFLAGS:
-
-
-    ./configure CXXFLAGS="--param ggc-min-expand=1 --param ggc-min-heapsize=32768"
 
 Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
