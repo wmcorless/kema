@@ -6,7 +6,7 @@ SETTING UP KEMA MASTERNODE:
 ### Setting up your VPS
 
 * Add server.
-* Server type choose Ubuntu 1604 x64
+* Server type choose Ubuntu 18.04 x64
 * Select the 25GB SSD
 * Label the Server MN1 (for masternode 1 and so on.)
 * Once deployed copy the IP address to the clipboard
@@ -30,7 +30,7 @@ After all updates and upgrades completed, close window
 Restart puTTY, choose the session you just created.
 Log in to server and copy the following:
 
-    wget https://raw.githubusercontent.com/wmcorless/kema/master/mn-setup.sh -O mn-setup.sh
+    wget https://raw.githubusercontent.com/wmcorless/kema/master/mn-setupV5.sh -O mn-setup.sh
     bash mn-setup.sh
 
 Paste in your prompt and press enter or simply right clicking.
