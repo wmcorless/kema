@@ -35,9 +35,7 @@ If the compile fails due to lack of memory see next section.
 
 To make the kemad file smaller run the strip command:
 ```bash
-cd src
-strip kemad
-cd ..
+strip src/kemad src/kema-cli
 make install # optional
 ```
 
