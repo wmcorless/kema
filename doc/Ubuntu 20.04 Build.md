@@ -66,8 +66,9 @@ To Build
 ```bash
 cd kema
 ./autogen.sh
-./configure
+./configure --with-boost-libdir=/usr/local/lib/
 make
+strip src/kemad src/kema-cli
 make install # optional
 ```
 
