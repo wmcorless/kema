@@ -64,6 +64,8 @@ Install Boost
     
 Add Paths
 
+    PATH=$PATH:~/usr/local/lib
+    export LD_LIBRARY_PATH=/usr/local/lib
     echo 'export PATH=$PATH:~/usr/local/lib' >> ~/.bashrc
     echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib' >> ~/.bashrc
 
