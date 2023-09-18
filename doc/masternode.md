@@ -21,27 +21,13 @@ Download Putty at http://www.putty.org
 * When Security Alert box opens, click Yes
 * Enter Username and Password
 
-If you need to run updates use this:
+Use our new ubuntu setup guide https://github.com/wmcorless/kema/blob/master/doc/Ubuntu%2020.04%20Build.md
 
-    apt update && apt upgrade -y && reboot
-
-After all updates and upgrades completed, close window
-
-Restart puTTY, choose the session you just created.
-Log in to server and copy the following:
-
-    wget https://raw.githubusercontent.com/wmcorless/kema/master/mn-setupV5.sh -O mn-setup.sh
-    bash mn-setup.sh
-
-Paste in your prompt and press enter or simply right clicking.
-Once completed running it will ask for a private key (just hit the return key) 
-It will then say "kema server starting" will be displayed and a new key will be generated.
-
-When program finishes highlight complete line starting with "MN#". 
-Once highlighted it will be copied into your clipboard.
+# Setting up your Masternode using your Wallet
 Now in the Kema Coin Wallet click on Tools > Masternode configuration file.
 
-On a blank line paste the line you just copied into the Masternode Configuration file.
+If you are using notepad you should see an example line starting with a `#`. This is a comment line.
+It is recommended that you name each of your masternodes as MN1, MN2, etc.
 Change # sign to 1 or the latest number of the node.  
 CTRL "S" to save file.
 In the wallet click Tools > Debug to go to the console 
@@ -49,7 +35,7 @@ Type:
 
     getaccountaddress MN1
     
-Copy address generated.
+Copy address generated. This is the addresss we are going to send the collateral to.
 
 ### Send Collateral
 
@@ -67,12 +53,13 @@ Go back to the Debug Console and run the below command.
 
     masternode outputs
 
-It will then give you a listing of all transaction ID's of your Masternodes.  
+Make sure you have enough confirmations and it will then give you a listing of all transaction ID's of your Masternodes.  
 Compare the first three digits of each ID to find the one you just created.  
 The last digit of each line will be a 1 or a 0 (zero).  
 Now enter that digit at the end of the line following a blank space. 
 Your config line should not have any "enter" keys on the line just spaces seperating each item. 
 The number has to be the last character in the config file or your Node will not run.  
+Make sure the config file follows the same nomenclature as the example provided.
 Now save and close the configuration file and close the Kema Wallet program.  
 
 ### Start Masternode
