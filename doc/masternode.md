@@ -5,11 +5,12 @@ SETTING UP KEMA MASTERNODE:
 
 ### Setting up your VPS
 
-* Add server.
-* Server type choose Ubuntu 18.04 x64
+* Add server or droplet.
+* Server type choose Ubuntu 20.04 x64
 * Select the 25GB SSD
 * Label the Server MN1 (for masternode 1 and so on.)
 * Once deployed copy the IP address to the clipboard
+* Use our new ubuntu setup guide https://github.com/wmcorless/kema/blob/master/doc/Ubuntu%2020.04%20Build.md
  
 To access your server we recommend using PUTTY. 
 Download Putty at http://www.putty.org
@@ -20,8 +21,6 @@ Download Putty at http://www.putty.org
 * Press the open button
 * When Security Alert box opens, click Yes
 * Enter Username and Password
-
-Use our new ubuntu setup guide https://github.com/wmcorless/kema/blob/master/doc/Ubuntu%2020.04%20Build.md
 
 # Setting up your Masternode using your Wallet
 Now in the Kema Coin Wallet click on Tools > Masternode configuration file.
@@ -49,6 +48,14 @@ Double click on "Payment to yourself" to open a window.
 Double click on the txid number to highlight it, then copy it. 
 Go back to your masternode config file and then paste it in Masternode config file one space after MN# line.  
 CTRL S and save the file.  
+
+### Create a Masternode key
+Using the console in your Wallet type:
+
+     masternode genkey
+
+This key should start with a '7'. Copy this key and put it in your Masternode Config File.
+
 Go back to the Debug Console and run the below command.
 
     masternode outputs
