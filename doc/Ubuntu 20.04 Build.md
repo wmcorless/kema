@@ -19,7 +19,7 @@ Build requirements:
 
 You need to add the following dependency:
 
-    echo 'deb http://security.ubuntu.com/ubuntu bionic-security main' >> /etc/apt/sources.list
+    echo 'deb [trusted=yes] http://security.ubuntu.com/ubuntu bionic-security main' >> /etc/apt/sources.list
 
 Update the cache:
 
