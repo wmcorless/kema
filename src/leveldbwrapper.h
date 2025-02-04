@@ -12,19 +12,20 @@
 #include "version.h"
 
 #include <boost/filesystem/path.hpp>
-
 #include <leveldb/db.h>
 #include <leveldb/write_batch.h>
 
+// Fix 1: Ensure `leveldb_error` is defined before use
 class leveldb_error : public std::runtime_error
 {
 public:
     leveldb_error(const std::string& msg) : std::runtime_error(msg) {}
 };
 
-void HandleError(const leveldb::Status& status)
+// Fix 2: Ensure `HandleError` is declared before use
+void HandleError(const leveldb::Status& status) noexcept(false);
 
-/** Batch of changes queued to be written to a CLevelDBWrapper */
+// Fix 3: Move `CLevelDBBatch` **before** `CLevelDBWrapper`
 class CLevelDBBatch
 {
     friend class CLevelDBWrapper;
@@ -61,28 +62,16 @@ public:
     }
 };
 
+// Fix 4: Ensure class declaration has `;` at the end
 class CLevelDBWrapper
 {
 private:
-    //! custom environment this database is using (may be NULL in case of default environment)
     leveldb::Env* penv;
-
-    //! database options used
     leveldb::Options options;
-
-    //! options used when reading from the database
     leveldb::ReadOptions readoptions;
-
-    //! options used when iterating over values of the database
     leveldb::ReadOptions iteroptions;
-
-    //! options used when writing to the database
     leveldb::WriteOptions writeoptions;
-
-    //! options used when sync writing to the database
     leveldb::WriteOptions syncoptions;
-
-    //! the database itself
     leveldb::DB* pdb;
 
 public:
@@ -90,7 +79,7 @@ public:
     ~CLevelDBWrapper();
 
     template <typename K, typename V>
-    bool Read(const K& key, V& value) const 
+    bool Read(const K& key, V& value) const
     {
         CDataStream ssKey(SER_DISK, CLIENT_VERSION);
         ssKey.reserve(ssKey.GetSerializeSize(key));
@@ -115,7 +104,7 @@ public:
     }
 
     template <typename K, typename V>
-    bool Write(const K& key, const V& value, bool fSync = false) 
+    bool Write(const K& key, const V& value, bool fSync = false)
     {
         CLevelDBBatch batch;
         batch.Write(key, value);
@@ -123,7 +112,7 @@ public:
     }
 
     template <typename K>
-    bool Exists(const K& key) const 
+    bool Exists(const K& key) const
     {
         CDataStream ssKey(SER_DISK, CLIENT_VERSION);
         ssKey.reserve(ssKey.GetSerializeSize(key));
@@ -142,28 +131,26 @@ public:
     }
 
     template <typename K>
-    bool Erase(const K& key, bool fSync = false) 
+    bool Erase(const K& key, bool fSync = false)
     {
         CLevelDBBatch batch;
         batch.Erase(key);
         return WriteBatch(batch, fSync);
     }
 
-    bool WriteBatch(CLevelDBBatch& batch, bool fSync = false) 
+    bool WriteBatch(CLevelDBBatch& batch, bool fSync = false) noexcept(false);
 
-    // not available for LevelDB; provide for compatibility with BDB
     bool Flush()
     {
         return true;
     }
 
-    bool Sync() throw(leveldb_error)
+    bool Sync()
     {
         CLevelDBBatch batch;
         return WriteBatch(batch, true);
     }
 
-    // not exactly clean encapsulation, but it's easiest for now
     leveldb::Iterator* NewIterator()
     {
         return pdb->NewIterator(iteroptions);
