@@ -102,7 +102,7 @@ cd kema
 ./autogen.sh
 ```
 ```bash
-./configure --with-boost-libdir=/usr/local/lib/
+./configure CXXFLAGS="--param ggc-min-expand=1 --param ggc-min-heapsize=32768"
 make
 strip src/kemad src/kema-cli
 make install # optional
