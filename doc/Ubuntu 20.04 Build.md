@@ -31,7 +31,7 @@ Install dependencies.
 
 BerkeleyDB is required for the wallet.
 
-    sudo add-apt-repository ppa:pivx/pivx
+    sudo add-apt-repository ppa:pivx/berkeley-db4
 
 Update the system.
 
