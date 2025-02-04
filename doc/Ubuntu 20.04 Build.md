@@ -48,7 +48,7 @@ ZMQ dependencies (provides ZMQ API):
 
 Install Boost
 
-    wget https://boostorg.jfrog.io/artifactory/main/release/1.65.1/source/boost_1_65_1.tar.gz
+    wget https://archives.boost.io/release/1.65.1/source/boost_1_65_1.tar.gz
     tar -xzf boost_1_65_1.tar.gz
     cd boost_1_65_1
     ./bootstrap.sh
