@@ -2,6 +2,7 @@ UNIX BUILD NOTES
 ====================
 Some notes on how to build Kemacoin Core On a ubuntu 20.04 server from root.
 if working with less than 2GB memory it is advised to set up a swap file. See https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
+LTS versions of ubuntu are reccomended.
 
 ## Linux Distribution Specific Instructions
 
