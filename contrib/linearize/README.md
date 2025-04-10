@@ -17,7 +17,7 @@ Copy the config file:
 
 ## Step 3: Download hash list
 
-    python3 linearize-hashes.py linearize.cfg > hashlist.txt
+    python3 linearize-kemacoin.py linearize.cfg > kemacoin_blocks.txt
 
 ## Step 2: Copy local block data
 
