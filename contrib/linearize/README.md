@@ -1,23 +1,30 @@
 # Linearize
 Construct a linear, no-fork, best version of the blockchain.
 
-## Step 1: Download hash list
-
-   $ ./linearize-hashes.py linearize.cfg > hashlist.txt
+## Step 1:
+Edit example-linearize.cfg
 
 Required configuration file settings for linearize-hashes:
-* RPC: rpcuser, rpcpassword
-
-Optional config file setting for linearize-hashes:
+* RPC: rpcuser, rpcpassword:
+* Optional config file setting for linearize-hashes:
 * RPC: host, port
 * Block chain: min_height, max_height
 
+## Step 2:
+Copy the config file:
+
+    cp example-linearize.cfg linearize.cfg
+
+## Step 3: Download hash list
+
+    python3 linearize-hashes.py linearize.cfg > hashlist.txt
+
 ## Step 2: Copy local block data
 
-   $ ./linearize-data.py linearize.cfg
+    python3 linearize-data.py linearize.cfg
 
 Required configuration file settings:
-* "input": bitcoind blocks/ directory containing blkNNNNN.dat
+* "input": kemad blocks/ directory containing blkNNNNN.dat
 * "hashlist": text file containing list of block hashes, linearized-hashes.py
 output.
 * "output_file": bootstrap.dat
