@@ -1,301 +1,183 @@
-#!/usr/bin/python
-#
-# linearize-data.py: Construct a linear, no-fork version of the chain.
-#
-# Copyright (c) 2013-2014 The Bitcoin developers
-# Distributed under the MIT/X11 software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#
+#!/usr/bin/env python3
+"""
+linearize-kemacoin.py: List blocks in a linear, no-fork version of the Kemacoin chain,
+from min_height up to the chain tip using the JSON-RPC API.
 
-from __future__ import print_function, division
+Usage:
+  python linearize-kemacoin.py linearize.cfg > kemacoin_blocks.txt
+
+The configuration file (linearize.cfg) might contain lines like:
+    rpcuser=youruser
+    rpcpassword=yourRPCpass
+    host=127.0.0.1
+    port=65076
+    min_height=0
+    use_https=False
+
+Make sure your Kemacoin node is running with RPC enabled.
+"""
+
 import json
-import struct
 import re
-import os
 import base64
-import httplib
+import http.client
 import sys
-import hashlib
-import datetime
-import time
-from collections import namedtuple
 
+# Global settings dictionary
 settings = {}
 
-def uint32(x):
-	return x & 0xffffffffL
+class KemacoinRPC:
+    def __init__(self, host, port, username, password, use_https=False):
+        self.use_https = use_https
+        authpair = f"{username}:{password}"
+        # In Python3, base64.b64encode returns bytes so decode it to get a string.
+        self.authhdr = "Basic " + base64.b64encode(authpair.encode("utf-8")).decode("utf-8")
+        if self.use_https:
+            self.conn = http.client.HTTPSConnection(host, port, timeout=300)
+        else:
+            self.conn = http.client.HTTPConnection(host, port, timeout=300)
 
-def bytereverse(x):
-	return uint32(( ((x) << 24) | (((x) << 8) & 0x00ff0000) |
-		       (((x) >> 8) & 0x0000ff00) | ((x) >> 24) ))
+    def execute(self, request_array):
+        """
+        Makes one batch RPC call with request_array (a list of JSON-RPC requests).
+        """
+        self.conn.request(
+            'POST',
+            '/',
+            json.dumps(request_array),
+            {
+                'Authorization': self.authhdr,
+                'Content-type': 'application/json'
+            }
+        )
 
-def bufreverse(in_buf):
-	out_words = []
-	for i in range(0, len(in_buf), 4):
-		word = struct.unpack('@I', in_buf[i:i+4])[0]
-		out_words.append(struct.pack('@I', bytereverse(word)))
-	return ''.join(out_words)
+        resp = self.conn.getresponse()
+        if resp is None:
+            print("JSON-RPC: no response", file=sys.stderr)
+            return None
 
-def wordreverse(in_buf):
-	out_words = []
-	for i in range(0, len(in_buf), 4):
-		out_words.append(in_buf[i:i+4])
-	out_words.reverse()
-	return ''.join(out_words)
+        body = resp.read()
+        try:
+            resp_obj = json.loads(body)
+        except ValueError as e:
+            print(f"JSON parse error: {e}", file=sys.stderr)
+            print(f"Raw response body: {body}", file=sys.stderr)
+            sys.exit(1)
+        return resp_obj
 
-def calc_hdr_hash(blk_hdr):
-	hash1 = hashlib.sha256()
-	hash1.update(blk_hdr)
-	hash1_o = hash1.digest()
+    @staticmethod
+    def build_request(idx, method, params):
+        """
+        Build a JSON-RPC request object. We use the common "jsonrpc": "1.0" for many
+        Bitcoin-derived coins like Kemacoin.
+        """
+        return {
+            'jsonrpc': '1.0',
+            'id': idx,
+            'method': method,
+            'params': params if params is not None else []
+        }
 
-	hash2 = hashlib.sha256()
-	hash2.update(hash1_o)
-	hash2_o = hash2.digest()
+    @staticmethod
+    def response_is_error(resp_obj):
+        """
+        Check if an individual response object indicates an error.
+        """
+        return ('error' in resp_obj) and (resp_obj['error'] is not None)
 
-	return hash2_o
+def get_block_hashes(settings, max_blocks_per_call=1000):
+    """
+    Retrieve block hashes from the Kemacoin node starting at min_height and going up
+    to the chain tip. Prints each block hash to stdout in ascending order.
+    """
+    use_https = settings.get('use_https', False)
+    rpc = KemacoinRPC(settings['host'], settings['port'],
+                      settings['rpcuser'], settings['rpcpassword'],
+                      use_https=use_https)
 
-def calc_hash_str(blk_hdr):
-	hash = calc_hdr_hash(blk_hdr)
-	hash = bufreverse(hash)
-	hash = wordreverse(hash)
-	hash_str = hash.encode('hex')
-	return hash_str
+    # Step 1: Get the current chain tip using getblockcount.
+    batch_for_count = [rpc.build_request(0, 'getblockcount', [])]
+    reply_count = rpc.execute(batch_for_count)
+    if not reply_count or len(reply_count) < 1:
+        print("Error: getblockcount failed, no reply", file=sys.stderr)
+        sys.exit(1)
+    if rpc.response_is_error(reply_count[0]):
+        print(f"Error: getblockcount returned an error: {reply_count[0]['error']}", file=sys.stderr)
+        sys.exit(1)
 
-def get_blk_dt(blk_hdr):
-	members = struct.unpack("<I", blk_hdr[68:68+4])
-	nTime = members[0]
-	dt = datetime.datetime.fromtimestamp(nTime)
-	dt_ym = datetime.datetime(dt.year, dt.month, 1)
-	return (dt_ym, nTime)
+    current_tip = reply_count[0]['result']
+    print(f"Current chain tip is: {current_tip}", file=sys.stderr)
 
-def get_block_hashes(settings):
-	blkindex = []
-	f = open(settings['hashlist'], "r")
-	for line in f:
-		line = line.rstrip()
-		blkindex.append(line)
+    # Start fetching from min_height (defaulting to 0 if not provided).
+    height = settings.get('min_height', 0)
+    print(f"Starting from block height: {height}", file=sys.stderr)
 
-	print("Read " + str(len(blkindex)) + " hashes")
+    # Step 2: Loop until we reach the chain tip.
+    while height <= current_tip:
+        num_blocks = min(current_tip - height + 1, max_blocks_per_call)
+        batch = []
+        for x in range(num_blocks):
+            # Build a "getblockhash" request for block at height + x.
+            batch.append(rpc.build_request(x, 'getblockhash', [height + x]))
 
-	return blkindex
+        reply = rpc.execute(batch)
+        if not reply or len(reply) < num_blocks:
+            print("Error: batch RPC call didn't return enough items", file=sys.stderr)
+            sys.exit(1)
 
-def mkblockmap(blkindex):
-	blkmap = {}
-	for height,hash in enumerate(blkindex):
-		blkmap[hash] = height
-	return blkmap
+        # Step 3: Process each response and print the block hash.
+        for x, resp_obj in enumerate(reply):
+            if rpc.response_is_error(resp_obj):
+                print(f"JSON-RPC error at height {height + x}: {resp_obj['error']}", file=sys.stderr)
+                sys.exit(1)
+            # Confirm that the response id is what we expected.
+            assert resp_obj['id'] == x, "Mismatched response id"
+            print(resp_obj['result'])
 
-# Block header and extent on disk
-BlockExtent = namedtuple('BlockExtent', ['fn', 'offset', 'inhdr', 'blkhdr', 'size'])
+        height += num_blocks
 
-class BlockDataCopier:
-	def __init__(self, settings, blkindex, blkmap):
-		self.settings = settings
-		self.blkindex = blkindex
-		self.blkmap = blkmap
-
-		self.inFn = 0
-		self.inF = None
-		self.outFn = 0
-		self.outsz = 0
-		self.outF = None
-		self.outFname = None
-		self.blkCountIn = 0
-		self.blkCountOut = 0
-
-		self.lastDate = datetime.datetime(2000, 1, 1)
-		self.highTS = 1408893517 - 315360000
-		self.timestampSplit = False
-		self.fileOutput = True
-		self.setFileTime = False
-		self.maxOutSz = settings['max_out_sz']
-		if 'output' in settings:
-			self.fileOutput = False
-		if settings['file_timestamp'] != 0:
-			self.setFileTime = True
-		if settings['split_timestamp'] != 0:
-			self.timestampSplit = True
-        # Extents and cache for out-of-order blocks
-		self.blockExtents = {}
-		self.outOfOrderData = {}
-		self.outOfOrderSize = 0 # running total size for items in outOfOrderData
-
-	def writeBlock(self, inhdr, blk_hdr, rawblock):
-		if not self.fileOutput and ((self.outsz + self.inLen) > self.maxOutSz):
-			self.outF.close()
-			if self.setFileTime:
-				os.utime(outFname, (int(time.time()), highTS))
-			self.outF = None
-			self.outFname = None
-			self.outFn = outFn + 1
-			self.outsz = 0
-
-		(blkDate, blkTS) = get_blk_dt(blk_hdr)
-		if self.timestampSplit and (blkDate > self.lastDate):
-			print("New month " + blkDate.strftime("%Y-%m") + " @ " + hash_str)
-			lastDate = blkDate
-			if outF:
-				outF.close()
-				if setFileTime:
-					os.utime(outFname, (int(time.time()), highTS))
-				self.outF = None
-				self.outFname = None
-				self.outFn = self.outFn + 1
-				self.outsz = 0
-
-		if not self.outF:
-			if self.fileOutput:
-				outFname = self.settings['output_file']
-			else:
-				outFname = "%s/blk%05d.dat" % (self.settings['output'], outFn)
-			print("Output file" + outFname)
-			self.outF = open(outFname, "wb")
-
-		self.outF.write(inhdr)
-		self.outF.write(blk_hdr)
-		self.outF.write(rawblock)
-		self.outsz = self.outsz + len(inhdr) + len(blk_hdr) + len(rawblock)
-
-		self.blkCountOut = self.blkCountOut + 1
-		if blkTS > self.highTS:
-			self.highTS = blkTS
-
-		if (self.blkCountOut % 1000) == 0:
-			print('%i blocks scanned, %i blocks written (of %i, %.1f%% complete)' % 
-					(self.blkCountIn, self.blkCountOut, len(self.blkindex), 100.0 * self.blkCountOut / len(self.blkindex)))
-
-	def inFileName(self, fn):
-		return "%s/blk%05d.dat" % (self.settings['input'], fn)
-
-	def fetchBlock(self, extent):
-		'''Fetch block contents from disk given extents'''
-		with open(self.inFileName(extent.fn), "rb") as f:
-			f.seek(extent.offset)
-			return f.read(extent.size)
-
-	def copyOneBlock(self):
-		'''Find the next block to be written in the input, and copy it to the output.'''
-		extent = self.blockExtents.pop(self.blkCountOut)
-		if self.blkCountOut in self.outOfOrderData:
-			# If the data is cached, use it from memory and remove from the cache
-			rawblock = self.outOfOrderData.pop(self.blkCountOut)
-			self.outOfOrderSize -= len(rawblock)
-		else: # Otherwise look up data on disk
-			rawblock = self.fetchBlock(extent)
-
-		self.writeBlock(extent.inhdr, extent.blkhdr, rawblock)
-
-	def run(self):
-		while self.blkCountOut < len(self.blkindex):
-			if not self.inF:
-				fname = self.inFileName(self.inFn)
-				print("Input file" + fname)
-				try:
-					self.inF = open(fname, "rb")
-				except IOError:
-					print("Premature end of block data")
-					return
-
-			inhdr = self.inF.read(8)
-			if (not inhdr or (inhdr[0] == "\0")):
-				self.inF.close()
-				self.inF = None
-				self.inFn = self.inFn + 1
-				continue
-
-			inMagic = inhdr[:4]
-			if (inMagic != self.settings['netmagic']):
-				print("Invalid magic:" + inMagic)
-				return
-			inLenLE = inhdr[4:]
-			su = struct.unpack("<I", inLenLE)
-			inLen = su[0] - 80 # length without header
-			blk_hdr = self.inF.read(80)
-			inExtent = BlockExtent(self.inFn, self.inF.tell(), inhdr, blk_hdr, inLen)
-
-			hash_str = calc_hash_str(blk_hdr)
-			if not hash_str in blkmap:
-				print("Skipping unknown block " + hash_str)
-				self.inF.seek(inLen, os.SEEK_CUR)
-				continue
-
-			blkHeight = self.blkmap[hash_str]
-			self.blkCountIn += 1
-
-			if self.blkCountOut == blkHeight:
-				# If in-order block, just copy
-				rawblock = self.inF.read(inLen)
-				self.writeBlock(inhdr, blk_hdr, rawblock)
-
-				# See if we can catch up to prior out-of-order blocks
-				while self.blkCountOut in self.blockExtents:
-					self.copyOneBlock()
-
-			else: # If out-of-order, skip over block data for now
-				self.blockExtents[blkHeight] = inExtent
-				if self.outOfOrderSize < self.settings['out_of_order_cache_sz']:
-					# If there is space in the cache, read the data
-					# Reading the data in file sequence instead of seeking and fetching it later is preferred,
-					# but we don't want to fill up memory
-					self.outOfOrderData[blkHeight] = self.inF.read(inLen)
-					self.outOfOrderSize += inLen
-				else: # If no space in cache, seek forward
-					self.inF.seek(inLen, os.SEEK_CUR)
-
-		print("Done (%i blocks written)" % (self.blkCountOut))
+    print(f"Finished. Last height fetched was {current_tip}", file=sys.stderr)
 
 if __name__ == '__main__':
-	if len(sys.argv) != 2:
-		print("Usage: linearize-data.py CONFIG-FILE")
-		sys.exit(1)
+    if len(sys.argv) != 2:
+        print("Usage: linearize-kemacoin.py CONFIG-FILE", file=sys.stderr)
+        sys.exit(1)
 
-	f = open(sys.argv[1])
-	for line in f:
-		# skip comment lines
-		m = re.search('^\s*#', line)
-		if m:
-			continue
+    # Parse the configuration file.
+    cfg_file = sys.argv[1]
+    with open(cfg_file) as f:
+        for line in f:
+            # Skip comment lines.
+            if re.search('^\s*#', line):
+                continue
 
-		# parse key=value lines
-		m = re.search('^(\w+)\s*=\s*(\S.*)$', line)
-		if m is None:
-			continue
-		settings[m.group(1)] = m.group(2)
-	f.close()
+            # Parse key=value formatted lines.
+            m = re.search('^(\w+)\s*=\s*(\S.*)$', line)
+            if m is None:
+                continue
+            key = m.group(1)
+            val = m.group(2)
 
-	if 'netmagic' not in settings:
-		settings['netmagic'] = '697c2446'
-	if 'genesis' not in settings:
-		settings['genesis'] = 'd95b733e17624a7e613b050470f57e8c6f13f9a2c36e4efbfb1e0077a6161ae7'
-	if 'input' not in settings:
-		settings['input'] = 'input'
-	if 'hashlist' not in settings:
-		settings['hashlist'] = 'hashlist.txt'
-	if 'file_timestamp' not in settings:
-		settings['file_timestamp'] = 0
-	if 'split_timestamp' not in settings:
-		settings['split_timestamp'] = 0
-	if 'max_out_sz' not in settings:
-		settings['max_out_sz'] = 1000L * 1000 * 1000
-	if 'out_of_order_cache_sz' not in settings:
-		settings['out_of_order_cache_sz'] = 100 * 1000 * 1000
+            if key in ['port', 'min_height', 'max_height']:
+                settings[key] = int(val)
+            elif key == 'use_https':
+                # Configure boolean value for use_https.
+                settings[key] = val.lower() in ['true', '1', 'yes']
+            else:
+                settings[key] = val
 
-	settings['max_out_sz'] = long(settings['max_out_sz'])
-	settings['split_timestamp'] = int(settings['split_timestamp'])
-	settings['file_timestamp'] = int(settings['file_timestamp'])
-	settings['netmagic'] = settings['netmagic'].decode('hex')
-	settings['out_of_order_cache_sz'] = int(settings['out_of_order_cache_sz'])
+    # Set defaults if not provided in the config.
+    if 'host' not in settings:
+        settings['host'] = '127.0.0.1'
+    if 'port' not in settings:
+        # Set this default to the typical Kemacoin RPC port if desired.
+        settings['port'] = 65076
+    if 'min_height' not in settings:
+        settings['min_height'] = 0
 
-	if 'output_file' not in settings and 'output' not in settings:
-		print("Missing output file / directory")
-		sys.exit(1)
+    if 'rpcuser' not in settings or 'rpcpassword' not in settings:
+        print("Missing rpcuser/rpcpassword in config", file=sys.stderr)
+        sys.exit(1)
 
-	blkindex = get_block_hashes(settings)
-	blkmap = mkblockmap(blkindex)
-
-	if not settings['genesis'] in blkmap:
-		print("Genesis Block not found")
-	else:
-		BlockDataCopier(settings, blkindex, blkmap).run()
-
-
+    # Run the block hash fetching routine.
+    get_block_hashes(settings, max_blocks_per_call=1000)
