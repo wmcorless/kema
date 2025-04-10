@@ -10,7 +10,7 @@ The configuration file (linearize.cfg) should contain lines such as:
     rpcuser=youruser
     rpcpassword=yourRPCpass
     host=127.0.0.1
-    port=16745               # Adjust to your Kemacoin RPC port
+    port=65076               # Adjust to your Kemacoin RPC port
     min_height=0
     use_https=False          # Optional: set to True if your node uses HTTPS
     netmagic=697c2446        # 8 hex characters representing your Kemacoin network magic
@@ -218,7 +218,7 @@ if __name__ == '__main__':
     if 'host' not in settings:
         settings['host'] = '127.0.0.1'
     if 'port' not in settings:
-        settings['port'] = 16745
+        settings['port'] = 65706
     if 'min_height' not in settings:
         settings['min_height'] = 0
     if 'rpcuser' not in settings or 'rpcpassword' not in settings:
